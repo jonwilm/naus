@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
 	<!-- Required meta tags -->
@@ -8,55 +8,143 @@
 
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+	<!-- Styles CSS -->
+	<style>
+		body {
+			position: relative;
+			padding-top: 54px;
+		}
+		/* Navbar */
+		
+		.bg-navbar {
+			background-color: #F5F4F4;
+			width: auto;
+			height: 54px;
+		}
+		
+		.navbar-custom {
+			padding: 8px 0 8px 0;
+			background-color: #F5F4F4;
+		}
+		
+		.navbar-light .navbar-nav .nav-link {
+			color: #273638;
+		}
+		
+		.navbar-light .navbar-nav .nav-link:hover {
+			color: #1D70B7;
+		}
+		
+		ul.nav {
+			margin-top: 8px;
+			margin-bottom: 8px;
+		}
+		
+		a.nav-link {
+			padding-left: 5px;
+			padding-right: 5px;
+		}
+		
+		li.nav-item {
+			padding-left: 5px;
+			padding-right: 5px;
+			border-right: 1px solid #1D70B7;
+		}
+		
+		.navbar-toggler {
+			background-color: #1D70B7;
+			border: 0;
+		}
+		
+		.nav-toggler-icon {
+			background-color: #F5F4F4;
+		}
+		/* Navbar Movil */
+		
+		@media (max-width: 767px) {
+			.navbar-custom {
+				background-color: transparent;
+			}
+			.navbar-brand {
+				margin-left: 15px;
+			}
+			li.nav-item {
+				border: 0;
+			}
+			.navbar-light .navbar-nav .nav-link {
+				background-color: #1D70B7;
+				color: #F5F4F4;
+				padding-left: 15px;
+				border-bottom: 1px solid white;
+			}
+			.navbar-light .navbar-nav .nav-link:hover {
+				background-color: #3AA935;
+				color: #F5F4F4;
+			}
+			.navbar-collapse {
+				margin: 20px;
+			}
+			.collapse.show {
+				background-color: #1D70B7;
+				padding: 10px;
+			}
+			.container {
+				width: auto;
+			}
+		}
+
+	</style>
 </head>
 
-<body>
-	<div class="container">
-		<nav class="navbar navbar-light navbar-toggleable-sm bg-faded">
-			<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#collapsingNavbar3">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-			<a href="#" class="navbar-brand d-flex w-50 mr-auto">Logo</a>
-			<div class="navbar-collapse collapse" id="collapsingNavbar3">
-				<ul class="nav navbar-nav ml-auto w-100 justify-content-end">
-					<li class="nav-item"><a data-scroll class="nav-link" href="#home">Home</a></li>
-					<li class="nav-item"><a data-scroll class="nav-link" href="#service">Servicios</a></li>
-					<li class="nav-item"><a data-scroll class="nav-link" href="#us">Nosotros</a></li>
-					<li class="nav-item"><a data-scroll class="nav-link" href="#portfolio">Portafolio</a></li>
-					<li class="nav-item"><a data-scroll class="nav-link" href="#contact">Contacto</a></li>
+<body data-spy="scroll" data-target="#navbar-spy">
+	<div class="bg-navbar fixed-top"></div>
+	<nav class="navbar-custom navbar-toggleable-sm navbar-light bg-faded fixed-top">
+		<div class="container">
+			<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+  		</button>
+			<a class="navbar-brand" href="#">Logo</a>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item"><a data-scroll class="nav-link" href="#home">HOME</a></li>
+					<li class="nav-item"><a data-scroll class="nav-link" href="#service">SERVICIOS</a></li>
+					<li class="nav-item"><a data-scroll class="nav-link" href="#us">NOSOTROS</a></li>
+					<li class="nav-item"><a data-scroll class="nav-link" href="#portfolio">PORTAFOLIO</a></li>
+					<li class="nav-item"><a data-scroll class="nav-link" href="#contact">CONTACTO</a></li>
 				</ul>
 			</div>
-		</nav>
-	</div>
+		</div>
+	</nav>
 
 	<!-- Home -->
 	<section id="home" class="container-fluid" style="height: 500px; background-color: yellow;">
 		<div class="container">
-			<h1>Home</h1>
+			<h1>HOME</h1>
 		</div>
 	</section>
 	<!-- Service -->
 	<section id="service" class="container-fluid" style="height: 500px; background-color: blue;">
 		<div class="container">
-			<h1>Servicios</h1>
+			<h1>SERVICIOS</h1>
 		</div>
 	</section>
 	<!-- Us -->
 	<section id="us" class="container-fluid" style="height: 500px; background-color: red;">
 		<div class="container">
-			<h1>Nosotros</h1>
+			<h1>NOSOTROS</h1>
 		</div>
 	</section>
 	<!-- Portfolio -->
 	<section id="portfolio" class="container-fluid" style="height: 500px; background-color: yellow;">
 		<div class="container">
-			<h1>Portafolio</h1>
+			<h1>PORTAFOLIO</h1>
 		</div>
 	</section>
 	<!-- Contact -->
 	<section id=contact class="container-fluid" style="height: 500px; background-color: blue;">
 		<div class="container">
-			<h1>Contacto</h1>
+			<h1>CONTACTO</h1>
 		</div>
 	</section>
 
@@ -71,8 +159,15 @@
 			selectorHeader: null, // Selector for fixed headers (must be a valid CSS selector) [optional]
 			speed: 1500, // Integer. How fast to complete the scroll in milliseconds
 			easing: 'easeInOutCubic', // Easing pattern to use
-			offset: 70, // Integer. How far to offset the scrolling anchor location in pixels
+			offset: 54, // Integer. How far to offset the scrolling anchor location in pixels
 			callback: function(anchor, toggle) {} // Function to run after scrolling
+		});
+
+	</script>
+	<script>
+		$(".navbar-nav li a").click(function(event) {
+			if (!$(this).parent().hasClass('dropdown'))
+				$(".navbar-collapse").collapse('hide');
 		});
 
 	</script>
