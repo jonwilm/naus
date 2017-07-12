@@ -1,32 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 </head>
+
 <body>
-	<nav class="navbar navbar-light navbar-toggleable-sm bg-faded">
-    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#collapsingNavbar3">
+	<div class="container">
+		<nav class="navbar navbar-light navbar-toggleable-sm bg-faded">
+			<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#collapsingNavbar3">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <a href="#" class="navbar-brand d-flex w-50 mr-auto">Logo</a>
-    <div class="navbar-collapse collapse" id="collapsingNavbar3">
-      <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
-        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Servicios</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Portafolio</a></li>
-    </ul>
-    </div>
-</nav>
+			<a href="#" class="navbar-brand d-flex w-50 mr-auto">Logo</a>
+			<div class="navbar-collapse collapse" id="collapsingNavbar3">
+				<ul class="nav navbar-nav ml-auto w-100 justify-content-end">
+					<li class="nav-item"><a data-scroll class="nav-link" href="#home">Home</a></li>
+					<li class="nav-item"><a data-scroll class="nav-link" href="#service">Servicios</a></li>
+					<li class="nav-item"><a data-scroll class="nav-link" href="#us">Nosotros</a></li>
+					<li class="nav-item"><a data-scroll class="nav-link" href="#portfolio">Portafolio</a></li>
+					<li class="nav-item"><a data-scroll class="nav-link" href="#contact">Contacto</a></li>
+				</ul>
+			</div>
+		</nav>
+	</div>
 
-  <!-- jQuery first, Bootstrap JS. -->
-  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+	<!-- Home -->
+	<section id="home" class="container-fluid" style="height: 500px; background-color: yellow;">
+		<div class="container">
+			<h1>Home</h1>
+		</div>
+	</section>
+	<!-- Service -->
+	<section id="service" class="container-fluid" style="height: 500px; background-color: blue;">
+		<div class="container">
+			<h1>Servicios</h1>
+		</div>
+	</section>
+	<!-- Us -->
+	<section id="us" class="container-fluid" style="height: 500px; background-color: red;">
+		<div class="container">
+			<h1>Nosotros</h1>
+		</div>
+	</section>
+	<!-- Portfolio -->
+	<section id="portfolio" class="container-fluid" style="height: 500px; background-color: yellow;">
+		<div class="container">
+			<h1>Portafolio</h1>
+		</div>
+	</section>
+	<!-- Contact -->
+	<section id=contact class="container-fluid" style="height: 500px; background-color: blue;">
+		<div class="container">
+			<h1>Contacto</h1>
+		</div>
+	</section>
+
+	<!-- jQuery first, Bootstrap JS. -->
+	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+	<script src="js/smooth-scroll.min.js"></script>
+	<script>
+		smoothScroll.init({
+			selector: '[data-scroll]', // Selector for links (must be a class, ID, data attribute, or element tag)
+			selectorHeader: null, // Selector for fixed headers (must be a valid CSS selector) [optional]
+			speed: 1500, // Integer. How fast to complete the scroll in milliseconds
+			easing: 'easeInOutCubic', // Easing pattern to use
+			offset: 70, // Integer. How far to offset the scrolling anchor location in pixels
+			callback: function(anchor, toggle) {} // Function to run after scrolling
+		});
+
+	</script>
 </body>
+
 </html>
