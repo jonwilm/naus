@@ -8,19 +8,20 @@
 
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/planet-earth-3d.css">
 	<link rel="stylesheet" href="css/style.css">
 	<!-- Styles CSS -->
 	<style>
 		body {
 			position: relative;
-			padding-top: 54px;
+			padding-top: 56px;
 		}
 		/* Navbar */
 		
 		.bg-navbar {
 			background-color: #F5F4F4;
 			width: auto;
-			height: 54px;
+			height: 56px;
 		}
 		
 		.navbar-custom {
@@ -118,10 +119,10 @@
 	</nav>
 
 	<!-- Home -->
-	<section id="home" class="container-fluid container-home" style="height: 200px;">
+	<section id="home" class="container-fluid container-home"  style="width: 100%; height: 85%;">
 		<div class="container">
 			<div class="row">
-        <div class="col-xs-4 col-xs-offset-1 no-padding">
+        <div class="col-4 col-xs-offset-1 no-padding">
           <div class="home">
             <p class="text-title text-title-home wow fadeInLeft">Construye tu sitio web, construye tu sueño</p>
             <p class="text-home wow fadeInLeft">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates saepe doloremque expedita minima consequuntur sint veniam quas sequi sapiente quos assumenda laboriosam cupiditate illum, dolores consectetur aut aspernatur repellendus adipisci!</p>
@@ -131,9 +132,45 @@
 		</div>
 	</section>
 	<!-- Service -->
-	<section id="service" class="container-fluid" style="height: 500px; background-color: blue;">
+	<section id="service" class="container-fluid" style="height: 500px; background-color: #f5f4f4;">
 		<div class="container">
-			<h1>SERVICIOS</h1>
+			<div class="row">
+				<h1>SERVICIOS</h1>
+				<div class="col">
+					<div class="globo">
+		        <div class="frontal"></div>
+		        <div class="mapfront"></div>
+		        <div class="mapback"></div>
+		        <div class="back"></div>
+		      </div>
+		    </div> 
+	      <div class="col" style="background-color: transparent">
+	        <div class="row">
+	          <div class="col-5 offset-md-1">
+	            <button class="btn btn-service btn-block btn-home text-center"><img class="icon-service img-responsive" src="img/software-icon.png">Desarrollo<br>de Software</button>
+	          </div>
+	          <div class="col-5">
+	            <button class="btn btn-service btn-block btn-home">Aplicaciones<br>Moviles</button>
+	          </div>
+	        </div>
+	        <div class="row">
+	          <div class="col-5 offset-md-1">
+	            <button class="btn btn-service btn-block btn-home">Staffing</button>
+	          </div>
+	          <div class="col-5">
+	            <button class="btn btn-service btn-block btn-home">Reestructuracion<br>de Proyectos</button>
+	          </div>
+	        </div>
+	        <div class="row">
+	          <div class="col-5 offset-md-1">
+	            <button class="btn btn-service btn-block btn-home">Nearshore</button>
+	          </div>
+	          <div class="col-5">
+	            <button class="btn btn-service btn-block btn-home">Marqueting<br>Digital</button>
+	          </div>
+	        </div>
+	      </div>
+	    </div>
 		</div>
 	</section>
 	<!-- Us -->
@@ -160,13 +197,17 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 	<script src="js/smooth-scroll.min.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script>
+    new WOW().init();
+  </script>
 	<script>
 		smoothScroll.init({
 			selector: '[data-scroll]', // Selector for links (must be a class, ID, data attribute, or element tag)
 			selectorHeader: null, // Selector for fixed headers (must be a valid CSS selector) [optional]
 			speed: 1500, // Integer. How fast to complete the scroll in milliseconds
 			easing: 'easeInOutCubic', // Easing pattern to use
-			offset: 54, // Integer. How far to offset the scrolling anchor location in pixels
+			offset: 56, // Integer. How far to offset the scrolling anchor location in pixels
 			callback: function(anchor, toggle) {} // Function to run after scrolling
 		});
 
@@ -177,6 +218,18 @@
 				$(".navbar-collapse").collapse('hide');
 		});
 
+	</script>
+	<script>
+		$(document).ready(function($){
+			var ventana_alto = $(window).height();
+			$('#home').css("height", ventana_alto -56);	
+			$(window).resize(function() {
+				var ventana_alto = $(window).height();
+				if (ventana_alto>=400) {	
+					$('#home').css("height", ventana_alto -56 );
+				}
+			});
+		});
 	</script>
 </body>
 
