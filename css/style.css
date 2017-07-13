@@ -1,7 +1,11 @@
 #home{
-	min-height: 200px;
+	
 }
 .container-home {
-  background: url(../img/bg-home.jpg) no-repeat center center fixed;
+  /*background: url(../img/bg/bg1.jpg) no-repeat center center fixed;
+  background-size: cover;*/
+
+  background: url("../img/bg/bg1.jpg") center center fixed;
   background-size: cover;
+  background-zoom: 5;
 }
