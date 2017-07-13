@@ -1,11 +1,9 @@
-#home{
-	
-}
 .container-home {
-  /*background: url(../img/bg/bg1.jpg) no-repeat center center fixed;
-  background-size: cover;*/
-
-  background: url("../img/bg/bg1.jpg") center center fixed;
-  background-size: cover;
-  background-zoom: 5;
+  background: url("http://www.fondos10.net/wp-content/uploads/2008/01/espacio-azul.jpg") fixed; //Imagen de fondo
+  max-height: 100%;
+  height: 400px; //altura del fondo
+  position: relative;
+  margin: 0 auto;
+  padding: 5%;
+  background-size: cover; //ajusta el fondo a la imagen
 }
