@@ -3,25 +3,43 @@ body {
 	padding-top: 56px;
 }
 
-
-/* Navbar */
-
-h5 {
-	font-family: 'Ubuntu', sans-serif;
-	font-size: 12px;
+h1, h2, h3, h4{
+	font-family: 'Roboto Slab', serif;
 }
 
-h6 {
-	font-family: 'Ubuntu', sans-serif;
+h1{
+	font-size: 20px;
+}
+
+h2{
+	font-size: 15px;
+}
+
+h3{
+	font-size: 30px;
+}
+
+h4{
 	font-size: 10px;
 }
 
-p {
+h5, h6, p{
 	font-family: 'Ubuntu', sans-serif;
+}
+
+h5{
 	font-size: 12px;
 }
 
-.container-home {
+h6{
+	font-size: 10px;
+}
+
+p{
+	font-size: 12px;
+}
+
+#home {
 	background: url("http://www.fondos10.net/wp-content/uploads/2008/01/espacio-azul.jpg") fixed; //Imagen de fondo
 	max-height: 100%;
 	height: 400px; //altura del fondo
@@ -31,10 +49,108 @@ p {
 	background-size: cover; //ajusta el fondo a la imagen
 }
 
-.card img {
-	width: 27px;
+/*US*/
+#us{
+	background: url("../img/bg/bg2.jpg") fixed; //Imagen de fondo
+	max-height: 100%;
+	position: relative;
+	margin: 0 auto;
+	padding: 5%;
+	background-size: cover; //ajusta el fondo a la imagen
 }
 
-h6 {
-	display: inline-block;
+#us p, #us h1{
+	color:#fff;
 }
+.row {
+  display: flex;
+}
+
+.center {
+  justify-content: space-around;
+}
+
+.naus:hover {
+  transform: scale(1.1);
+  border: 0px;
+}
+
+.naus--logo {
+  height: 40px;
+  width: 40px;
+  margin: 0 auto;
+}
+
+.naus--logo--img {
+  height: 40px;
+  width: 40px;
+}
+
+.naus--name {
+  font-size: 10px;
+  font-weight: 600;
+  color: #000000;
+  margin: 1rem 0 0 0;
+}
+
+#accordion .card img {
+	width: 40px;
+}
+
+#service .card img{
+	width: 40px;
+}
+
+/*.us-logo{	
+	height: 60px;
+	width: 60px;
+	margin: 0 auto;
+}*/
+
+
+/* Navbar */
+/*
+ Flip Hover 
+.flip-container:hover .flipper,
+.flip-container.hover .flipper {
+	 voltea el panel al colocar el mouse(HOVER) 
+	
+	transform: rotateY(180deg);
+}
+.flip-container,
+.front,
+.back {
+	width: 100%;
+	height: 100%;
+}
+.flipper {
+	 velocidad del flip aqui 
+	
+	transition: 0.6s;
+	transform-style: preserve-3d;
+	position: relative;
+}
+.front,
+.back {
+	 oculta el panel posterior durante el cambio 
+	
+	backface-visibility: hidden;
+	top: 0;
+	left: 0;
+}
+.front {
+	 panel frontal, enviado atras 
+	
+	z-index: 2;
+	 for firefox 31 
+	
+	transform: rotateY(0deg);
+}
+.back {
+	 detras,inicialmente el panel oculto 
+	
+	transform: rotateY(180deg);
+}
+
+ End Flip Hover 
+*/
