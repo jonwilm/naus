@@ -39,8 +39,7 @@ p{
 	font-size: 12px;
 }
 
-/* Navbar */
-.container-home {
+#home {
 	background: url("http://www.fondos10.net/wp-content/uploads/2008/01/espacio-azul.jpg") fixed; //Imagen de fondo
 	max-height: 100%;
 	height: 400px; //altura del fondo
@@ -49,9 +48,66 @@ p{
 	padding: 5%;
 	background-size: cover; //ajusta el fondo a la imagen
 }
-.card img {
+/*US*/
+#us{
+	background: url("../img/bg/bg2.jpg") fixed; //Imagen de fondo
+	max-height: 100%;
+	position: relative;
+	margin: 0 auto;
+	padding: 5%;
+	background-size: cover; //ajusta el fondo a la imagen
+}
+
+#us p, #us h1{
+	color:#fff;
+}
+.row {
+  display: flex;
+}
+
+.center {
+  justify-content: space-around;
+}
+
+.naus:hover {
+  transform: scale(1.1);
+  border: 0px;
+}
+
+.naus--logo {
+  height: 40px;
+  width: 40px;
+  margin: 0 auto;
+}
+
+.naus--logo--img {
+  height: 40px;
+  width: 40px;
+}
+
+.naus--name {
+  font-size: 10px;
+  font-weight: 600;
+  color: #000000;
+  margin: 1rem 0 0 0;
+}
+
+#accordion .card img {
 	width: 40px;
 }
+
+#service .card img{
+	width: 40px;
+}
+
+/*.us-logo{	
+	height: 60px;
+	width: 60px;
+	margin: 0 auto;
+}*/
+
+
+/* Navbar */
 /*
  Flip Hover 
 .flip-container:hover .flipper,
