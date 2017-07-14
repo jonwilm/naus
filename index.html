@@ -8,7 +8,10 @@
 
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/planet-earth-3d.css">
 	<!-- Styles CSS -->
@@ -108,10 +111,10 @@
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav ml-auto">
 					<li class="nav-item"><a data-scroll class="nav-link" href="#home">HOME</a></li>
-					<li class="nav-item"><a data-scroll class="nav-link" href="#service">SERVICIOS</a></li>
 					<li class="nav-item"><a data-scroll class="nav-link" href="#us">NOSOTROS</a></li>
-					<li class="nav-item"><a data-scroll class="nav-link" href="#portfolio">PORTAFOLIO</a></li>
+					<li class="nav-item"><a data-scroll class="nav-link" href="#service">SERVICIOS</a></li>
 					<li class="nav-item"><a data-scroll class="nav-link" href="#contact">CONTACTO</a></li>
+					<li class="nav-item"><a data-scroll class="nav-link" href="#portfolio">PORTAFOLIO</a></li>
 				</ul>
 			</div>
 		</div>
@@ -121,13 +124,20 @@
 	<section id="home" class="container-fluid container-home"  style="width: 100%; height: 85%;">
 		<div class="container">
 			<div class="row">
-        <div class="col-4 col-xs-offset-1 no-padding">
+        <div class="col no-padding">
           <div class="home">
-            <h1 class="text-title text-title-home wow fadeInLeft">Construye tu sitio web, construye tu sueño</h1>
-            <p class="text-home wow fadeInLeft">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates saepe doloremque expedita minima consequuntur sint veniam quas sequi sapiente quos assumenda laboriosam cupiditate illum, dolores consectetur aut aspernatur repellendus adipisci!</p>
+            <h3 class="text-title text-title-home wow fadeInLeft">Construye tu sitio web, construye tu sueño</h3>
+            <p class="text-home wow fadeInLeft">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates saepe doloremque expedita minima consequuntur sint veniam quas sequi sapiente quos assumenda laboriosam</p>
           </div>
         </div>
       </div>
+		</div>
+	</section>
+	<!-- Us -->
+	<section id="us" class="container-fluid">
+		<div class="container">
+			<h1>NOSOTROS</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem quibusdam, suscipit? Nulla mollitia, repudiandae voluptates laudantium temporibus maxime excepturi voluptatem culpa aliquam! Veritatis aperiam fugit laborum earum possimus magni omnis.</p>
 		</div>
 	</section>
 	<!-- Service -->
@@ -146,14 +156,12 @@
 	      <div class="col" style="background-color: transparent">
 	        <div id="accordion" role="tablist" aria-multiselectable="true">
 					  <div class="card">
-					    <div class="card-header" role="tab" id="headingOne"  data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-					      <img src="img/we/software_development.png" alt="">
-					      <h6 class="mb-0">
-					        <a>
-					          Desarrollo de software
-					        </a>
+					    <a role="tab" id="headingOne" class="collapsed card-header" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+				      	<img class="align-middle" src="img/we/software_development.png" alt="">
+					      <h6 class="mb-0 text-center">
+					        Desarrollo de software
 					      </h6>
-					    </div>
+					    </a>
 					    <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne">
 					      <div class="card-block">
 					      	<p class="card-text">
@@ -163,14 +171,12 @@
 					    </div>
 					  </div>
 					  <div class="card">
-					    <div class="card-header" role="tab" id="headingTwo">
+					    <a role="tab" id="headingTwo" class="collapsed card-header" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
 					      <img src="img/we/apps.png" alt="Aplicaciones Moviles">
-					      <h6 class="mb-0">
-					        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-					          Aplicaciones Moviles
-					        </a>
+					      <h6 class="mb-0 text-center">
+					        Aplicaciones Moviles
 					      </h6>
-					    </div>
+					    </a>
 					    <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
 					      <div class="card-block">
 					      	<p class="card-text">
@@ -180,14 +186,12 @@
 					    </div>
 					  </div>
 					  <div class="card">
-					    <div class="card-header" role="tab" id="headingThree">
+					    <a role="tab" id="headingThree" class="collapsed card-header" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
 					      <img src="img/we/digital_marketing.png" alt="Marketing Digital">
-					      <h6 class="mb-0">
-					        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-					          Marketing Digital
-					        </a>
+					      <h6 class="mb-0 text-center">
+					        Marketing Digital
 					      </h6>
-					    </div>
+					    </a>
 					    <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree">
 					      <div class="card-block">
 					      	<p class="card-text">
@@ -197,14 +201,12 @@
 					    </div>
 					  </div>
 					  <div class="card">
-					    <div class="card-header" role="tab" id="headingThree">
+					    <a role="tab" id="headingThree"  class="card-header collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
 					      <img src="img/we/staffing.png" alt="Staffing">
-					      <h6 class="mb-0">
-					        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-					          Staffing
-					        </a>
+					      <h6 class="mb-0 text-center">
+					        Staffing
 					      </h6>
-					    </div>
+					    </a>
 					    <div id="collapseFour" class="collapse" role="tabpanel" aria-labelledby="headingThree">
 					      <div class="card-block">
 					        <p class="card-text">
@@ -214,14 +216,12 @@
 					    </div>
 					  </div>
 					  <div class="card">
-					    <div class="card-header" role="tab" id="headingThree">
+					    <a role="tab" id="headingThree" class="card-header collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
 					      <img src="img/we/seo.png" alt="Nearshore">
-					      <h6 class="mb-0">
-					        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-					          Nearshore
-					        </a>
+					      <h6 class="mb-0 text-center">
+					        Nearshore
 					      </h6>
-					    </div>
+					    </a>
 					    <div id="collapseFive" class="collapse" role="tabpanel" aria-labelledby="headingThree">
 					      <div class="card-block">
 					      	<p class="card-text">
@@ -235,10 +235,10 @@
 	    </div>
 		</div>
 	</section>
-	<!-- Us -->
-	<section id="us" class="container-fluid" style="height: 500px; background-color: red;">
+	<!-- Contact -->
+	<section id=contact class="container-fluid" style="height: 500px; background-color: blue;">
 		<div class="container">
-			<h1>NOSOTROS</h1>
+			<h1>CONTACTO</h1>
 		</div>
 	</section>
 	<!-- Portfolio -->
@@ -269,15 +269,6 @@
 			</div>
 		</div>
 	</section>
-
-
-	<!-- Contact -->
-	<section id=contact class="container-fluid" style="height: 500px; background-color: blue;">
-		<div class="container">
-			<h1>CONTACTO</h1>
-		</div>
-	</section>
-
 	<!-- jQuery first, Bootstrap JS. -->
 	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
