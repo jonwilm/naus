@@ -42,13 +42,7 @@
 		top: 40%;
 	}
 	.img-modal {
-		float: left;
 		max-width: 40%;
 		margin-right: 2%;
-	}
-	.workers {
-		float: right;
-		max-width: 60%;
-		margin-left: 10%;
 	}
 }
