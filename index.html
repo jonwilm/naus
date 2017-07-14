@@ -14,10 +14,9 @@
 
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/planet-earth-3d.css">
+	<link rel="stylesheet" href="css/portfolio.css">
 	<!-- Styles CSS -->
 	<style>
-		
-		
 		.bg-navbar {
 			background-color: #F5F4F4;
 			width: auto;
@@ -95,10 +94,11 @@
 			}
 		}
 	*/
+
 	</style>
 </head>
 
-<body data-spy="scroll" data-target="#navbar-spy">
+<body>
 	<div class="bg-navbar fixed-top"></div>
 	<nav class="navbar-custom navbar-toggleable-sm navbar-light bg-faded fixed-top">
 		<div class="container">
@@ -260,29 +260,59 @@
 		</div>
 	</section>
 	<!-- Portfolio -->
-	<section id="portfolio" class="container-fluid container-portfolio" style="background-color: yellow;">
+	<section id="portfolio" class="container-fluid container-portfolio">
 		<div class="container">
 			<h1>PORTAFOLIO</h1>
-			<div class="row">
-				<div class="col-md">
-					1
+			<div class="row mt-4">
+				<div class="col-md mt-4">
+					<div class="box-portfolio">
+						<img src="img/portfolio/1.jpg" class="">
+						<div class="text-center text-box-portfolio">
+							<h3>esloquees.com</h3>
+						</div>
+					</div>
 				</div>
-				<div class="col-md">
-					2
+				<div class="col-md mt-4">
+					<div class="box-portfolio">
+						<img src="img/portfolio/2.jpg" class="">
+						<div class="text-center text-box-portfolio">
+							<h3>vayalow.com</h3>
+						</div>
+					</div>
 				</div>
-				<div class="col-md">
-					3
+				<div class="col-md mt-4">
+					<div class="box-portfolio">
+						<img src="img/portfolio/3.jpg" class="">
+						<div class="text-center text-box-portfolio">
+							<h3>Morrocoy TEAM</h3>
+						</div>
+					</div>
 				</div>
 			</div>
-			<div class="row">
-				<div class="col-md">
-					4
+			<div class="row mb-4">
+				<div class="col-md mt-4">
+					<div class="box-portfolio">
+						<img src="img/portfolio/4.jpg" class="">
+						<div class="text-center text-box-portfolio">
+							<h3>okeyya.com</h3>
+						</div>
+					</div>
 				</div>
-				<div class="col-md">
-					5
+				<div class="col-md mt-4">
+					<div class="box-portfolio">
+						<img src="img/portfolio/5.png" class="">
+						<div class="text-center text-box-portfolio">
+							<h3>seacabo.mx</h3>
+						</div>
+					</div>
 				</div>
-				<div class="col-md">
-					6
+				<div class="col-md mt-4">
+					<div class="box-portfolio">
+						<img src="img/portfolio/6.jpg" class="">
+						<div class="text-center text-box-portfolio">
+							<h3>hacetodo.com</h3>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -294,8 +324,9 @@
 	<script src="js/smooth-scroll.min.js"></script>
 	<script src="js/wow.min.js"></script>
 	<script>
-    new WOW().init();
-  </script>
+		new WOW().init();
+
+	</script>
 	<script>
 		smoothScroll.init({
 			selector: '[data-scroll]', // Selector for links (must be a class, ID, data attribute, or element tag)
@@ -312,18 +343,20 @@
 			if (!$(this).parent().hasClass('dropdown'))
 				$(".navbar-collapse").collapse('hide');
 		});
+
 	</script>
 	<script>
-		$(document).ready(function($){
+		$(document).ready(function($) {
 			var ventana_alto = $(window).height();
-			$('#home').css("height", ventana_alto -56);	
+			$('#home').css("height", ventana_alto - 56);
 			$(window).resize(function() {
 				var ventana_alto = $(window).height();
-				if (ventana_alto>=400) {	
-					$('#home').css("height", ventana_alto -56 );
+				if (ventana_alto >= 400) {
+					$('#home').css("height", ventana_alto - 56);
 				}
 			});
 		});
+
 	</script>
 </body>
 
