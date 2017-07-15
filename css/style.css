@@ -44,6 +44,91 @@ p {
 	font-size: 12px;
 }
 
+
+/* NAVBAR */
+
+.bg-navbar {
+	background-color: #F5F4F4;
+	width: auto;
+	height: 56px;
+}
+
+.navbar-custom {
+	padding: 8px 0 8px 0;
+	background-color: #F5F4F4;
+}
+
+.navbar-light .navbar-nav .nav-link {
+	color: #273638;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+	color: #1D70B7;
+}
+
+ul.nav {
+	margin-top: 8px;
+	margin-bottom: 8px;
+}
+
+a.nav-link {
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+li.nav-item {
+	padding-left: 5px;
+	padding-right: 5px;
+	border-right: 1px solid #1D70B7;
+}
+
+.navbar-toggler {
+	background-color: #1D70B7;
+	border: 0;
+}
+
+.nav-toggler-icon {
+	background-color: #F5F4F4;
+}
+
+
+/* NAVBAR MOVIL */
+
+@media (max-width: 767px) {
+	.navbar-custom {
+		background-color: transparent;
+	}
+	.navbar-brand {
+		margin-left: 15px;
+	}
+	li.nav-item {
+		border: 0;
+	}
+	.navbar-light .navbar-nav .nav-link {
+		background-color: #1D70B7;
+		color: #F5F4F4;
+		padding-left: 15px;
+		border-bottom: 1px solid white;
+	}
+	.navbar-light .navbar-nav .nav-link:hover {
+		background-color: #3AA935;
+		color: #F5F4F4;
+	}
+	.navbar-collapse {
+		margin: 20px;
+	}
+	.container-navbar>.collapse.show {
+		background-color: #1D70B7;
+		padding: 10px;
+	}
+	.container {
+		width: auto;
+	}
+}
+
+
+/* HOME */
+
 #home {
 	background: url("http://www.fondos10.net/wp-content/uploads/2008/01/espacio-azul.jpg") fixed; //Imagen de fondo
 	max-height: 100%;
@@ -55,7 +140,7 @@ p {
 }
 
 
-/*US*/
+/* US */
 
 #us {
 	background: url("../img/bg/bg2.jpg") fixed; //Imagen de fondo
@@ -109,7 +194,7 @@ p {
 
 .card-img-top {
 	width: 50%;
-	margin: 0 auto;
+	margin: 5% auto;
 }
 
 .card-title {
@@ -119,6 +204,9 @@ p {
 .card-text {
 	color: #000;
 }
+
+
+/* SERVICE */
 
 #service {
 	padding: 5%;
