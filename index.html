@@ -61,7 +61,7 @@
 			background-color: #F5F4F4;
 		}
 		/* Navbar Movil */
-		/*
+		
 		@media (max-width: 767px) {
 			.navbar-custom {
 				background-color: transparent;
@@ -85,7 +85,7 @@
 			.navbar-collapse {
 				margin: 20px;
 			}
-			.collapse.show {
+			.container-navbar>.collapse.show {
 				background-color: #1D70B7;
 				padding: 10px;
 			}
@@ -93,7 +93,6 @@
 				width: auto;
 			}
 		}
-	*/
 
 	</style>
 </head>
@@ -101,7 +100,7 @@
 <body>
 	<div class="bg-navbar fixed-top"></div>
 	<nav class="navbar-custom navbar-toggleable-sm navbar-light bg-faded fixed-top">
-		<div class="container">
+		<div class="container container-navbar">
 			<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
   		</button>
@@ -121,16 +120,16 @@
 	</nav>
 
 	<!-- Home -->
-	<section id="home" class="container-fluid"  style="width: 100%; height: 85%;">
+	<section id="home" class="container-fluid" style="width: 100%; height: 85%;">
 		<div class="container">
 			<div class="row">
-        <div class="col no-padding">
-          <div class="home">
-            <h3 class="text-title text-title-home wow fadeInLeft">Construye tu sitio web, construye tu sueño</h3>
-            <p class="text-home wow fadeInLeft">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates saepe doloremque expedita minima consequuntur sint veniam quas sequi sapiente quos assumenda laboriosam</p>
-          </div>
-        </div>
-      </div>
+				<div class="col no-padding">
+					<div class="home">
+						<h3 class="text-title text-title-home wow fadeInLeft">Construye tu sitio web, construye tu sueño</h3>
+						<p class="text-home wow fadeInLeft">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates saepe doloremque expedita minima consequuntur sint veniam quas sequi sapiente quos assumenda laboriosam</p>
+					</div>
+				</div>
+			</div>
 		</div>
 	</section>
 	<!-- Us -->
@@ -139,24 +138,24 @@
 		<h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem quibusdam, suscipit? Nulla mollitia, repudiandae voluptates laudantium temporibus maxime excepturi voluptatem culpa aliquam! Veritatis aperiam fugit laborum earum possimus magni omnis.</h2>
 		<div class="card">
 			<div class="card-block row center middle wrap">
-	      <article class="naus">
-	          <figure class="naus--logo">
-	              <img class="naus--logo--img" src="img/us/consultancy.png" alt="Consultoria">
-	          </figure>
-	          <h3 class="naus--name">CONSULTORIA</h3>
-	      </article>
-	      <article class="naus">
-	          <figure class="naus--logo">
-	              <img class="naus--logo--img" src="img/us/development.png" alt="Desarrollo">
-	          </figure>
-	          <h3 class="naus--name">DESARROLLO</h3>
-	      </article>
-	      <article class="naus">
-	          <figure class="naus--logo">
-	              <img class="naus--logo--img" src="img/us/outsourcing.png" alt="Outsourcing">
-	          </figure>
-	          <h3 class="naus--name">OUTSOURCING</h3>
-	      </article>
+				<article class="naus">
+					<figure class="naus--logo">
+						<img class="naus--logo--img" src="img/us/consultancy.png" alt="Consultoria">
+					</figure>
+					<h3 class="naus--name">CONSULTORIA</h3>
+				</article>
+				<article class="naus">
+					<figure class="naus--logo">
+						<img class="naus--logo--img" src="img/us/development.png" alt="Desarrollo">
+					</figure>
+					<h3 class="naus--name">DESARROLLO</h3>
+				</article>
+				<article class="naus">
+					<figure class="naus--logo">
+						<img class="naus--logo--img" src="img/us/outsourcing.png" alt="Outsourcing">
+					</figure>
+					<h3 class="naus--name">OUTSOURCING</h3>
+				</article>
 			</div>
 		</div>
 	</section>
@@ -166,92 +165,92 @@
 		<div class="row">
 			<div class="col">
 				<div class="globo">
-	        <div class="frontal"></div>
-	        <div class="mapfront"></div>
-	        <div class="mapback"></div>
-	        <div class="back"></div>
-	      </div>
-	    </div> 
-      <div class="col" style="background-color: transparent">
-        <div id="accordion" role="tablist" aria-multiselectable="true">
-				  <div class="card">
-				    <a role="tab" id="headingOne" class="collapsed card-header" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-			      	<img class="align-middle" src="img/service/software_development.png" alt="">
-				      <h6 class="mb-0 text-center">
-				        Desarrollo de software
-				      </h6>
-				    </a>
-				    <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne">
-				      <div class="card-block">
-				      	<p class="card-text">
-				        	Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-				      	</p>
-				      </div>
-				    </div>
-				  </div>
-				  <div class="card">
-				    <a role="tab" id="headingTwo" class="collapsed card-header" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-				      <img src="img/service/apps.png" alt="Aplicaciones Moviles">
-				      <h6 class="mb-0 text-center">
-				        Aplicaciones Moviles
-				      </h6>
-				    </a>
-				    <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
-				      <div class="card-block">
-				      	<p class="card-text">
-				        	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum fugiat quod numquam, quaerat deleniti expedita, architecto aspernatur iusto, quos unde, assumenda sequi illum! Deleniti, laborum laboriosam qui in at, neque!
-				        </p>
-				      </div>
-				    </div>
-				  </div>
-				  <div class="card">
-				    <a role="tab" id="headingThree" class="collapsed card-header" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-				      <img src="img/service/digital_marketing.png" alt="Marketing Digital">
-				      <h6 class="mb-0 text-center">
-				        Marketing Digital
-				      </h6>
-				    </a>
-				    <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree">
-				      <div class="card-block">
-				      	<p class="card-text">
-				        	Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-				      	</p>
-				      </div>
-				    </div>
-				  </div>
-				  <div class="card">
-				    <a role="tab" id="headingThree"  class="card-header collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-				      <img src="img/service/staffing.png" alt="Staffing">
-				      <h6 class="mb-0 text-center">
-				        Staffing
-				      </h6>
-				    </a>
-				    <div id="collapseFour" class="collapse" role="tabpanel" aria-labelledby="headingThree">
-				      <div class="card-block">
-				        <p class="card-text">
-				        	Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-				      	</p>
-				      </div>
-				    </div>
-				  </div>
-				  <div class="card">
-				    <a role="tab" id="headingThree" class="card-header collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-				      <img src="img/service/seo.png" alt="Nearshore">
-				      <h6 class="mb-0 text-center">
-				        Nearshore
-				      </h6>
-				    </a>
-				    <div id="collapseFive" class="collapse" role="tabpanel" aria-labelledby="headingThree">
-				      <div class="card-block">
-				      	<p class="card-text">
-				        	Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-				      	</p>
-				      </div>
-				    </div>
-				  </div>
+					<div class="frontal"></div>
+					<div class="mapfront"></div>
+					<div class="mapback"></div>
+					<div class="back"></div>
 				</div>
-      </div>
-    </div>
+			</div>
+			<div class="col" style="background-color: transparent">
+				<div id="accordion" role="tablist" aria-multiselectable="true">
+					<div class="card">
+						<a role="tab" id="headingOne" class="collapsed card-header" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+							<img class="align-middle" src="img/service/software_development.png" alt="">
+							<h6 class="mb-0 text-center">
+								Desarrollo de software
+							</h6>
+						</a>
+						<div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne">
+							<div class="card-block">
+								<p class="card-text">
+									Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<a role="tab" id="headingTwo" class="collapsed card-header" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+							<img src="img/service/apps.png" alt="Aplicaciones Moviles">
+							<h6 class="mb-0 text-center">
+								Aplicaciones Moviles
+							</h6>
+						</a>
+						<div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
+							<div class="card-block">
+								<p class="card-text">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum fugiat quod numquam, quaerat deleniti expedita, architecto aspernatur iusto, quos unde, assumenda sequi illum! Deleniti, laborum laboriosam qui in at, neque!
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<a role="tab" id="headingThree" class="collapsed card-header" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+							<img src="img/service/digital_marketing.png" alt="Marketing Digital">
+							<h6 class="mb-0 text-center">
+								Marketing Digital
+							</h6>
+						</a>
+						<div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree">
+							<div class="card-block">
+								<p class="card-text">
+									Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<a role="tab" id="headingThree" class="card-header collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+							<img src="img/service/staffing.png" alt="Staffing">
+							<h6 class="mb-0 text-center">
+								Staffing
+							</h6>
+						</a>
+						<div id="collapseFour" class="collapse" role="tabpanel" aria-labelledby="headingThree">
+							<div class="card-block">
+								<p class="card-text">
+									Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<a role="tab" id="headingThree" class="card-header collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+							<img src="img/service/seo.png" alt="Nearshore">
+							<h6 class="mb-0 text-center">
+								Nearshore
+							</h6>
+						</a>
+						<div id="collapseFive" class="collapse" role="tabpanel" aria-labelledby="headingThree">
+							<div class="card-block">
+								<p class="card-text">
+									Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</section>
 	<!-- Contact -->
 	<section id=contact class="container-fluid" style="height: 500px; background-color: blue;">
@@ -282,21 +281,33 @@
 								</div>
 								<div class="modal-body">
 									<div class="row">
-										<div class="col-md">
-											<img src="img/portfolio/1.jpg" class="img-modal img-fluid">
+										<div class="col-md-5">
+											<img src="img/portfolio/1.jpg" class="img-fluid">
+										</div>
+										<div class="col-md-7">
 											<h1>esloquees.com</h1>
 											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, quia odit adipisci voluptatibus dolore perspiciatis nesciunt aliquam eum quam aliquid consequatur vitae doloribus incidunt eius aspernatur inventore possimus odio cupiditate.</p>
 											<p><strong>Tipo de ..........: </strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores nemo impedit enim ea voluptatem explicabo earum quae quo eligendi, quibusdam facere nihil quisquam nobis neque ut. Nostrum error sapiente fugit!</p>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col">
 											<p><strong>Metodologia</strong></p>
 											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit nemo repellendus consequatur ipsum, beatae ad eaque? Sit adipisci velit, facilis neque officiis a atque quo, nisi ipsa ad eaque exercitationem.</p>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md">
 											<p><strong>Tecnologia</strong></p>
 											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit nemo repellendus consequatur ipsum, beatae ad eaque? Sit adipisci velit, facilis neque officiis a atque quo, nisi ipsa ad eaque exercitationem.</p>
-											<div class="workers">
-												<p><strong>Equipo de Trabajo</strong></p>
-												<img class="img-workers" src="img/logo/logo-mobile.png">
-												<img class="img-workers" src="img/portfolio/avatar.png">
-												<img class="img-workers" src="img/portfolio/avatar.png">
-												<img class="img-workers" src="img/portfolio/avatar.png">
+										</div>
+										<div class="col-md">
+											<div class="workers float-right">
+												<p class="text-right"><strong>Equipo de Trabajo</strong></p>
+												<img class="img-fluid" src="img/logo/logo-mobile.png">
+												<img class="img-fluid" src="img/portfolio/avatar.png">
+												<img class="img-fluid" src="img/portfolio/avatar.png">
+												<img class="img-fluid" src="img/portfolio/avatar.png">
 											</div>
 										</div>
 									</div>
@@ -324,7 +335,7 @@
 								<div class="modal-body">
 									<div class="row">
 										<div class="col-md">
-											<img src="img/portfolio/2.jpg" class="img-modal img-fluid">
+											<img src="img/portfolio/2.jpg" class="img-modal img-fluid float-left">
 											<h1>vayalow.com</h1>
 											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, quia odit adipisci voluptatibus dolore perspiciatis nesciunt aliquam eum quam aliquid consequatur vitae doloribus incidunt eius aspernatur inventore possimus odio cupiditate.</p>
 											<p><strong>Tipo de ..........: </strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores nemo impedit enim ea voluptatem explicabo earum quae quo eligendi, quibusdam facere nihil quisquam nobis neque ut. Nostrum error sapiente fugit!</p>
@@ -332,12 +343,12 @@
 											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit nemo repellendus consequatur ipsum, beatae ad eaque? Sit adipisci velit, facilis neque officiis a atque quo, nisi ipsa ad eaque exercitationem.</p>
 											<p><strong>Tecnologia</strong></p>
 											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit nemo repellendus consequatur ipsum, beatae ad eaque? Sit adipisci velit, facilis neque officiis a atque quo, nisi ipsa ad eaque exercitationem.</p>
-											<div class="workers">
+											<div class="float-right workers">
 												<p><strong>Equipo de Trabajo</strong></p>
-												<img class="img-workers" src="img/logo/logo-mobile.png">
-												<img class="img-workers" src="img/portfolio/avatar.png">
-												<img class="img-workers" src="img/portfolio/avatar.png">
-												<img class="img-workers" src="img/portfolio/avatar.png">
+												<img class="img-fluid" src="img/logo/logo-mobile.png">
+												<img class="img-fluid" src="img/portfolio/avatar.png">
+												<img class="img-fluid" src="img/portfolio/avatar.png">
+												<img class="img-fluid" src="img/portfolio/avatar.png">
 											</div>
 										</div>
 									</div>
@@ -364,21 +375,33 @@
 								</div>
 								<div class="modal-body">
 									<div class="row">
-										<div class="col-md">
-											<img src="img/portfolio/3.jpg" class="img-modal img-fluid">
-											<h1>Morrocoy TEAM</h1>
+										<div class="col-md-5">
+											<img src="img/portfolio/3.jpg" class="img-fluid">
+										</div>
+										<div class="col-md-7">
+											<h1>esloquees.com</h1>
 											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, quia odit adipisci voluptatibus dolore perspiciatis nesciunt aliquam eum quam aliquid consequatur vitae doloribus incidunt eius aspernatur inventore possimus odio cupiditate.</p>
 											<p><strong>Tipo de ..........: </strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores nemo impedit enim ea voluptatem explicabo earum quae quo eligendi, quibusdam facere nihil quisquam nobis neque ut. Nostrum error sapiente fugit!</p>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col">
 											<p><strong>Metodologia</strong></p>
 											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit nemo repellendus consequatur ipsum, beatae ad eaque? Sit adipisci velit, facilis neque officiis a atque quo, nisi ipsa ad eaque exercitationem.</p>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md">
 											<p><strong>Tecnologia</strong></p>
 											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit nemo repellendus consequatur ipsum, beatae ad eaque? Sit adipisci velit, facilis neque officiis a atque quo, nisi ipsa ad eaque exercitationem.</p>
-											<div class="workers">
-												<p><strong>Equipo de Trabajo</strong></p>
-												<img class="img-workers" src="img/logo/logo-mobile.png">
-												<img class="img-workers" src="img/portfolio/avatar.png">
-												<img class="img-workers" src="img/portfolio/avatar.png">
-												<img class="img-workers" src="img/portfolio/avatar.png">
+										</div>
+										<div class="col-md align-self-end">
+											<div class="workers float-right">
+												<p class="text-right"><strong>Equipo de Trabajo</strong></p>
+												<img class="img-fluid" src="img/logo/logo-mobile.png">
+												<img class="img-fluid" src="img/portfolio/avatar.png">
+												<img class="img-fluid" src="img/portfolio/avatar.png">
+												<img class="img-fluid" src="img/portfolio/avatar.png">
 											</div>
 										</div>
 									</div>
@@ -407,21 +430,33 @@
 								</div>
 								<div class="modal-body">
 									<div class="row">
-										<div class="col-md">
-											<img src="img/portfolio/4.jpg" class="img-modal img-fluid">
-											<h1>okeyya.com</h1>
+										<div class="col-md-5">
+											<img src="img/portfolio/4.jpg" class="img-fluid">
+										</div>
+										<div class="col-md-7">
+											<h1>esloquees.com</h1>
 											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, quia odit adipisci voluptatibus dolore perspiciatis nesciunt aliquam eum quam aliquid consequatur vitae doloribus incidunt eius aspernatur inventore possimus odio cupiditate.</p>
 											<p><strong>Tipo de ..........: </strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores nemo impedit enim ea voluptatem explicabo earum quae quo eligendi, quibusdam facere nihil quisquam nobis neque ut. Nostrum error sapiente fugit!</p>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col">
 											<p><strong>Metodologia</strong></p>
 											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit nemo repellendus consequatur ipsum, beatae ad eaque? Sit adipisci velit, facilis neque officiis a atque quo, nisi ipsa ad eaque exercitationem.</p>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md">
 											<p><strong>Tecnologia</strong></p>
 											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit nemo repellendus consequatur ipsum, beatae ad eaque? Sit adipisci velit, facilis neque officiis a atque quo, nisi ipsa ad eaque exercitationem.</p>
+										</div>
+										<div class="col-md">
 											<div class="workers">
 												<p><strong>Equipo de Trabajo</strong></p>
-												<img class="img-workers" src="img/logo/logo-mobile.png">
-												<img class="img-workers" src="img/portfolio/avatar.png">
-												<img class="img-workers" src="img/portfolio/avatar.png">
-												<img class="img-workers" src="img/portfolio/avatar.png">
+												<img class="img-fluid" src="img/logo/logo-mobile.png">
+												<img class="img-fluid" src="img/portfolio/avatar.png">
+												<img class="img-fluid" src="img/portfolio/avatar.png">
+												<img class="img-fluid" src="img/portfolio/avatar.png">
 											</div>
 										</div>
 									</div>
