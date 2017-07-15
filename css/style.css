@@ -50,7 +50,7 @@ p {
 .bg-navbar {
 	background-color: #F5F4F4;
 	width: auto;
-	height: 56px;
+	height: 66px;
 }
 
 .navbar-custom {
@@ -58,11 +58,11 @@ p {
 	background-color: #F5F4F4;
 }
 
-.navbar-light .navbar-nav .nav-link {
+.navbar-inverse .navbar-nav .nav-link {
 	color: #273638;
 }
 
-.navbar-light .navbar-nav .nav-link:hover {
+.navbar-inverse .navbar-nav .nav-link:hover {
 	color: #1D70B7;
 }
 
@@ -85,6 +85,7 @@ li.nav-item {
 .navbar-toggler {
 	background-color: #1D70B7;
 	border: 0;
+	margin-top: 6px;
 }
 
 .nav-toggler-icon {
@@ -104,18 +105,18 @@ li.nav-item {
 	li.nav-item {
 		border: 0;
 	}
-	.navbar-light .navbar-nav .nav-link {
+	.navbar-inverse .navbar-nav .nav-link {
 		background-color: #1D70B7;
 		color: #F5F4F4;
 		padding-left: 15px;
 		border-bottom: 1px solid white;
 	}
-	.navbar-light .navbar-nav .nav-link:hover {
+	.navbar-inverse .navbar-nav .nav-link:hover {
 		background-color: #3AA935;
 		color: #F5F4F4;
 	}
 	.navbar-collapse {
-		margin: 5px 15px;
+		margin: 9px 15px;
 	}
 	/*.container-navbar>.collapse.show {
 		background-color: #1D70B7;
@@ -226,6 +227,21 @@ li.nav-item {
 .link-services:hover {
 	color: #1D70B7;
 	text-decoration: none;
+}
+
+.service-info {
+	background: #2196f3;
+	color: #fff;
+	height: 100%;
+	left: 0;
+	padding: 20px;
+	position: absolute;
+	text-align: center;
+	top: 0;
+	width: 100%;
+	opacity: 0;
+	visibility: hidden;
+	transition: all 0.4s ease-in-out;
 }
 
 
