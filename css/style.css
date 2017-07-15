@@ -3,41 +3,131 @@ body {
 	padding-top: 56px;
 }
 
-h1, h2, h3, h4{
+h1,
+h2,
+h3,
+h4 {
 	font-family: 'Roboto Slab', serif;
 }
 
-h1{
+h1 {
 	font-size: 20px;
 }
 
-h2{
+h2 {
 	font-size: 15px;
 }
 
-h3{
+h3 {
 	font-size: 30px;
 }
 
-h4{
+h4 {
 	font-size: 10px;
 }
 
-h5, h6, p{
+h5,
+h6,
+p {
 	font-family: 'Ubuntu', sans-serif;
 }
 
-h5{
+h5 {
 	font-size: 12px;
 }
 
-h6{
+h6 {
 	font-size: 10px;
 }
 
-p{
+p {
 	font-size: 12px;
 }
+
+
+/* NAVBAR */
+
+.bg-navbar {
+	background-color: #F5F4F4;
+	width: auto;
+	height: 56px;
+}
+
+.navbar-custom {
+	padding: 8px 0 8px 0;
+	background-color: #F5F4F4;
+}
+
+.navbar-light .navbar-nav .nav-link {
+	color: #273638;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+	color: #1D70B7;
+}
+
+ul.nav {
+	margin-top: 8px;
+	margin-bottom: 8px;
+}
+
+a.nav-link {
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+li.nav-item {
+	padding-left: 5px;
+	padding-right: 5px;
+	border-right: 1px solid #1D70B7;
+}
+
+.navbar-toggler {
+	background-color: #1D70B7;
+	border: 0;
+}
+
+.nav-toggler-icon {
+	background-color: #F5F4F4;
+}
+
+
+/* NAVBAR MOVIL */
+
+@media (max-width: 767px) {
+	.navbar-custom {
+		background-color: transparent;
+	}
+	.navbar-brand {
+		margin-left: 15px;
+	}
+	li.nav-item {
+		border: 0;
+	}
+	.navbar-light .navbar-nav .nav-link {
+		background-color: #1D70B7;
+		color: #F5F4F4;
+		padding-left: 15px;
+		border-bottom: 1px solid white;
+	}
+	.navbar-light .navbar-nav .nav-link:hover {
+		background-color: #3AA935;
+		color: #F5F4F4;
+	}
+	.navbar-collapse {
+		margin: 20px;
+	}
+	.container-navbar>.collapse.show {
+		background-color: #1D70B7;
+		padding: 10px;
+	}
+	.container {
+		width: auto;
+	}
+}
+
+
+/* HOME */
 
 #home {
 	background: url("http://www.fondos10.net/wp-content/uploads/2008/01/espacio-azul.jpg") fixed; //Imagen de fondo
@@ -49,8 +139,10 @@ p{
 	background-size: cover; //ajusta el fondo a la imagen
 }
 
-/*US*/
-#us{
+
+/* US */
+
+#us {
 	background: url("../img/bg/bg2.jpg") fixed; //Imagen de fondo
 	max-height: 100%;
 	position: relative;
@@ -59,47 +151,87 @@ p{
 	background-size: cover; //ajusta el fondo a la imagen
 }
 
-#us p, #us h1{
-	color:#fff;
+#title-us,
+#text-us {
+	color: #FFF;
+	text-shadow: 2px 2px #000;
 }
+
 .row {
-  display: flex;
+	display: flex;
 }
 
 .center {
-  justify-content: space-around;
+	justify-content: space-around;
 }
 
 .naus:hover {
-  transform: scale(1.1);
-  border: 0px;
+	transform: scale(1.1);
+	border: 0px;
 }
 
 .naus--logo {
-  height: 40px;
-  width: 40px;
-  margin: 0 auto;
+	height: 40px;
+	width: 40px;
+	margin: 0 auto;
 }
 
 .naus--logo--img {
-  height: 40px;
-  width: 40px;
+	height: 40px;
+	width: 40px;
 }
 
 .naus--name {
-  font-size: 10px;
-  font-weight: 600;
-  color: #000000;
-  margin: 1rem 0 0 0;
+	font-size: 10px;
+	font-weight: 600;
+	color: #000000;
+	margin: 1rem 0 0 0;
+}
+
+.card {
+	background-color: #F5F4F4;
+}
+
+.card-img-top {
+	width: 50%;
+	margin: 5% auto;
+}
+
+.card-title {
+	color: #1D70B7;
+}
+
+.card-text {
+	color: #000;
+}
+
+
+/* SERVICE */
+
+#service {
+	padding: 5%;
 }
 
 #accordion .card img {
 	width: 40px;
 }
 
-#service .card img{
+#service .card img {
 	width: 40px;
 }
+
+#service {
+	padding: 5%;
+}
+
+#contact {
+	padding: 5%;
+}
+
+#portfolio {
+	padding: 5%;
+}
+
 
 /*.us-logo{	
 	height: 60px;
@@ -109,6 +241,8 @@ p{
 
 
 /* Navbar */
+
+
 /*
  Flip Hover 
 .flip-container:hover .flipper,
