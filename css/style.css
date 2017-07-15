@@ -128,7 +128,6 @@ li.nav-item {
 
 
 /* HOME */
-
 #home {
 	background: url("http://www.fondos10.net/wp-content/uploads/2008/01/espacio-azul.jpg") fixed; //Imagen de fondo
 	max-height: 100%;
@@ -141,7 +140,6 @@ li.nav-item {
 
 
 /* US */
-
 #us {
 	background: url("../img/bg/bg2.jpg") fixed; //Imagen de fondo
 	max-height: 100%;
@@ -187,7 +185,9 @@ li.nav-item {
 	color: #000000;
 	margin: 1rem 0 0 0;
 }
-
+#service .card{
+	box-shadow: 2px 2px 10px #000;
+}
 .card {
 	background-color: #F5F4F4;
 }
@@ -205,9 +205,7 @@ li.nav-item {
 	color: #000;
 }
 
-
 /* SERVICE */
-
 #service {
 	padding: 5%;
 }
@@ -217,7 +215,7 @@ li.nav-item {
 }
 
 #service .card img {
-	width: 40px;
+	
 }
 
 #service {
@@ -231,60 +229,3 @@ li.nav-item {
 #portfolio {
 	padding: 5%;
 }
-
-
-/*.us-logo{	
-	height: 60px;
-	width: 60px;
-	margin: 0 auto;
-}*/
-
-
-/* Navbar */
-
-
-/*
- Flip Hover 
-.flip-container:hover .flipper,
-.flip-container.hover .flipper {
-	 voltea el panel al colocar el mouse(HOVER) 
-	
-	transform: rotateY(180deg);
-}
-.flip-container,
-.front,
-.back {
-	width: 100%;
-	height: 100%;
-}
-.flipper {
-	 velocidad del flip aqui 
-	
-	transition: 0.6s;
-	transform-style: preserve-3d;
-	position: relative;
-}
-.front,
-.back {
-	 oculta el panel posterior durante el cambio 
-	
-	backface-visibility: hidden;
-	top: 0;
-	left: 0;
-}
-.front {
-	 panel frontal, enviado atras 
-	
-	z-index: 2;
-	 for firefox 31 
-	
-	transform: rotateY(0deg);
-}
-.back {
-	 detras,inicialmente el panel oculto 
-	
-	transform: rotateY(180deg);
-}
-
- End Flip Hover 
-*/
