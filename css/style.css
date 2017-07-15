@@ -214,7 +214,6 @@ li.nav-item {
 
 
 /* SERVICE */
-
 #service {
 	padding: 5%;
 }
@@ -230,14 +229,12 @@ li.nav-item {
 
 
 /* CONTACT */
-
 #contact {
 	padding: 5%;
 }
 
 
 /* PORTFOLIO */
-
 #portfolio {
 	padding: 5%;
 }
@@ -289,4 +286,15 @@ li.nav-item {
 		max-width: 40%;
 		margin-right: 2%;
 	}
+}
+
+/*footer*/
+
+footer a{
+	color: #000;
+	cursor: pointer;
+}
+
+footer a:hover{
+	color: #000;
 }
