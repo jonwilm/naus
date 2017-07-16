@@ -1,6 +1,14 @@
 body {
-	position: relative;
-	padding-top: 56px;
+	padding-top: 77px;
+}
+
+nav{
+	position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 2;
+  width: 100%;
+  background: transparent;
 }
 
 h1,
@@ -50,12 +58,12 @@ p {
 .bg-navbar {
 	background-color: #F5F4F4;
 	width: auto;
-	height: 66px;
+	height: 80px;
+	z-index: 1;
 }
 
 .navbar-custom {
-	padding: 8px 0 8px 0;
-	background-color: #F5F4F4;
+	padding: 15px 0;
 }
 
 .navbar-inverse .navbar-nav .nav-link {
@@ -96,9 +104,9 @@ li.nav-item {
 /* NAVBAR MOVIL */
 
 @media (max-width: 767px) {
-	.navbar-custom {
+	/*.navbar-custom {
 		background-color: transparent;
-	}
+	}*/
 	.navbar-brand {
 		margin-left: 15px;
 	}
@@ -116,7 +124,7 @@ li.nav-item {
 		color: #F5F4F4;
 	}
 	.navbar-collapse {
-		margin: 9px 15px;
+		margin: 15px 15px;
 	}
 	/*.container-navbar>.collapse.show {
 		background-color: #1D70B7;
@@ -127,25 +135,7 @@ li.nav-item {
 	}
 }
 
-
-/* HOME */
-
-#home {
-	background: url("../img/bg/bg1.jpg") fixed; //Imagen de fondo
-	max-height: 100%;
-	height: 400px; //altura del fondo
-	position: relative;
-	margin: 0 auto;
-	padding: 5%;
-	padding-bottom: 0;
-	background-size: cover; //ajusta el fondo a la imagen
-}
-
-.container-btn-home {}
-
-
 /* US */
-
 #us {
 	background: url("../img/bg/bg2.jpg") fixed; //Imagen de fondo
 	max-height: 100%;

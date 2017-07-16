@@ -73,15 +73,15 @@
 }
 
 
-/*.mapfront {
+.mapfront {
 	background: url(http://1.bp.blogspot.com/-M5AZ_16w8b4/UesDQ6r3miI/AAAAAAAAKr8/Sj0Tu25SgWA/s1600/3.png) repeat-x;
-	-webkit-animation: mapback_spin 30s linear infinite;
-	animation: mapback_spin 30s linear infinite;
+	/*-webkit-animation: mapback_spin 30s linear infinite;
+	animation: mapback_spin 30s linear infinite;*/
 
 .mapfront {
   background: url(http://1.bp.blogspot.com/-M5AZ_16w8b4/UesDQ6r3miI/AAAAAAAAKr8/Sj0Tu25SgWA/s1600/3.png) repeat-x;
   /*-webkit-animation: mapback_spin 100s linear infinite;
-  animation: mapback_spin 100s linear infinite;*/
+  animation: mapback_spin 100s linear infinite;
 
 
 }
