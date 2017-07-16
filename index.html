@@ -44,12 +44,12 @@
 	<section id="us" class="container-fluid">
 	</section>
 
-	<!-- 
+	 
 	<section id="service" class="container-fluid" style=" background-color: #f5f4f4;">
 	</section>
-	-->
+	
 
-	<section id=contact class="container-fluid" style="height: 500px; background-color: blue;">
+	<section id=contact class="container-fluid">
 	</section>
 
 	<section id="portfolio" class="container-fluid container-portfolio">
@@ -88,15 +88,22 @@
 	<script>
 		$(document).ready(function($) {
 			var ventana_alto = $(window).height();
+			if ($(window).width() <= 767) {
+				$('#us').css("height", ventana_alto - 77);
+	    }
 			$('#home').css("height", ventana_alto - 77);
+
 			$(window).resize(function() {
 				var ventana_alto = $(window).height();
-				if (ventana_alto >= 400) {
-					$('#home').css("height", ventana_alto - 77);
+				$('#home').css("height", ventana_alto - 77);
+
+				if ($(window).width() <= 767) {
+					$('#us').css("height", ventana_alto - 77);
+				}else{
+					$('#us').css("height", "inherit");
 				}
 			});
 		});
-
 	</script>
 	<script>
 		$(function() {
