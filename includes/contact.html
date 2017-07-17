@@ -23,7 +23,7 @@
 				</div>
 				<div class="form-group">
 					<div class="form-inline col-xs-12 d-flex justify-content-end btn-form">
-						<button class="btn btn-form-custom ml-2" type="button">...</button>
+						<button class="btn btn-form-custom ml-2 tooltip--top tooltip-blue" type="button" aria-label="Cargar Curriculum">...</button>
 						<button class="btn btn-form-custom ml-2" type="button">...</button>
 						<button class="btn btn-form-custom btn-block col-6 ml-2" type="submit">Enviar</button>
 					</div>
@@ -51,6 +51,15 @@
 	
 	.btn-form {
 		padding-top: 38px;
+	}
+	
+	.tooltip-blue:after {
+		background-color: #1D70B7;
+		text-shadow: 0 -1px 0px #1a3c4d;
+	}
+	
+	.tooltip-blue.tooltip--top:before {
+		border-top-color: #1D70B7;
 	}
 
 </style>
