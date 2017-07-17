@@ -44,7 +44,7 @@
 .frontal {
 	width: 100%;
 	height: 100%;
-	/*background: url(http://1.bp.blogspot.com/-R7NM2HBq--Q/UesCwsosv3I/AAAAAAAAKrs/ZZm2CMlqVWs/s1600/1.png);*/
+	background: url(http://1.bp.blogspot.com/-R7NM2HBq--Q/UesCwsosv3I/AAAAAAAAKrs/ZZm2CMlqVWs/s1600/1.png);
 	background-size: 100% 100%;
 	z-index: 5;
 	position: absolute;
@@ -121,8 +121,8 @@
 }
 @media (min-width: 1439px){
 	.globo {
-		width: 570px;
-		height: 570px;
+		width: 550px;
+		height: 550px;
 	}
 
 	.mapfront,
