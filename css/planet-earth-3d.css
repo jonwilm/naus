@@ -66,23 +66,68 @@
 .mapfront,
 .mapback {
 	border-radius: 300px;
-	width: 90%;
-	height: 90%;
+  width: 85%;
+  height: 85%;
 	position: absolute;
-	top: 10px;
-	left: 10px;
+	top: 18px;
+	left: 18px;
 	z-index: 4;
 }
 
 
 .mapfront {
 	background: url(http://1.bp.blogspot.com/-M5AZ_16w8b4/UesDQ6r3miI/AAAAAAAAKr8/Sj0Tu25SgWA/s1600/3.png) repeat-x;
-	-webkit-animation: mapback_spin 100s linear infinite;
-	animation: mapback_spin 100s linear infinite;
+	/*-webkit-animation: mapback_spin 100s linear infinite;
+	animation: mapback_spin 100s linear infinite;*/
  }
 .mapback {
   background: url(http://2.bp.blogspot.com/-PEUhx5zxLcg/UesDeRIwkmI/AAAAAAAAKsE/XvusGF7_Omc/s1600/4.png) repeat-x;
   position: absolute;
-  -webkit-animation: mapfront_spin 100s linear infinite;
-  animation: mapfront_spin 100s linear infinite;
+  /*-webkit-animation: mapfront_spin 100s linear infinite;
+  animation: mapfront_spin 100s linear infinite;*/
+}
+
+@media (min-width: 374px){
+	.globo {
+		width: 300px;
+		height: 300px;
+	}
+
+	.mapfront,
+	.mapback {
+    top: 22px;
+    left: 22px;
+	}
+}
+
+@media (min-width: 767px){
+	.globo {
+		width: 345px;
+		height: 345px;
+	}
+}
+
+@media (min-width: 1023px){
+	.globo {
+		width: 460px;
+		height: 460px;
+	}
+
+	.mapfront,
+	.mapback {	
+		top: 34px;
+    left: 34px;
+  }
+}
+@media (min-width: 1439px){
+	.globo {
+		width: 570px;
+		height: 570px;
+	}
+
+	.mapfront,
+	.mapback {	
+		top: 42px;
+    left: 42px;
+  }
 }
