@@ -212,3 +212,47 @@ footer a {
 footer a:hover {
 	color: #000;
 }
+
+
+/* Social Bar */
+
+.social {
+	position: fixed;
+	/* Barra Fija */
+	right: 0;
+	/* Alineada a la Derecha */
+	top: 200px;
+	/* Posicion Vertical */
+	z-index: 2000;
+	/* No superposicion de elementos */
+}
+
+.social ul {
+	list-style: none;
+}
+
+.social ul li a {
+	display: inline-block;
+	color: #fff;
+	background: #3AA935;
+	text-align: center;
+	margin-top: 5px;
+	padding: 5px;
+	width: 60px;
+	text-decoration: none;
+	-webkit-transition: all 500ms ease;
+	-o-transition: all 500ms ease;
+	transition: all 500ms ease;
+}
+
+.social ul li a:hover {
+	background: #000;
+}
+
+.social ul li .social-chat,
+.social ul li .social-testimonio {
+	background: #1D70B7;
+	writing-mode: vertical-lr;
+	transform: rotate(180deg);
+	text-align: center;
+}
