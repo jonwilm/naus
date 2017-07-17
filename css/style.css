@@ -152,7 +152,7 @@ li.nav-item {
 }
 
 .container-portfolio {
-	/*background: url("../img/bg/bg3.jpg") fixed; //Imagen de fondo*/
+	background: url("../img/bg/bg3.jpg") fixed; //Imagen de fondo*/
 	position: relative;
 	margin: 0 auto;
 	background-size: cover; //ajusta el fondo a la imagen
