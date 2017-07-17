@@ -2,13 +2,13 @@ body {
 	padding-top: 77px;
 }
 
-nav{
+nav {
 	position: fixed;
-  top: 0px;
-  left: 0px;
-  z-index: 1000;
-  width: 100%;
-  background: transparent;
+	top: 0px;
+	left: 0px;
+	z-index: 1000;
+	width: 100%;
+	background: transparent;
 }
 
 h1,
@@ -136,13 +136,16 @@ li.nav-item {
 	}
 }
 
+
 /* CONTACT */
+
 #contact {
 	padding: 5%;
 }
 
 
 /* PORTFOLIO */
+
 #portfolio {
 	padding: 5%;
 }
@@ -157,6 +160,7 @@ li.nav-item {
 .box-portfolio {
 	position: relative;
 	height: 100px;
+	box-shadow: 2px 2px 10px #000;
 }
 
 .box-portfolio>img {
@@ -196,13 +200,14 @@ li.nav-item {
 	}
 }
 
+
 /*footer*/
 
-footer a{
+footer a {
 	color: #000;
 	cursor: pointer;
 }
 
-footer a:hover{
+footer a:hover {
 	color: #000;
 }

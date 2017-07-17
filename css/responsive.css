@@ -1,150 +1,43 @@
-@media screen and (min-width: 1200px) {
-	body,
-	p,
-	a,
-	.btn {
-		font-size: 18px;
-	}
-	.text-title {
-		font-size: 48px;
-		font-weight: bold;
-	}
-	.text-subtitle {
-		font-size: 24px;
-	}
-}
+/*	>= 1440 	*/
 
-@media screen and (max-width: 1199px) {
-	body,
-	p,
-	a,
-	.btn {
-		font-size: 16px;
-	}
-	.text-title {
-		font-size: 40px;
-		font-weight: bold;
-	}
-	.text-subtitle {
-		font-size: 22px;
-	}
-}
+@media screen and (min-width: 1440px) {}
 
-@media screen and (max-width: 991px) {
-	body,
-	p,
-	a,
-	.btn {
-		font-size: 15px;
-	}
-	.text-title {
-		font-size: 32px;
-		font-weight: bold;
-	}
-	.text-subtitle {
-		font-size: 19px;
-	}
-}
 
-@media screen and (max-width: 767px) {
-	body {
-		padding-top: 50px;
-	}
-	body,
-	p,
-	a,
-	/*.btn {
-		font-size: 14px;
-	}*/
-	.text-title {
-		font-size: 22px;
-	}
-	.text-subtitle {
-		font-size: 18px;
-	}
-	.navbar-brand {
-		height: 50px;
-		padding: 0px;
-	}
-	.navbar-brand>img {
-		padding: 8px 0 0 10px;
-		height: 100%;
-		width: auto;
-	}
-	.nav>li>a {
-		padding-top: 5px;
-		padding-bottom: 5px;
-		text-align: center;
-	}
-	.container-home {
-		background-size: 100% 100%;
-	}
-	.home {
-		margin-top: 50px;
-		margin-bottom: 50px;
-	}
-}
+/*	1200 to 1439 	*/
 
-@media screen and (max-width: 639px) {
-	body,
-	p,
-	a,
-	.btn {
-		font-size: 13px;
-	}
-	.text-title {
-		font-size: 21px;
-		font-weight: bold;
-	}
-	.text-subtitle {
-		font-size: 17px;
-	}
-}
+@media screen and (max-width: 1439px) {}
 
-@media screen and (max-width: 479px) {
-	body,
-	p,
-	a,
-	.btn {
-		font-size: 12px;
-	}
-	.text-title {
-		font-size: 20px;
-		font-weight: bold;
-	}
-	.text-subtitle {
-		font-size: 16px;
-	}
-}
 
-@media screen and (max-width: 319px) {
-	body,
-	p,
-	a,
-	.btn {
-		font-size: 11px;
-	}
-	.text-title {
-		font-size: 19px;
-		font-weight: bold;
-	}
-	.text-subtitle {
-		font-size: 15px;
-	}
-}
+/*	992 to 1199 	*/
 
-@media screen and (max-width: 239px) {
-	body,
-	p,
-	a,
-	.btn {
-		font-size: 10px;
-	}
-	.text-title {
-		font-size: 18px;
-		font-weight: bold;
-	}
-	.text-subtitle {
-		font-size: 14px;
-	}
-}
+@media screen and (max-width: 1199px) {}
+
+
+/*	768 to 991 	*/
+
+@media screen and (max-width: 991px) {}
+
+
+/*	640 to 767 	*/
+
+@media screen and (max-width: 767px) {}
+
+
+/*	480 to 639 	*/
+
+@media screen and (max-width: 639px) {}
+
+
+/*	320 to 479 	*/
+
+@media screen and (max-width: 479px) {}
+
+
+/*	240 to 319 	*/
+
+@media screen and (max-width: 319px) {}
+
+
+/*	< 240 	*/
+
+@media screen and (max-width: 239px) {}
