@@ -1,6 +1,14 @@
 body {
-	position: relative;
-	padding-top: 56px;
+	padding-top: 77px;
+}
+
+nav{
+	position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 1000;
+  width: 100%;
+  background: transparent;
 }
 
 h1,
@@ -50,12 +58,13 @@ p {
 .bg-navbar {
 	background-color: #F5F4F4;
 	width: auto;
-	height: 66px;
+	height: 80px;
+	z-index: 999;
+	box-shadow: 5px 5px 20px #000;
 }
 
 .navbar-custom {
-	padding: 8px 0 8px 0;
-	background-color: #F5F4F4;
+	padding: 15px 0;
 }
 
 .navbar-inverse .navbar-nav .nav-link {
@@ -96,9 +105,9 @@ li.nav-item {
 /* NAVBAR MOVIL */
 
 @media (max-width: 767px) {
-	.navbar-custom {
+	/*.navbar-custom {
 		background-color: transparent;
-	}
+	}*/
 	.navbar-brand {
 		margin-left: 15px;
 	}
@@ -116,7 +125,7 @@ li.nav-item {
 		color: #F5F4F4;
 	}
 	.navbar-collapse {
-		margin: 9px 15px;
+		margin: 15px 15px;
 	}
 	/*.container-navbar>.collapse.show {
 		background-color: #1D70B7;
@@ -126,123 +135,6 @@ li.nav-item {
 		width: auto;
 	}
 }
-
-
-/* HOME */
-
-#home {
-	background: url("../img/bg/bg1.jpg") fixed; //Imagen de fondo
-	max-height: 100%;
-	height: 400px; //altura del fondo
-	position: relative;
-	margin: 0 auto;
-	padding: 5%;
-	padding-bottom: 0;
-	background-size: cover; //ajusta el fondo a la imagen
-}
-
-.container-btn-home {}
-
-
-/* US */
-
-#us {
-	background: url("../img/bg/bg2.jpg") fixed; //Imagen de fondo
-	max-height: 100%;
-	position: relative;
-	margin: 0 auto;
-	padding: 5%;
-	background-size: cover; //ajusta el fondo a la imagen
-}
-
-#title-us,
-#text-us {
-	color: #FFF;
-	text-shadow: 2px 2px #000;
-}
-
-.row {
-	display: flex;
-}
-
-.center {
-	justify-content: space-around;
-}
-
-.naus:hover {
-	transform: scale(1.1);
-	border: 0px;
-}
-
-.naus--logo {
-	height: 40px;
-	width: 40px;
-	margin: 0 auto;
-}
-
-.naus--logo--img {
-	height: 40px;
-	width: 40px;
-}
-
-.naus--name {
-	font-size: 10px;
-	font-weight: 600;
-	color: #000000;
-	margin: 1rem 0 0 0;
-}
-
-#service .card {
-	box-shadow: 2px 2px 10px #000;
-}
-
-.card {
-	background-color: #F5F4F4;
-}
-
-.card-img-top {
-	width: 50%;
-	margin: 5% auto;
-}
-
-.card-title {
-	color: #1D70B7;
-}
-
-.card-text {
-	color: #000;
-}
-
-
-/* SERVICE */
-#service {
-	padding: 5%;
-}
-
-#accordion .card img {
-	width: 40px;
-}
-
-.link-services:hover {
-	color: #1D70B7;
-	text-decoration: none;
-}
-
-.service-info {
-	background: #2196f3;
-	color: #fff;
-	height: 100%;
-	left: 0;
-	padding: 20px;
-	position: absolute;
-	text-align: center;
-	top: 0;
-	width: 100%;
-	opacity: 0;
-	visibility: hidden;
-	transition: all 0.4s ease-in-out;
-}
-
 
 /* CONTACT */
 #contact {
