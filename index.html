@@ -82,17 +82,23 @@
 	<footer id="footer" class="container-fluid">
 	</footer>
 
-	<a class="go-top" data-scroll href="#home"><i class="fa fa-chevron-up"></i></a>
+	<div id="go-top" style="display: none;">
+		<a data-scroll href="#"><i class="fa fa-angle-up"></i></a>
+	</div>
 	<!-- jQuery first, Bootstrap JS. -->
 	<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 	<script src="js/smooth-scroll.min.js"></script>
 	<script src="js/wow.min.js"></script>
+
+	<!-- Animates WOW -->
 	<script>
 		new WOW().init();
 
 	</script>
+
+	<!-- Scroll -->
 	<script>
 		smoothScroll.init({
 			selector: '[data-scroll]', // Selector for links (must be a class, ID, data attribute, or element tag)
@@ -104,34 +110,58 @@
 		});
 
 	</script>
+
+	<!-- Hide navbar onClick -->
 	<script>
 		$(".navbar-nav li a").click(function(event) {
 			if (!$(this).parent().hasClass('dropdown'))
 				$(".navbar-collapse").collapse('hide');
 		});
+		$(".navbar-brand").click(function(event) {
+			if (!$(this).parent().hasClass('dropdown'))
+				$(".navbar-collapse").collapse('hide');
+		});
 
 	</script>
+
+	<!-- Height Home -->
 	<script>
 		$(document).ready(function($) {
 			var ventana_alto = $(window).height();
 			if ($(window).width() <= 767) {
-				$('#us').css("height", ventana_alto - 77);
+				/*$('#us').css("height", ventana_alto - 66);*/
 			}
-			$('#home').css("height", ventana_alto - 77);
+			$('#home').css("height", ventana_alto - 66);
 
 			$(window).resize(function() {
 				var ventana_alto = $(window).height();
-				$('#home').css("height", ventana_alto - 77);
+				$('#home').css("height", ventana_alto - 66);
 
 				if ($(window).width() <= 767) {
-					$('#us').css("height", ventana_alto - 77);
+					/*$('#us').css("height", ventana_alto - 66);*/
 				} else {
-					$('#us').css("height", "inherit");
+					/*$('#us').css("height", "inherit");*/
 				}
 			});
 		});
 
 	</script>
+
+	<!-- Button Go Top -->
+	<script>
+		$(document).ready(function() {
+			$(window).scroll(function() {
+				if ($(this).scrollTop() > 200) {
+					$('#go-top').fadeIn('slow');
+				} else {
+					$('#go-top').fadeOut('slow');
+				}
+			});
+		});
+
+	</script>
+
+	<!-- Includes -->
 	<script>
 		$(function() {
 			$("#home").load("includes/home.html");
@@ -140,24 +170,6 @@
 			$("#contact").load("includes/contact.html");
 			$("#portfolio").load("includes/portfolio.html");
 			$("#footer").load("includes/footer.html");
-		});
-
-	</script>
-	<script>
-		$(document).ready(function() {
-			$(window).scroll(function() {
-				if ($(this).scrollTop() > 200) {
-					$('.go-top').fadeIn(200);
-				} else {
-					$('.go-top').fadeOut(200);
-				}
-			});
-			$('.go-top').click(function(event) {
-				event.preventDefault();
-				$('html, body').animate({
-					scrollTop: 0
-				}, 300);
-			})
 		});
 
 	</script>

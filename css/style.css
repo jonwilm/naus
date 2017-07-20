@@ -1,6 +1,6 @@
 body {
 	background-color: #F5F4F4;
-	padding-top: 77px;
+	padding-top: 66px;
 }
 
 nav {
@@ -59,13 +59,13 @@ p {
 .bg-navbar {
 	background-color: #F5F4F4;
 	width: auto;
-	height: 80px;
+	height: 66px;
 	z-index: 999;
 	box-shadow: 5px 5px 20px #000;
 }
 
 .navbar-custom {
-	padding: 15px 0;
+	padding: 8px 0;
 }
 
 .navbar-inverse .navbar-nav .nav-link {
@@ -260,7 +260,7 @@ footer a:hover {
 
 /* Go to Top */
 
-.go-top .fa {
+#go-top .fa {
 	position: fixed;
 	bottom: 5px;
 	right: 5px;
@@ -274,7 +274,7 @@ footer a:hover {
 	margin: 0 20px 20px;
 }
 
-.go-top .fa:hover {
+#go-top .fa:hover {
 	background: transparent;
 	color: #F5F4F4;
 	text-shadow: 3px 3px 10px #000000;
