@@ -81,6 +81,8 @@
 
 	<footer id="footer" class="container-fluid">
 	</footer>
+
+	<a class="go-top" data-scroll href="#home"><i class="fa fa-chevron-up"></i></a>
 	<!-- jQuery first, Bootstrap JS. -->
 	<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
@@ -141,6 +143,25 @@
 		});
 
 	</script>
+	<script>
+		$(document).ready(function() {
+			$(window).scroll(function() {
+				if ($(this).scrollTop() > 200) {
+					$('.go-top').fadeIn(200);
+				} else {
+					$('.go-top').fadeOut(200);
+				}
+			});
+			$('.go-top').click(function(event) {
+				event.preventDefault();
+				$('html, body').animate({
+					scrollTop: 0
+				}, 300);
+			})
+		});
+
+	</script>
+
 </body>
 
 </html>
