@@ -5,6 +5,9 @@ body {
 	padding-top: 70px;
 }
 
+
+/* NAVBAR */
+
 nav {
 	position: fixed;
 	top: 0px;
@@ -15,55 +18,13 @@ nav {
 	height: 70px;
 }
 
-h1,
-h2,
-h3,
-h4,
-a.nav-link{
-	font-family: 'Roboto Slab', serif;
-}
-
-h1 {
-	font-size: 20px;
-}
-
-h2 {
-	font-size: 15px;
-}
-
-h3 {
-	font-size: 30px;
-}
-
-h4 {
-	font-size: 10px;
-}
-
-h5,
-h6,
-p {
-	font-family: 'Ubuntu', sans-serif;
-}
-
-h5 {
-	font-size: 12px;
-}
-
-h6 {
-	font-size: 10px;
-}
-
-p {
-	font-size: 12px;
-}
-
 /* NAVBAR */
 .navbar-brand {
   padding-top: 6px;
   padding-bottom: 6px;
 }
 
-nav img{
+nav img {
 	height: 58px;
 }
 
@@ -73,21 +34,22 @@ nav img{
 	height: 70px;
 	z-index: 999;
 	box-shadow: 3px 2px 2px #000;
-}	
+}
 
 .navbar-inverse .navbar-nav .nav-link {
 	color: #fff;
 	font-size: 12px;
 }
 
-.navbar-inverse .navbar-nav .nav-link:hover, .navbar-inverse .navbar-nav .nav-link:focus {
+.navbar-inverse .navbar-nav .nav-link:hover,
+.navbar-inverse .navbar-nav .nav-link:focus {
 	color: #273638;
 	outline-color: transparent;
 }
-nav .container-navbar{
+
+nav .container-navbar {
 	height: 70px;
 }
-
 
 ul.nav {
 	margin-top: 8px;
@@ -97,6 +59,7 @@ ul.nav {
 a.nav-link {
 	padding-left: 5px;
 	padding-right: 5px;
+	font-family: 'Roboto Slab', serif;
 }
 
 li.nav-item {
@@ -114,48 +77,44 @@ li.nav-item {
 .nav-toggler-icon {
 	background-color: #F5F4F4;
 }
+
 .navbar-toggler {
 	padding: 0px;
 }
 
-.navbar-inverse .navbar-toggler{
+.navbar-inverse .navbar-toggler {
 	width: 40px;
-  height: 40px;
+	height: 40px;
 }
+
+
 /* NAVBAR MOVIL */
 @media (max-width: 767px) {
 	.container {
 		width: auto;
 	}
-
 	.navbar-brand {
 		margin-left: 30px;
 	}
-
 	li.nav-item {
 		border: 0;
 	}
-
 	.navbar-inverse .navbar-nav a.nav-link.no-border {
 		border-bottom: 0px;
 	}
-
 	.navbar-inverse .navbar-nav a.nav-link {
 		margin: 0 15px;
 		border-bottom: 1px solid white;
 		padding-left: 10px;
 		text-transform: uppercase;
 	}
-
 	.navbar-inverse .navbar-nav .nav-item {
 		background-color: #1D70B7;
 	}
-
 	.navbar-inverse .navbar-nav .nav-item:hover {
 		background-color: #3AA935;
 		color: #F5F4F4;
 	}
-
 	.navbar-collapse {
 		margin: 4px 15px;
 	}
@@ -199,6 +158,57 @@ li.nav-item {
 	.navbar-inverse .navbar-nav .nav-link {
 		font-size: 14px;
 	}	
+}
+
+/* HOME */
+
+#home {
+	background: url("../img/bg/bg1.jpg") fixed; //Imagen de fondo
+	position: relative;
+	margin: 0 auto;
+	padding-bottom: 0;
+	background-size: cover; //ajusta el fondo a la imagen
+}
+
+#home .container {
+	height: 100%;
+}
+
+#home h3 {
+	padding-top: 20px;
+	font-family: 'Roboto Slab', sans-serif;
+	color: #273638;
+	font-size: 21px;
+}
+
+#home p {
+	font-family: 'Ubuntu', sans-serif;
+	color: #273638;
+	font-size: 12.4px;
+}
+
+.row-text {
+	height: 75%
+}
+
+.btn-home {
+	background-color: #F5F4F4;
+	color: #273638;
+	height: 30px;
+	box-shadow: 3px 3px 2px #000000;
+	padding: 5px;
+}
+
+.btn-home h5 {
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 19px;
+	margin: 0;
+	vertical-align: middle;
+}
+
+.btn-home:hover {
+	background-color: #273638;
+	color: #F5F4F4;
 }
 
 /* CONTACT */
