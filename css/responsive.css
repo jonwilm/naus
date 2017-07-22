@@ -1,10 +1,46 @@
-/*	>= 1440 	*/
-
-@media screen and (min-width: 1440px) {}
-
-
 /*	1024 to 1439 	*/
 
 @media screen and (min-width: 1024px) {
 	/* HOME */
+	#home h3 {
+		font-size: 27px;
+	}
+	#home p {
+		font-size: 13.4px;
+	}
+	.row-text {
+		height: 85%
+	}
+	.btn-home {
+		height: 40px;
+		padding: 5px;
+	}
+	.btn-home h5 {
+		font-family: 'Roboto Slab', sans-serif;
+		font-size: 26px;
+	}
+}
+
+
+/*	>= 1440 	*/
+
+@media screen and (min-width: 1440px) {
+	/* HOME */
+	#home h3 {
+		font-size: 56px;
+	}
+	#home p {
+		font-size: 15.5px;
+	}
+	.row-text {
+		height: 85%
+	}
+	.btn-home {
+		height: 60px;
+		padding: 5px;
+	}
+	.btn-home h5 {
+		font-family: 'Roboto Slab', sans-serif;
+		font-size: 37px;
+	}
 }
