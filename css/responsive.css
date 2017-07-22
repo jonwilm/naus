@@ -5,9 +5,6 @@
 
 /*	1024 to 1439 	*/
 
-@media screen and (max-width: 1439px) {}
-
-
-/*	<= 1024 	*/
-
-@media screen and (max-width: 1023px) {}
+@media screen and (min-width: 1024px) {
+	/* HOME */
+}
