@@ -76,17 +76,17 @@
 
 .mapfront {
 	background: url(../img/planet/3.png) repeat-x;
-	-webkit-animation: mapback_spin 100s linear infinite;
 	background-size: 1944px 540px;
-	animation: mapback_spin 100s linear infinite;
+	/*-webkit-animation: mapback_spin 100s linear infinite;
+	animation: mapback_spin 100s linear infinite;*/
 }
 
 .mapback {
 	background: url(../img/planet/4.png) repeat-x;
 	position: absolute;
 	background-size: 1944px 540px;
-	-webkit-animation: mapfront_spin 100s linear infinite;
-	animation: mapfront_spin 100s linear infinite;
+	/*-webkit-animation: mapfront_spin 100s linear infinite;
+	animation: mapfront_spin 100s linear infinite;*/
 }
 
 
