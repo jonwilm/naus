@@ -14,7 +14,7 @@
 	<link rel="stylesheet" href="fonts/font-roboto-slab.css">
 	<link rel="stylesheet" href="fonts/font-ubuntu.css">
 	<!-- Font awesome -->
-	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<!--<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 	<!-- Tooltips -->
 	<link rel="stylesheet" href="css/tooltips.css">
 	<!-- styles -->
@@ -76,28 +76,76 @@
 	</div>
 	<!-- End Button Go to Top -->
 	<!-- Social Bar -->
-	<!-- <div class="social">
+	<div class="social hidden-sm-down">
 		<ul>
 			<li>
-				<a href="#" class="social-chat">CHAT</a>
+				<a id="chat-popover" role="button" class="social-chat" data-container="body" data-placement="left">CHAT <span class="fa fa-plus"></span></a>
 			</li>
 			<li>
-				<a href="#" class="social-testimonio">TESTIMONIOS</a>
+				<a id="testimonio-popover" role="button" class="social-testimonio" data-container="body" data-placement="left">TESTIMONIO <span class="fa fa-plus"></span></a>
 			</li>
-			<li>
-				<a href="#" target="_blank" class="fa fa-2x fa-instagram"></a>
+			<li class="social-icon">
+				<a href="#" target="_blank" class="fa fa-instagram"></a>
 			</li>
-			<li>
-				<a href="#" target="_blank" class="fa fa-2x fa-facebook"></a>
+			<li class="social-icon">
+				<a href="#" target="_blank" class="fa fa-facebook"></a>
 			</li>
-			<li>
-				<a href="#" target="_blank" class="fa fa-2x fa-whatsapp"></a>
+			<li class="social-icon">
+				<a href="#" target="_blank" class="fa  fa-whatsapp"></a>
 			</li>
-			<li>
-				<a href="#" target="_blank" class="fa fa-2x fa-google-plus"></a>
+			<li class="social-icon">
+				<a href="#" target="_blank" class="fa fa-google-plus"></a>
 			</li>
 		</ul>
-	</div> -->
+	</div>
+	<div id="chat-popover-content" class="hidden-xs-up">
+		<form>
+			<div class="row">
+				<div class="col-6">
+					<div class="form-group">
+						<label class="label-form" for="inputName">Nombre</label>
+						<input class="form-control input-form" id="inputTextName" type="text">
+					</div>
+				</div>
+				<div class="col-6">
+					<div class="form-group">
+						<label class="label-form" for="inputEmail">E-mail</label>
+						<input class="form-control input-form" id="inputTextEmail" type="email">
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+					<div class="chat">
+						<div class="content-chat"></div>
+						<input class="form-control input-form input-chat" id="Message-chat" type="text">
+					</div>
+				</div>
+			</div>
+		</form>
+	</div>
+	<div id="testimonio-popover-content" class="hidden-xs-up">
+		<div class="row">
+			<div class="col-3">
+				<img src="img/socialbar/avatar-testimonios.png" class="img-fluid" alt="Perfil">
+			</div>
+			<div class="col-9">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ipsum praesentium facilis necessitatibus perferendis nisi, error itaque eveniet nobis earum, hic vitae sint magni! Placeat dignissimos necessitatibus unde, aliquam omnis!</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-6">
+				<p>@FulanitodeTal</p>
+			</div>
+			<div class="col-6">
+				<img class="float-right" src="img/socialbar/estrella-azul.png" alt="star">
+				<img class="float-right" src="img/socialbar/estrella-azul.png" alt="star">
+				<img class="float-right" src="img/socialbar/estrella-azul.png" alt="star">
+				<img class="float-right" src="img/socialbar/estrella-azul.png" alt="star">
+				<img class="float-right" src="img/socialbar/estrella-gris.png" alt="star">
+			</div>
+		</div>
+	</div>
 	<!-- End Social Bar -->
 	<!-- jQuery first, Bootstrap JS. -->
 	<script src="js/jquery-3.2.1.min.js"></script>
@@ -177,7 +225,24 @@
 		});
 
 	</script>
+	<!-- Popovers -->
+	<script>
+		$(function() {
+			$("#chat-popover").popover({
+				html: true,
+				content: function() {
+					return $("#chat-popover-content").html();
+				}
+			});
+			$("#testimonio-popover").popover({
+				html: true,
+				content: function() {
+					return $("#testimonio-popover-content").html();
+				}
+			});
+		});
 
+	</script>
 </body>
 
 </html>

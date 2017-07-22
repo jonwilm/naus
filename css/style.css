@@ -227,20 +227,22 @@ footer a:hover {
 	/* Posicion Vertical */
 	z-index: 2000;
 	/* No superposicion de elementos */
+	margin: 0;
+	padding: 0;
 }
 
 .social ul {
 	list-style: none;
 }
 
+.social ul li {
+	text-align: center;
+}
+
 .social ul li a {
 	display: inline-block;
-	color: #fff;
-	background: #3AA935;
-	text-align: center;
-	margin-top: 5px;
-	padding: 5px;
-	width: 60px;
+	color: #F5F4F4;
+	padding: 5px 0;
 	text-decoration: none;
 	-webkit-transition: all 500ms ease;
 	-o-transition: all 500ms ease;
@@ -251,12 +253,50 @@ footer a:hover {
 	background: #000;
 }
 
+.social-icon {
+	background: #3AA935;
+	margin-top: 5px;
+}
+
 .social ul li .social-chat,
 .social ul li .social-testimonio {
 	background: #1D70B7;
 	writing-mode: vertical-lr;
 	transform: rotate(180deg);
 	text-align: center;
+}
+
+#chat-popover,
+#testimonio-popover {
+	background-color: #1D70B7;
+	color: #F5F4F4;
+	border: 0px;
+	cursor: pointer;
+}
+
+#chat-popover:hover,
+#testimonio-popover:hover {
+	background-color: #000000;
+}
+
+.popover {
+	max-width: 40%;
+	background: #F5F4F4;
+	color: #273638;
+}
+
+.content-chat {
+	background: #DADBDC;
+	height: 100px;
+}
+
+.input-chat {
+	margin-top: 10px;
+}
+
+.chat {
+	background: #DADBDC;
+	padding: 10px;
 }
 
 
