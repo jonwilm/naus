@@ -35,7 +35,7 @@ nav img {
 	width: auto;
 	height: 70px;
 	z-index: 999;
-	box-shadow: 3px 2px 2px #000;
+	box-shadow: 3px 3px 2px #A3A3A3;
 }
 
 .navbar-inverse .navbar-nav .nav-link {
@@ -199,12 +199,12 @@ li.nav-item {
 	background-color: #F5F4F4;
 	color: #273638;
 	height: 30px;
-	box-shadow: 3px 3px 2px #000000;
+	box-shadow: 3px 3px 2px #A3A3A3;
 	padding: 5px;
 }
 
 .btn-home h5 {
-	font-family: 'Ubuntu', sans-serif;
+	font-family: 'Roboto Slab', sans-serif;
 	font-size: 19px;
 	margin: 0;
 	vertical-align: middle;
@@ -239,7 +239,7 @@ li.nav-item {
 
 #us h3#title-us {
 	font-family: 'Roboto Slab', serif;
-	font-size: 40px;
+	font-size: 21px;
 }
 
 #us p#text-us {
@@ -284,7 +284,7 @@ li.nav-item {
 }
 
 #service .card {
-	box-shadow: 2px 2px 10px #000;
+	box-shadow: 3px 3px 2px #A3A3A3;
 }
 
 .card {
@@ -313,7 +313,7 @@ li.nav-item {
 
 #service h3 {
 	font-family: 'Roboto Slab', serif;
-	font-size: 40px;
+	font-size: 21px;
 	color: #273638;
 }
 
@@ -322,7 +322,8 @@ li.nav-item {
 }
 
 .card {
-	box-shadow: 2px 2px 10px #000;
+	border: 0;
+	box-shadow: 3px 3px 2px #A3A3A3;
 }
 
 .card-block {
@@ -355,21 +356,6 @@ li.nav-item {
 	text-decoration: none;
 }
 
-.service-info {
-	background: #2196f3;
-	color: #fff;
-	height: 100%;
-	left: 0;
-	padding: 20px;
-	position: absolute;
-	text-align: center;
-	top: 0;
-	width: 100%;
-	opacity: 0;
-	visibility: hidden;
-	transition: all 0.4s ease-in-out;
-}
-
 @media (min-width: 767px) {
 	#service img.card-img-top {
 		margin: auto;
@@ -392,7 +378,7 @@ li.nav-item {
 
 #portfolio h3 {
 	font-family: 'Roboto Slab', sans-serif;
-	font-size: 40px;
+	font-size: 21px;
 	color: #273638;
 }
 
@@ -411,7 +397,7 @@ li.nav-item {
 .box-portfolio {
 	position: relative;
 	height: 76px;
-	box-shadow: 3px 3px 10px #000;
+	box-shadow: 3px 3px 2px #A3A3A3;
 }
 
 .box-portfolio>img {
@@ -466,7 +452,7 @@ li.nav-item {
 
 #contact h3 {
 	font-family: 'Roboto Slab', sans-serif;
-	font-size: 40px;
+	font-size: 21px;
 	color: #273638;
 }
 
@@ -483,7 +469,7 @@ li.nav-item {
 
 .input-form {
 	background-color: #DADBDC;
-	box-shadow: 3px 3px 10px #000;
+	box-shadow: 3px 3px 2px #A3A3A3;
 }
 
 #input-text-name,
@@ -503,11 +489,15 @@ li.nav-item {
 .btn-form-custom {
 	background-color: #3AA935;
 	color: #F5F4F4;
-	box-shadow: 3px 3px 10px #000000;
+	box-shadow: 3px 3px 2px #A3A3A3;
 }
 
 .btn-form {
 	padding-top: 38px;
+}
+
+.form-group {
+	margin-bottom: 2px;
 }
 
 .btn-docs {
@@ -523,7 +513,7 @@ li.nav-item {
 	font-family: 'Ubuntu', sans-serif;
 	font-size: 10px;
 	text-shadow: 0 0 0;
-	box-shadow: 3px 3px 10px #000000;
+	box-shadow: 3px 3px 2px #A3A3A3;
 }
 
 .tooltip-blue.tooltip--top:before {
@@ -651,5 +641,5 @@ footer a:hover {
 #go-top .fa:hover {
 	background: transparent;
 	color: #F5F4F4;
-	text-shadow: 3px 3px 10px #000000;
+	text-shadow: 3px 3px 2px #A3A3A3;
 }

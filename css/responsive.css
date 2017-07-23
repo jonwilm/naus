@@ -1,24 +1,4 @@
-/*	1024 to 1439 	*/
-
-@media screen and (min-width: 1024px) {
-	/* HOME */
-	#home h3 {
-		font-size: 27px;
-	}
-	#home p {
-		font-size: 13.4px;
-	}
-	.row-text {
-		height: 85%
-	}
-	.btn-home {
-		height: 40px;
-		padding: 5px;
-	}
-	.btn-home h5 {
-		font-family: 'Roboto Slab', sans-serif;
-		font-size: 26px;
-	}
+@media screen and (min-width: 768px) {
 	/*
   ------
     US
@@ -52,6 +32,86 @@
     SERVICE
   ------
   */
+	#service article {
+		min-height: 114px;
+	}
+	#service img.card-img-top {
+		width: 80px;
+		height: 48px;
+		margin: 10px auto;
+	}
+	#service .card-title {
+		font-family: "Roboto Slab";
+		font-size: 15px;
+		color: #1d70b7;
+		padding: 0px 5px;
+	}
+	#service .card {
+		height: 100%;
+	}
+}
+
+
+/*	1024 to 1439 	*/
+
+@media screen and (min-width: 1024px) {
+	/* HOME */
+	#home h3 {
+		font-size: 40px;
+	}
+	#home p {
+		font-size: 13.4px;
+	}
+	.row-text {
+		height: 85%
+	}
+	.btn-home {
+		height: 40px;
+		padding: 5px;
+	}
+	.btn-home h5 {
+		font-family: 'Roboto Slab', sans-serif;
+		font-size: 26px;
+	}
+	/*
+  ------
+    US
+  ------
+  */
+	#us h3#title-us {
+		font-size: 35px;
+	}
+	#us p#text-us {
+		font-family: 'Ubuntu', serif;
+		font-size: 13.4px;
+	}
+	#us .card-img-top {
+		width: 99px;
+		height: 99px;
+		margin: 20px auto;
+	}
+	#us .card-title {
+		font-family: 'Roboto Slab', serif;
+		font-size: 26px;
+		color: #1d70b7;
+	}
+	#us .card-text {
+		font-family: 'Ubuntu', serif;
+		font-size: 13.4px;
+		color: #273638;
+	}
+	#us .card-text {
+		margin-bottom: 16px;
+		padding: 0 18px;
+	}
+	/*
+  ------
+    SERVICE
+  ------
+  */
+	#service h3 {
+		font-size: 35px;
+	}
 	#service img.card-img-top {
 		width: 106px;
 		height: 63px;
@@ -70,6 +130,9 @@
 		height: 100%;
 	}
 	/* PORTFOLIO */
+	#portfolio h3 {
+		font-size: 35px;
+	}
 	#portfolio h1 {
 		font-size: 26px;
 	}
@@ -87,6 +150,9 @@
 		height: 100%;
 	}
 	/* CONTACT */
+	#contact h3 {
+		font-size: 35px;
+	}
 	#input-text-name,
 	#input-text-email,
 	#input-text-asunto {
@@ -95,9 +161,12 @@
 		font-size: 10px;
 	}
 	#input-text-message {
-		height: 86px;
+		height: 96px;
 		font-family: 'Ubuntu', sans-serif;
 		font-size: 10px;
+	}
+	.btn-form {
+		padding-top: 25px;
 	}
 }
 
@@ -128,6 +197,9 @@
     US
   ------
   */
+	#us h3#title-us {
+		font-size: 40px;
+	}
 	#us p#text-us {
 		font-family: 'Ubuntu', serif;
 		font-size: 15.5px;
@@ -150,6 +222,9 @@
     SERVICE
   ------
   */
+	#service h3 {
+		font-size: 40px;
+	}
 	#service img.card-img-top {
 		width: 150px;
 		height: 89px;
@@ -159,14 +234,14 @@
 		font-size: 28px;
 	}
 	#service article {
-		min-height: 143px;
+		min-height: 200px;
 	}
 	/* PORTFOLIO */
 	#portfolio {
 		padding: 30px 0;
 	}
 	#portfolio h1 {
-		font-size: 38px;
+		font-size: 33px;
 	}
 	#portfolio p {
 		font-size: 15.5;
@@ -185,6 +260,9 @@
 	#contact {
 		padding: 30px 0;
 	}
+	#contact h3 {
+		font-size: 40px;
+	}
 	#input-text-name,
 	#input-text-email,
 	#input-text-asunto {
@@ -196,5 +274,8 @@
 		height: 122px;
 		font-family: 'Ubuntu', sans-serif;
 		font-size: 10px;
+	}
+	.btn-form {
+		padding-top: 35px;
 	}
 }
