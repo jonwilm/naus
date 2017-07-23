@@ -97,7 +97,7 @@ li.nav-item {
 		width: auto;
 	}
 	.navbar-brand {
-		margin-left: 30px;
+		margin-left: 15px;
 	}
 	li.nav-item {
 		border: 0;
@@ -170,6 +170,10 @@ li.nav-item {
 	background-size: cover; //ajusta el fondo a la imagen
 }
 
+#home {
+	padding: 20px 0;
+}
+
 #home .container {
 	height: 100%;
 }
@@ -219,8 +223,7 @@ li.nav-item {
 	max-height: 100%;
 	position: relative;
 	margin: 0 auto;
-	padding-top: 20px;
-	padding-bottom: 20px;
+	padding: 20px 0;
 	background-size: cover;
 }
 
@@ -315,8 +318,7 @@ li.nav-item {
 }
 
 #service {
-	padding-top: 20px;
-	padding-bottom: 20px;
+	padding: 20px 0;
 }
 
 .card {
@@ -378,8 +380,7 @@ li.nav-item {
 /* PORTFOLIO */
 
 #portfolio {
-	padding-top: 20px;
-	padding-bottom: 20px;
+	padding: 20px 0;
 }
 
 .container-portfolio {
@@ -460,8 +461,7 @@ li.nav-item {
 /* CONTACT */
 
 #contact {
-	padding-top: 20px;
-	padding-bottom: 20px;
+	padding: 20px 0;
 }
 
 #contact h3 {
@@ -543,8 +543,8 @@ footer a:hover {
 }
 
 .logo-footer {
-	width: 70px;
-	height: 70px;
+	width: 60px;
+	height: 60px;
 }
 
 

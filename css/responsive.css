@@ -128,10 +128,6 @@
     US
   ------
   */
-	#us {
-		padding-top: 30px;
-		padding-bottom: 30px;
-	}
 	#us p#text-us {
 		font-family: 'Ubuntu', serif;
 		font-size: 15.5px;
@@ -154,10 +150,6 @@
     SERVICE
   ------
   */
-	#service {
-		padding-top: 30px;
-		padding-bottom: 30px;
-	}
 	#service img.card-img-top {
 		width: 150px;
 		height: 89px;
@@ -171,8 +163,7 @@
 	}
 	/* PORTFOLIO */
 	#portfolio {
-		padding-top: 30px;
-		padding-bottom: 30px;
+		padding: 30px 0;
 	}
 	#portfolio h1 {
 		font-size: 38px;
@@ -192,8 +183,7 @@
 	}
 	/* CONTACT */
 	#contact {
-		padding-top: 30px;
-		padding-bottom: 30px;
+		padding: 30px 0;
 	}
 	#input-text-name,
 	#input-text-email,
