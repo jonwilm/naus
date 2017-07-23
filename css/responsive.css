@@ -1,24 +1,4 @@
-/*	1024 to 1439 	*/
-
-@media screen and (min-width: 1024px) {
-	/* HOME */
-	#home h3 {
-		font-size: 27px;
-	}
-	#home p {
-		font-size: 13.4px;
-	}
-	.row-text {
-		height: 85%
-	}
-	.btn-home {
-		height: 40px;
-		padding: 5px;
-	}
-	.btn-home h5 {
-		font-family: 'Roboto Slab', sans-serif;
-		font-size: 26px;
-	}
+@media screen and (min-width: 768px) {
   /*
   ------
     US
@@ -62,6 +42,27 @@
     margin-bottom: 16px;
     padding: 0 18px;
   }
+}
+/*	1024 to 1439 	*/
+@media screen and (min-width: 1024px) {
+	/* HOME */
+	#home h3 {
+		font-size: 27px;
+	}
+	#home p {
+		font-size: 13.4px;
+	}
+	.row-text {
+		height: 85%
+	}
+	.btn-home {
+		height: 40px;
+		padding: 5px;
+	}
+	.btn-home h5 {
+		font-family: 'Roboto Slab', sans-serif;
+		font-size: 26px;
+	}
   /*
   ------
     SERVICE
@@ -71,7 +72,7 @@
     font-size: 27px;
     font-family: 'Roboto Slab', serif;
   }
-  
+
   #service img.card-img-top {
     width: 106px;
     height: 63px;
