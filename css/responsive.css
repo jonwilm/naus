@@ -19,6 +19,56 @@
 		font-family: 'Roboto Slab', sans-serif;
 		font-size: 26px;
 	}
+	/*
+  ------
+    US
+  ------
+  */
+	#us p#text-us {
+		font-family: 'Ubuntu', serif;
+		font-size: 13.4px;
+	}
+	#us .card-img-top {
+		width: 99px;
+		height: 99px;
+		margin: 20px auto;
+	}
+	#us .card-title {
+		font-family: 'Roboto Slab', serif;
+		font-size: 26px;
+		color: #1d70b7;
+	}
+	#us .card-text {
+		font-family: 'Ubuntu', serif;
+		font-size: 13.4px;
+		color: #273638;
+	}
+	#us .card-text {
+		margin-bottom: 16px;
+		padding: 0 18px;
+	}
+	/*
+  ------
+    SERVICE
+  ------
+  */
+	#service img.card-img-top {
+		width: 106px;
+		height: 63px;
+		margin: 11px auto;
+	}
+	#service .card-title {
+		font-family: "Roboto Slab";
+		font-size: 20px;
+		color: #1d70b7;
+		padding: 0px 5px;
+	}
+	#service article {
+		min-height: 143px;
+	}
+	#service .card {
+		height: 100%;
+	}
 	/* PORTFOLIO */
 	#portfolio h1 {
 		font-size: 26px;
@@ -72,6 +122,44 @@
 	.btn-home h5 {
 		font-family: 'Roboto Slab', sans-serif;
 		font-size: 37px;
+	}
+	/*
+  ------
+    US
+  ------
+  */
+	#us p#text-us {
+		font-family: 'Ubuntu', serif;
+		font-size: 15.5px;
+	}
+	#us .card-img-top {
+		width: 140px;
+		height: 140px;
+		margin: 28px auto;
+	}
+	#us .card-title {
+		font-family: 'Roboto Slab', serif;
+		font-size: 38px;
+	}
+	#us .card-text {
+		font-family: 'Ubuntu', serif;
+		font-size: 15.5px;
+	}
+	/*
+  ------
+    SERVICE
+  ------
+  */
+	#service img.card-img-top {
+		width: 150px;
+		height: 89px;
+		margin: 20px auto;
+	}
+	#service .card-title {
+		font-size: 28px;
+	}
+	#service article {
+		min-height: 143px;
 	}
 	/* PORTFOLIO */
 	#portfolio {

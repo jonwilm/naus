@@ -215,12 +215,12 @@ li.nav-item {
 /* US */
 
 #us {
-	background: url("../img/bg/bg2.jpg") fixed; //Imagen de fondo
+	background: url("../img/bg/bg2.jpg") fixed;
 	max-height: 100%;
 	position: relative;
 	margin: 0 auto;
-	padding: 5%;
-	background-size: cover; //ajusta el fondo a la imagen
+	padding: 20px 0;
+	background-size: cover;
 }
 
 #us .container {
@@ -229,8 +229,17 @@ li.nav-item {
 
 #title-us,
 #text-us {
-	color: #000;
+	color: #273638;
 	margin-bottom: 20px;
+}
+
+#us h3#title-us {
+	font-family: 'Roboto Slab', serif;
+	font-size: 40px;
+}
+
+#us p#text-us {
+	font-size: 12.4px;
 }
 
 .row {
@@ -245,27 +254,29 @@ li.nav-item {
 	justify-content: space-around;
 }
 
-.naus:hover {
-	transform: scale(1.1);
-	border: 0px;
+.naus {
+	display: inline-block;
+	width: 32%;
 }
 
 .naus--logo {
-	height: 30px;
-	width: 30px;
+	height: 47px;
+	width: 47px;
+	padding: 10px;
 	margin: 0 auto;
 }
 
 .naus--logo--img {
-	height: 30px;
-	width: 30px;
+	width: 100%;
+	height: 100%;
 }
 
 .naus--name {
-	font-size: 10px;
+	font-family: 'Roboto Slab', serif;
+	font-size: 11px;
 	font-weight: bold;
-	color: #65bc60;
-	margin: .5rem 0 0 0;
+	color: #1d70b7;
+	text-align: center;
 }
 
 #service .card {
@@ -280,29 +291,30 @@ li.nav-item {
 	height: 100%;
 }
 
-#us .card-img-top {
-	width: 50%;
-	margin: 5% auto;
-}
-
 .card-title {
 	color: #1D70B7;
 }
 
-.card-text {
+#us .card {
+	border-radius: 0px;
 	color: #000;
 }
 
 #us .card-block {
-	padding: .5rem;
-	color: #000;
+	padding: 0px;
 }
 
 
 /* SERVICE */
 
+#service h3 {
+	font-family: 'Roboto Slab', serif;
+	font-size: 40px;
+	color: #273638;
+}
+
 #service {
-	padding: 5%;
+	padding: 20px 0;
 }
 
 .card {
@@ -313,12 +325,25 @@ li.nav-item {
 	padding: 0px;
 }
 
-.card-text {
-	padding: 15px;
+#service img {
+	width: 61px;
+	height: 38px;
 }
 
-#accordion .card img {
-	width: 40px;
+#service .card {
+	border-radius: 0px;
+}
+
+#service h2 {
+	font-family: 'Roboto Slab', serif;
+	font-size: 16px;
+	color: #3aa935;
+}
+
+#service p {
+	font-size: 12.14px;
+	font-family: 'Ubuntu', serif;
+	padding: 10px;
 }
 
 .link-services:hover {
@@ -343,28 +368,7 @@ li.nav-item {
 
 @media (min-width: 767px) {
 	#service img.card-img-top {
-		width: 100px;
 		margin: auto;
-		padding-top: 13px;
-		padding-bottom: 13px;
-	}
-}
-
-@media (min-width: 1023px) {
-	#service img.card-img-top {
-		width: 99px;
-		margin: auto;
-		padding-top: 19px;
-		padding-bottom: 19px;
-	}
-}
-
-@media (min-width: 1439px) {
-	#service img.card-img-top {
-		width: 149px;
-		margin: auto;
-		padding-top: 20px;
-		padding-bottom: 20px;
 	}
 }
 
@@ -454,6 +458,12 @@ li.nav-item {
 
 #contact {
 	padding: 20px 0;
+}
+
+#contact h3 {
+	font-family: 'Roboto Slab', sans-serif;
+	font-size: 40px;
+	color: #273638;
 }
 
 #contact h6 {
