@@ -219,7 +219,8 @@ li.nav-item {
 	max-height: 100%;
 	position: relative;
 	margin: 0 auto;
-	padding: 20px 0;
+	padding-top: 20px;
+	padding-bottom: 20px;
 	background-size: cover;
 }
 
@@ -314,7 +315,8 @@ li.nav-item {
 }
 
 #service {
-	padding: 20px 0;
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
 
 .card {
@@ -376,7 +378,8 @@ li.nav-item {
 /* PORTFOLIO */
 
 #portfolio {
-	padding: 20px 0;
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
 
 .container-portfolio {
@@ -457,7 +460,8 @@ li.nav-item {
 /* CONTACT */
 
 #contact {
-	padding: 20px 0;
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
 
 #contact h3 {
