@@ -2,7 +2,7 @@
 
 body {
 	background-color: #F5F4F4;
-	padding-top: 70px;
+	padding-top: 65px;
 }
 
 
@@ -15,7 +15,7 @@ nav {
 	z-index: 1000;
 	width: 100%;
 	background: transparent;
-	height: 70px;
+	height: 65px;
 }
 
 
@@ -33,7 +33,7 @@ nav img {
 .bg-navbar {
 	background-color: #F5F4F4;
 	width: auto;
-	height: 70px;
+	height: 65px;
 	z-index: 999;
 	box-shadow: 3px 3px 2px #A3A3A3;
 }
@@ -50,7 +50,7 @@ nav img {
 }
 
 nav .container-navbar {
-	height: 70px;
+	height: 65px;
 }
 
 ul.nav {
@@ -125,16 +125,16 @@ li.nav-item {
 
 @media (min-width: 768px) {
 	body {
-		padding-top: 77px;
+		padding-top: 65px;
 	}
 	nav {
-		height: 77px;
+		height: 65px;
 	}
 	.bg-navbar {
-		height: 77px;
+		height: 65px;
 	}
 	nav .container-navbar {
-		height: 77px;
+		height: 65px;
 	}
 	.navbar-inverse .navbar-nav .nav-link {
 		color: #273638;
