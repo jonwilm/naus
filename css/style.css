@@ -34,7 +34,7 @@ nav img {
 	background-color: #F5F4F4;
 	width: auto;
 	height: 65px;
-	z-index: 999;
+	z-index: 1000;
 	box-shadow: 3px 3px 2px #A3A3A3;
 }
 
@@ -175,12 +175,14 @@ video {
 	background-size: cover;
 }
 
-#home {
-	/*background: url("../img/bg/bg1.jpg") fixed; //Imagen de fondo
-	position: relative;
-	margin: 0 auto;
-	padding-bottom: 0;
-	background-size: cover; //ajusta el fondo a la imagen*/
+@media (max-width: 768px) {
+	#home {
+		background: url("../img/bg/bg1.jpg") fixed;
+		position: relative;
+		margin: 0 auto;
+		padding-bottom: 0;
+		background-size: cover;
+	}
 }
 
 #home {
@@ -232,7 +234,7 @@ video {
 /* US */
 
 #us {
-	background: url("../img/bg/bg2.jpg") fixed;
+	background: url("../img/bg/bg2.2.jpg") fixed;
 	max-height: 100%;
 	position: relative;
 	margin: 0 auto;

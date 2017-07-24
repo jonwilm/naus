@@ -50,34 +50,85 @@
 		</div>
 	</nav>
 	<!-- End Navbar -->
+
 	<!-- Home -->
 	<section id="home" class="container-fluid">
-		<video id="video_home" preload="auto" autoplay="autoplay" loop="loop">
-			<source src="video/video.mp4" type="video/mp4">
-		</video>
-		<div class="container">
-			<div class="row-text">
-				<div class="row">
-					<div class="title-home col-xs-11 col-sm-8 col-md-6 col-lg-4">
-						<h3 class="wow fadeInLeft">Construye tu sitio web, construye tu sueño</h3>
-					</div>
-				</div>
-				<div class="row">
-					<div class="text-home col-xs-11 col-sm-10 col-md-8 col-lg-6">
-						<p class="wow fadeInRightBig">Software en base a sus objetivos y necesidades. Somos especialistas en diseño web, diseño de páginas web , posicionamiento, sistemas y aplicaciones moviles.</p>
-					</div>
-				</div>
+		<div id="videoHome" data-section-name="home" class="scroll-act">
+			<div id="video" class="pre-height">
+				<video autoplay="" loop="" muted="" autobuffer="" preload="metadata" id="background" poster="">
+					<source src="video/video.mp4" type="video/mp4">
+				</video>
 			</div>
-			<div class="row">
-				<div class="col-12 col-md-5 mb-3">
-					<a class="btn btn-home btn-block" role="button" href="#">
-						<h5>Contacto</h5>
-					</a>
+		</div>
+		<style>
+			#videoHome {
+		    position: relative;
+		    height: 100%;
+		    width: 100%;
+		    -webkit-transition: background .3s ease-in-out,height .3s ease-in-out!important;
+		    -moz-transition: background .3s ease-in-out,height .3s ease-in-out!important;
+		    transition: background .3s ease-in-out,height .3s ease-in-out!important;
+		    background-position: center;
+		    background-size: cover;
+		    transition: all .3s ease-in-out;
+			}
+
+			#video {
+			  min-height: 549px;
+			}
+
+			#videoHome video {
+		    width: 100%;
+		    height: 100%;
+		    background-size: cover;
+		    bottom: 0;
+		    transition: height .3s linear;
+		    position: absolute;
+		    right: 0;
+			}
+
+			video {
+		    display: inline-block;
+		    vertical-align: baseline;
+			}
+
+			.wrapp {
+		    position: absolute;
+		    z-index: 999;
+		    top: 0;
+		    right: 0;
+		    left: 0;
+		    bottom: 0;
+		    margin: auto;
+		    text-align: center;
+			}
+		</style>
+		
+		<div class="wrapp">
+			<div class="container">
+				<div class="row-text">
+					<div class="row">
+						<div class="title-home col-xs-11 col-sm-8 col-md-6 col-lg-4">
+							<h3 class="wow fadeInLeft">Construye tu sitio web, construye tu sueño</h3>
+						</div>
+					</div>
+					<div class="row">
+						<div class="text-home col-xs-11 col-sm-10 col-md-8 col-lg-6">
+							<p class="wow fadeInRightBig">Software en base a sus objetivos y necesidades. Somos especialistas en diseño web, diseño de páginas web , posicionamiento, sistemas y aplicaciones moviles.</p>
+						</div>
+					</div>
 				</div>
-				<div class="col-12 col-md-5 mb-3">
-					<a class="btn btn-home btn-block" role="button" href="#">
-						<h5>Cotización</h5>
-					</a>
+				<div class="row">
+					<div class="col-12 col-md-5 mb-3">
+						<a class="btn btn-home btn-block" role="button" href="#">
+							<h5>Contacto</h5>
+						</a>
+					</div>
+					<div class="col-12 col-md-5 mb-3">
+						<a class="btn btn-home btn-block" role="button" href="#">
+							<h5>Cotización</h5>
+						</a>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -845,14 +896,14 @@
 
 	<!-- Height Home -->
 	<script>
-		$(document).ready(function($) {
+		/*$(document).ready(function($) {
 			var ventana_alto = $(window).height();
 			$('#home').css("height", ventana_alto - 65);
 			$(window).resize(function() {
 				var ventana_alto = $(window).height();
 				$('#home').css("height", ventana_alto - 65);
 			});
-		});
+		});*/
 
 	</script>
 
