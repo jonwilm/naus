@@ -49,13 +49,25 @@
 	#service .card {
 		height: 100%;
 	}
+	/*
+	------
+	  CONTACT
+	------
+	*/
+	.btn-form {
+		padding-top: 25px;
+	}
 }
 
 
 /*	1024 to 1439 	*/
 
 @media screen and (min-width: 1024px) {
-	/* HOME */
+	/*
+	------
+	  HOME
+	------
+	*/
 	#home h3 {
 		font-size: 40px;
 	}
@@ -129,7 +141,11 @@
 	#service .card {
 		height: 100%;
 	}
-	/* PORTFOLIO */
+	/*
+	------
+	  PORTFOLIO
+	------
+	*/
 	#portfolio h3 {
 		font-size: 35px;
 	}
@@ -149,24 +165,31 @@
 	.box-portfolio>img {
 		height: 100%;
 	}
-	/* CONTACT */
+	/*
+	------
+	  CONTACT
+	------
+	*/
 	#contact h3 {
 		font-size: 35px;
+	}
+	#contact h6 {
+		font-size: 15px;
 	}
 	#input-text-name,
 	#input-text-email,
 	#input-text-asunto {
-		height: 33px;
+		height: 35px;
 		font-family: 'Ubuntu', sans-serif;
 		font-size: 15px;
 	}
 	#input-text-message {
-		height: 96px;
+		height: 100px;
 		font-family: 'Ubuntu', sans-serif;
 		font-size: 15px;
 	}
 	.btn-form {
-		padding-top: 25px;
+		padding-top: 30px;
 	}
 }
 
@@ -174,7 +197,11 @@
 /*	>= 1440 	*/
 
 @media screen and (min-width: 1440px) {
-	/* HOME */
+	/*
+	------
+	  HOME
+	------
+	*/
 	#home h3 {
 		font-size: 56px;
 	}
@@ -236,7 +263,11 @@
 	#service article {
 		min-height: 200px;
 	}
-	/* PORTFOLIO */
+	/*
+	------
+	  PORTFOLIO
+	------
+	*/
 	#portfolio {
 		padding: 30px 0;
 	}
@@ -256,24 +287,31 @@
 	.box-portfolio>img {
 		height: 100%;
 	}
-	/* CONTACT */
+	/*
+	------
+	  CONTACT
+	------
+	*/
 	#contact {
 		padding: 30px 0;
 	}
 	#contact h3 {
 		font-size: 40px;
 	}
+	#contact h6 {
+		font-size: 15px;
+	}
 	#input-text-name,
 	#input-text-email,
 	#input-text-asunto {
 		height: 46px;
 		font-family: 'Ubuntu', sans-serif;
-		font-size: 10px;
+		font-size: 15px;
 	}
 	#input-text-message {
 		height: 122px;
 		font-family: 'Ubuntu', sans-serif;
-		font-size: 10px;
+		font-size: 15px;
 	}
 	.btn-form {
 		padding-top: 35px;

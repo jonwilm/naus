@@ -484,7 +484,7 @@ video {
 
 #contact h6 {
 	font-family: 'Ubuntu', sans-serif;
-	font-size: 15px;
+	font-size: 14px;
 	color: #273638;
 }
 
@@ -501,15 +501,15 @@ video {
 #input-text-name,
 #input-text-email,
 #input-text-asunto {
-	height: 25px;
+	height: 30px;
 	font-family: 'Ubuntu', sans-serif;
-	font-size: 10px;
+	font-size: 14px;
 }
 
 #input-text-message {
-	height: 65px;
+	height: 90px;
 	font-family: 'Ubuntu', sans-serif;
-	font-size: 10px;
+	font-size: 14px;
 }
 
 .btn-form-custom {
