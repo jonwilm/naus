@@ -50,11 +50,16 @@
 		</div>
 	</nav>
 	<!-- End Navbar -->
+
 	<!-- Home -->
 	<section id="home" class="container-fluid">
-		<video id="video_home" preload="auto" autoplay="autoplay" loop="loop">
-			<source src="video/video.mp4" type="video/mp4">
-		</video>
+		<div id="videoHome" data-section-name="home" class="scroll-act">
+			<div id="video" class="pre-height">
+				<video autoplay="" loop="" muted="" autobuffer="" preload="metadata" id="background" poster="">
+					<source src="video/video.mp4" type="video/mp4">
+				</video>
+			</div>
+		</div>
 		<div class="container">
 			<div class="row-text">
 				<div class="row">
@@ -733,7 +738,7 @@
 	</div>
 	<!-- End Button Go to Top -->
 	<!-- Social Bar -->
-	<!-- <div class="social hidden-sm-down">
+	<div class="social hidden-sm-down">
 		<ul>
 			<li>
 				<a id="chat-popover" role="button" class="social-chat" data-container="body" data-placement="left">CHAT <span class="fa fa-plus"></span></a>
@@ -802,7 +807,7 @@
 				<img class="float-right" src="img/socialbar/estrella-gris.png" alt="star">
 			</div>
 		</div>
-	</div>-->
+	</div>
 	<!-- End Social Bar -->
 	<!-- jQuery first, Bootstrap JS. -->
 	<script src="js/jquery-3.2.1.min.js"></script>
