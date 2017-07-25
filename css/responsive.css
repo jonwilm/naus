@@ -158,12 +158,12 @@
 	#input-text-asunto {
 		height: 33px;
 		font-family: 'Ubuntu', sans-serif;
-		font-size: 10px;
+		font-size: 15px;
 	}
 	#input-text-message {
 		height: 96px;
 		font-family: 'Ubuntu', sans-serif;
-		font-size: 10px;
+		font-size: 15px;
 	}
 	.btn-form {
 		padding-top: 25px;
