@@ -176,7 +176,7 @@ video {
 }
 
 #home {
-	background-color: rgba(0, 0, 0, .3);
+	background-color: rgba(0, 0, 0, 0.3);
 	/*background: url("../img/bg/bg1.jpg") fixed; //Imagen de fondo
 	position: relative;
 	margin: 0 auto;
@@ -252,12 +252,11 @@ video {
 	padding: 20px 0 50px 0;
 }
 
-#us .background{
+#us .background {
 	background-color: rgba(255, 255, 255, 0.7);
 }
-#us h1{
 
-}
+#us h1 {}
 
 #us .container {
 	height: 100%;
@@ -614,13 +613,13 @@ footer a:hover {
 	transition: all 500ms ease;
 }
 
-.social ul li a:hover {
-	background: #000;
-}
-
 .social-icon {
 	background: #3AA935;
 	margin-top: 5px;
+}
+
+.social-icon:hover {
+	background-color: #000000;
 }
 
 .social ul li .social-chat,
