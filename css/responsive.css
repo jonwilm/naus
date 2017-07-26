@@ -15,17 +15,15 @@
 	}
 	#us .card-title {
 		font-family: 'Roboto Slab', serif;
-		font-size: 26px;
+		font-size: 20px;
 		color: #1d70b7;
 	}
 	#us .card-text {
 		font-family: 'Ubuntu', serif;
 		font-size: 13.4px;
 		color: #273638;
-	}
-	#us .card-text {
+		padding: 0;
 		margin-bottom: 16px;
-		padding: 0 18px;
 	}
 	/*
   ------
@@ -104,7 +102,7 @@
 	}
 	#us .card-title {
 		font-family: 'Roboto Slab', serif;
-		font-size: 26px;
+		font-size: 20px;
 		color: #1d70b7;
 	}
 	#us .card-text {
@@ -241,7 +239,7 @@
 	}
 	#us .card-title {
 		font-family: 'Roboto Slab', serif;
-		font-size: 38px;
+		font-size: 28px;
 	}
 	#us .card-text {
 		font-family: 'Ubuntu', serif;
