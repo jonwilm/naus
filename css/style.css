@@ -176,7 +176,7 @@ video {
 }
 
 #home {
-	/*background-color: rgba(255, 255, 255, 0.5);
+	background-color: rgba(0, 0, 0, .3);
 	/*background: url("../img/bg/bg1.jpg") fixed; //Imagen de fondo
 	position: relative;
 	margin: 0 auto;
