@@ -616,11 +616,17 @@
 	<!-- Social Bar -->
 	<div class="social hidden-sm-down">
 		<ul>
-			<li>
+			<!--<li>
 				<a id="chat-popover" class="social-chat" href="javascript:void(0);">CHAT <span class="fa fa-plus"></span></a>
 			</li>
 			<li>
 				<a id="testimonio-popover" class="social-testimonio" href="javascript:void(0);">TESTIMONIO <span class="fa fa-plus"></span></a>
+			</li>-->
+			<li>
+				<a class="social-chat" id="btn-chat" href="javascript:void(0);">CHAT <span class="fa fa-plus"></span></a>
+			</li>
+			<li>
+				<a class="social-testimonio" id="btn-testimonio" href="javascript:void(0);">TESTIMONIO <span class="fa fa-plus"></span></a>
 			</li>
 			<li class="social-icon">
 				<a href="#" target="_blank" class="fa fa-instagram"></a>
@@ -637,7 +643,94 @@
 		</ul>
 	</div>
 
-	<div id="chat-popover-content" class="hidden-xs-up">
+	<div id="testimonio">
+		<div id="carouselTestimonio" class="carousel slide" data-ride="carousel">
+			<div class="carousel-inner" role="listbox">
+				<div class="carousel-item active">
+					<div class="">
+						<div class="row">
+							<div class="col-3">
+								<img src="img/socialbar/avatar-testimonios.png" class="img-fluid" alt="Perfil">
+							</div>
+							<div class="col-9">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ipsum praesentium facilis necessitatibus perferendis nisi, error itaque eveniet nobis earum, hic vitae sint magni! Placeat dignissimos necessitatibus unde, aliquam omnis!</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-6">
+								<p>@FulanodeTal</p>
+							</div>
+							<div class="col-6">
+								<img class="float-right" src="img/socialbar/estrella-azul.png" alt="star">
+								<img class="float-right" src="img/socialbar/estrella-azul.png" alt="star">
+								<img class="float-right" src="img/socialbar/estrella-azul.png" alt="star">
+								<img class="float-right" src="img/socialbar/estrella-azul.png" alt="star">
+								<img class="float-right" src="img/socialbar/estrella-gris.png" alt="star">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<div class="">
+						<div class="row">
+							<div class="col-3">
+								<img src="img/socialbar/avatar-testimonios.png" class="img-fluid" alt="Perfil">
+							</div>
+							<div class="col-9">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ipsum praesentium facilis necessitatibus perferendis nisi, error itaque eveniet nobis earum, hic vitae sint magni! Placeat dignissimos necessitatibus unde, aliquam omnis!</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-6">
+								<p>@FulanodeTal</p>
+							</div>
+							<div class="col-6">
+								<img class="float-right" src="img/socialbar/estrella-azul.png" alt="star">
+								<img class="float-right" src="img/socialbar/estrella-azul.png" alt="star">
+								<img class="float-right" src="img/socialbar/estrella-azul.png" alt="star">
+								<img class="float-right" src="img/socialbar/estrella-azul.png" alt="star">
+								<img class="float-right" src="img/socialbar/estrella-gris.png" alt="star">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<div class="">
+						<div class="row">
+							<div class="col-3">
+								<img src="img/socialbar/avatar-testimonios.png" class="img-fluid" alt="Perfil">
+							</div>
+							<div class="col-9">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ipsum praesentium facilis necessitatibus perferendis nisi, error itaque eveniet nobis earum, hic vitae sint magni! Placeat dignissimos necessitatibus unde, aliquam omnis!</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-6">
+								<p>@FulanodeTal</p>
+							</div>
+							<div class="col-6">
+								<img class="float-right" src="img/socialbar/estrella-azul.png" alt="star">
+								<img class="float-right" src="img/socialbar/estrella-azul.png" alt="star">
+								<img class="float-right" src="img/socialbar/estrella-azul.png" alt="star">
+								<img class="float-right" src="img/socialbar/estrella-azul.png" alt="star">
+								<img class="float-right" src="img/socialbar/estrella-gris.png" alt="star">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<a class="carousel-control-prev float-left" href="#carouselTestimonio" role="button" data-slide="prev">
+				<span class="fa fa-2x fa-chevron-circle-left" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			<a class="carousel-control-next float-right" href="#carouselTestimonio" role="button" data-slide="next">
+				<span class="fa fa-2x fa-chevron-circle-right" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			</a>
+		</div>
+	</div>
+
+	<!--<div id="chat-popover-content" class="hidden-xs-up">
 		<form>
 			<div class="row">
 				<div class="col-6">
@@ -756,7 +849,7 @@
 			</a>
 		</div>
 
-	</div>
+	</div>-->
 	<!-- End Social Bar -->
 
 	<!-- jQuery first, Bootstrap JS. -->
@@ -845,6 +938,30 @@
 				}
 			});
 		});
+
+	</script>
+
+	<!-- Testimonios -->
+	<script>
+		$(document).ready(main);
+
+		var contador = 1;
+
+		function main() {
+			$('#btn-testimonio').click(function() {
+				if (contador == 1) {
+					$('#testimonio').animate({
+						right: '26px'
+					}, 1000);
+					contador = 0;
+				} else {
+					contador = 1;
+					$('#testimonio').animate({
+						right: '-100%'
+					}, 1000);
+				}
+			});
+		};
 
 	</script>
 

@@ -638,41 +638,32 @@ footer a:hover {
 	text-align: center;
 }
 
-#chat-popover,
-#testimonio-popover {
-	background-color: #1D70B7;
-	color: #F5F4F4;
-	border: 0px;
-	cursor: pointer;
-}
-
-#chat-popover:hover,
-#testimonio-popover:hover {
+.social ul li a:hover {
 	background-color: #000000;
 }
 
-.popover {
-	max-width: 40%;
-	background: #F5F4F4;
+#testimonio {
+	background-color: #F5F4F4;
+	border: 2px solid #273638;
+	position: fixed;
+	top: 280px;
+	right: -100%;
+	z-index: 2000;
+	width: 50%;
+	height: auto;
+	padding: 10px;
+	box-shadow: 3px 3px 2px #A3A3A3;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+	position: relative;
 	color: #273638;
 }
 
-.content-chat {
-	background: #DADBDC;
-	height: 100px;
-}
-
-#Message-chat {
-	background: #fff;
-}
-
-.input-chat {
-	margin-top: 10px;
-}
-
-.chat {
-	background: #DADBDC;
-	padding: 10px;
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+	color: #000000;
 }
 
 
