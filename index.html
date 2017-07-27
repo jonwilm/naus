@@ -616,11 +616,33 @@
 	<!-- Social Bar -->
 	<!-- Chat -->
 	<div id="chat">
-		<form>
-			<div class="row">
-
+		<div class="row">
+			<div class="col-12">
+				<form>
+					<div class="row">
+						<div class="col-12">
+							<p>Welcome, <strong>Usuario</strong></p>
+							<hr class="no-margin no-padding">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12">
+							<div class="chat-box"></div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12">
+							<div class="input-group">
+								<input class="form-control" type="text" placeholder="Mensaje">
+								<div class="input-group-btn">
+									<button class="btn btn-secondary btn-submit-chat btn-block" type="submit">Send</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</form>
 			</div>
-		</form>
+		</div>
 	</div>
 
 	<!-- Testimonio -->
@@ -829,19 +851,40 @@
 	<script>
 		$(document).ready(main);
 
-		var contador = 1;
+		var contadorTest = 'TestClose';
+		var contadorChat = 'ChatClose';
 
 		function main() {
 			$('#btn-testimonio').click(function() {
-				if (contador == 1) {
+				if (contadorTest == 'TestClose') {
 					$('#testimonio').animate({
 						right: '26px'
 					}, 1000);
-					$(document.getElementById("btn-testomonio")).innerHTML = "TESTIMONIO <span class='fa fa-minus'></span>";
-					contador = 0;
+					contadorTest = 'TestOpen';
+					contadorChat = 'ChatClose';
+					$('#chat').animate({
+						right: '-100%'
+					}, 1000);
 				} else {
-					contador = 1;
+					contadorTest = 'TestClose';
 					$('#testimonio').animate({
+						right: '-100%'
+					}, 1000);
+				}
+			});
+			$('#btn-chat').click(function() {
+				if (contadorChat == 'ChatClose') {
+					$('#chat').animate({
+						right: '26px'
+					}, 1000);
+					contadorChat = 'ChatOpen';
+					contadorTest = 'TestClose';
+					$('#testimonio').animate({
+						right: '-100%'
+					}, 1000);
+				} else {
+					contadorChat = 'ChatClose';
+					$('#chat').animate({
 						right: '-100%'
 					}, 1000);
 				}
