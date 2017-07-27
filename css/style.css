@@ -194,13 +194,17 @@ video {
 
 @media (max-width: 767px) {
 	#home {
-		background: url("../img/bg/bg-home.png") fixed;
+		/*background: url("../img/bg/bg-home.png") fixed;*/
 		position: relative;
 		margin: 0 auto;
 		padding-bottom: 0;
 		background-size: cover;
 		background-position: center center;
 	}
+}
+
+#home li {
+	color: #FFFFFF;
 }
 
 #home {
@@ -211,11 +215,19 @@ video {
 	height: 100%;
 }
 
+.carousel-inner {
+	height: 300px;
+}
+
 #home h3 {
 	padding-top: 20px;
 	font-family: 'Roboto Slab', sans-serif;
 	color: #fff;
 	font-size: 21px;
+}
+
+#home p#subhome {
+	font-size: 10px;
 }
 
 #home p {
@@ -225,7 +237,7 @@ video {
 }
 
 .row-text {
-	height: 75%
+	height: 85%
 }
 
 .btn-home {

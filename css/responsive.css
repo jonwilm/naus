@@ -1,5 +1,25 @@
 @media screen and (min-width: 768px) {
 	/*
+	------
+	  HOME
+	------
+	*/
+	.carousel-inner {
+		height: 350px;
+	}
+	#home h3 {
+		font-size: 47px;
+	}
+	#home p#subhome {
+		font-size: 15px;
+	}
+	#home p {
+		font-size: 24px;
+	}
+	.row-text {
+		height: 95%;
+	}
+	/*
   ------
     US
   ------
@@ -66,14 +86,20 @@
 	  HOME
 	------
 	*/
+	.carousel-inner {
+		height: 450px;
+	}
 	#home h3 {
-		font-size: 40px;
+		font-size: 57px;
+	}
+	#home p#subhome {
+		font-size: 19px;
 	}
 	#home p {
-		font-size: 13.4px;
+		font-size: 32px;
 	}
 	.row-text {
-		height: 85%
+		height: 95%
 	}
 	.btn-home {
 		height: 35px;
@@ -203,14 +229,20 @@
 	  HOME
 	------
 	*/
+	.carousel-inner {
+		height: 600px;
+	}
 	#home h3 {
-		font-size: 56px;
+		font-size: 67px;
+	}
+	#home p#subhome {
+		font-size: 29px;
 	}
 	#home p {
-		font-size: 15.5px;
+		font-size: 42px;
 	}
 	.row-text {
-		height: 85%
+		height: 95%
 	}
 	.btn-home {
 		height: 35px;
