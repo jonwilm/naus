@@ -184,7 +184,7 @@ video {
 }
 
 #home {
-	background-color: rgba(0, 0, 0, 0.3);
+	background-color: rgba(0, 0, 0, 0.5);
 	/*background: url("../img/bg/bg1.jpg") fixed; //Imagen de fondo
 	position: relative;
 	margin: 0 auto;
@@ -215,10 +215,6 @@ video {
 	height: 100%;
 }
 
-.carousel-inner {
-	height: 300px;
-}
-
 #home h3 {
 	padding-top: 20px;
 	font-family: 'Roboto Slab', sans-serif;
@@ -231,7 +227,7 @@ video {
 }
 
 #home p {
-	font-family: 'Ubuntu', sans-serif;
+	font-family: 'Roboto Slab', sans-serif;
 	color: #fff;
 	font-size: 12.4px;
 }

@@ -57,44 +57,48 @@
 		<div id="videoHome" data-section-name="home" class="scroll-act hidden-sm-down">
 			<div id="video" class="pre-height">
 				<video autoplay="" loop="" muted="" autobuffer="" preload="metadata" id="background" poster="">
-<!--					<source src="https://ak8.picdn.net/shutterstock/videos/26153558/preview/stock-footage-the-future-connection-of-people-through-a-hologram-communication-and-sending-of-important-files-the.mp4" type="video/mp4">-->
+					<source src="https://ak8.picdn.net/shutterstock/videos/8895268/preview/stock-footage-top-view-software-engineer-drinking-coffee-using-laptop-computer-at-desk-from-above-red-epic-drago.mp4" type="video/mp4">
 				</video>
 			</div>
 		</div>
 		<div class="container">
-			<div class="row-text">
+			<div class="row-text" id="content-home">
 				<div class="row">
-					<div class="col-11 col-sm-8 col-md-8 col-lg-7">
+					<div class="col-12">
 						<div id="carouselHome" class="carousel slide" data-ride="carousel">
 							<ol class="carousel-indicators carousel-indicators-home">
 								<li data-target="#carouselHome" data-slide-to="0" class="active"></li>
 								<li data-target="#carouselHome" data-slide-to="1"></li>
+								<li data-target="#carouselHome" data-slide-to="2"></li>
 							</ol>
-							<div class="carousel-inner" role="listbox">
+							<div class="carousel-inner" role="listbox" id="carousel-inner-home">
 								<div class="carousel-item active">
-									<h3>CONSTRUYE tu sitio web, CONSTRUYE tu sueño</h3>
+									<h3 class="text-center">CONSTRUYE <br> tu sitio web, <br> CONSTRUYE <br> tu sueño</h3>
+								</div>
+								<div class="carousel-item">
+									<h3 class="text-center">Software en base <br> a sus OBJETIVOS <br> y NECESIDADES</h3>
 								</div>
 								<div class="carousel-item">
 									<div class="row">
-										<div class="col-8">
+										<div class="col-12">
 											<p id="subhome">Somos especialistas en:</p>
 										</div>
-										<div class="col-8">
+										<div class="col-12">
 											<ul>
 												<li>
-													<p>Diseño web</p>
+													<p class="no-padding no-margin">Diseño web</p>
 												</li>
 												<li>
-													<p>Diseño de paginas web</p>
+													<p class="no-padding no-margin">Diseño de paginas web</p>
 												</li>
 												<li>
-													<p>Posicionamiento</p>
+													<p class="no-padding no-margin">Posicionamiento</p>
 												</li>
 												<li>
-													<p>Sistemas</p>
+													<p class="no-padding no-margin">Sistemas</p>
 												</li>
 												<li>
-													<p>Aplicaciones Moviles</p>
+													<p class="no-padding no-margin">Aplicaciones Móviles</p>
 												</li>
 											</ul>
 										</div>
@@ -118,34 +122,6 @@
 				</div>
 			</div>
 		</div>
-		<!--
-		<div class="container">
-			<div class="row-text">
-				<div class="row">
-					<div class="title-home col-xs-11 col-sm-8 col-md-6 col-lg-4">
-						<h3 class="wow fadeInLeft">Construye tu sitio web, construye tu sueño</h3>
-					</div>
-				</div>
-				<div class="row">
-					<div class="text-home col-xs-11 col-sm-10 col-md-8 col-lg-6">
-						<p class="wow fadeInRightBig">Software en base a sus objetivos y necesidades. Somos especialistas en diseño web, diseño de páginas web , posicionamiento, sistemas y aplicaciones moviles.</p>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-12 col-md-5 mb-3">
-					<a class="btn btn-home btn-block" role="button" href="#">
-						<h5>Contacto</h5>
-					</a>
-				</div>
-				<div class="col-12 col-md-5 mb-3">
-					<a class="btn btn-home btn-block" role="button" href="#">
-						<h5>Cotización</h5>
-					</a>
-				</div>
-			</div>
-		</div>
--->
 	</section>
 	<!-- End Home -->
 
@@ -157,7 +133,7 @@
 					<h3 id="title-us">NOSOTROS</h3>
 				</div>
 				<div class="col-12 col-md-5">
-					<p id="text-us" class="wow fadeInRight text-justify">En la ultima decada México se ha convertido en un fuerte exponente en el mercado de las Tecnologías de la Información, su localización geográfica resulta estratégica para países vecinos quienes buscan estandares de calidad y buenas prácticas en servicios de desarrollo de software on shore.</p>
+					<p id="text-us" class="wow fadeInRight text-justify">En la última década México se ha convertido en un fuerte exponente en el mercado de las Tecnologías de la Información, su localización geográfica resulta estratégica para países vecinos quienes buscan estándares de calidad y buenas prácticas en servicios de desarrollo de software on shore.</p>
 				</div>
 			</div>
 			<div class="wow fadeInUp card hidden-md-up">
@@ -204,7 +180,7 @@
 							</div>
 							<div class="col-md-8">
 								<h1 class="card-title text-center">DESARROLLO </h1>
-								<p class="card-text text-left">Desarrollamos las mejores y diferentes plataformas de software, proporcionando servicios como web 3.0 entre otros trabajando con las technologias más actuales del mercado.</p>
+								<p class="card-text text-left">Desarrollamos las mejores y diferentes plataformas de software, proporcionando servicios como web 3.0 entre otros trabajando con las tecnologías más actuales del mercado.</p>
 							</div>
 						</div>
 					</div>
@@ -866,6 +842,15 @@
 			$(window).resize(function() {
 				var ventana_alto = $(window).height();
 				$('#home').css("height", ventana_alto - 65);
+			});
+		});
+
+		$(document).ready(function($) {
+			var content_home = $('#content-home').height();
+			$('#carousel-inner-home').css("height", content_home);
+			$(window).resize(function() {
+				var content_home = $('#content-home').height();
+				$('#carousel-inner-home').css("height", content_home);
 			});
 		});
 
