@@ -199,7 +199,7 @@
 	}
 	#input-text-name,
 	#input-text-email,
-	#input-text-asunto {
+	#input-text-subject {
 		height: 35px;
 		font-family: 'Ubuntu', sans-serif;
 		font-size: 15px;
@@ -330,7 +330,7 @@
 	}
 	#input-text-name,
 	#input-text-email,
-	#input-text-asunto {
+	#input-text-subject {
 		height: 46px;
 		font-family: 'Ubuntu', sans-serif;
 		font-size: 18px;

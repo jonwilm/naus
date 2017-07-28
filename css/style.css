@@ -531,7 +531,7 @@ video {
 
 #input-text-name,
 #input-text-email,
-#input-text-asunto {
+#input-text-subject {
 	height: 30px;
 	font-family: 'Ubuntu', sans-serif;
 	font-size: 12px;

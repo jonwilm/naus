@@ -4,6 +4,7 @@
 <head>
 	<!-- Required meta tags -->
 	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<!-- normalize -->
 	<link rel="stylesheet" href="css/normalize.css">
@@ -581,35 +582,37 @@
 						<p>Si quiere plantearnos alguna inquietud o deseas pertenecer a nuestro equipo entregarnos tu currículo llene el siguiente formulario, su petición será atendida en la brevedad posible. Sus datos personales serán manejados con absoluta discreción y confidencialidad.</p>
 					</div>
 				</div>
-				<div class="row">
-					<div class="col-md-6">
-						<div class="form-group">
-							<label class="label-form" for="inputName"><h6>Nombre y Apellido</h6></label>
-							<input class="form-control input-form" id="input-text-name" type="text">
+				<form action="mail.php" name="formcontact" method="post">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="label-form" for="name"><h6>Nombre y Apellido</h6></label>
+								<input class="form-control input-form" id="input-text-name" type="text" name="name">
+							</div>
+							<div class="form-group">
+								<label class="label-form" for="email"><h6>Correo Electronico</h6></label>
+								<input class="form-control input-form" id="input-text-email" type="email" name="email">
+							</div>
+							<div class="form-group">
+								<label class="label-form" for="subject"><h6>Asunto</h6></label>
+								<input class="form-control input-form" id="input-text-subject" type="text" name="subject">
+							</div>
 						</div>
-						<div class="form-group">
-							<label class="label-form" for="inputEmail"><h6>Correo Electronico</h6></label>
-							<input class="form-control input-form" id="input-text-email" type="email">
-						</div>
-						<div class="form-group">
-							<label class="label-form" for="inputAsunto"><h6>Asunto</h6></label>
-							<input class="form-control input-form" id="input-text-asunto" type="email">
-						</div>
-					</div>
-					<div class="col-md-6">
-						<div class="form-group">
-							<label class="label-form" for="inputMessage"><h6>Mensaje</h6></label>
-							<textarea class="form-control input-form" id="input-text-message" rows="5"></textarea>
-						</div>
-						<div class="form-group">
-							<div class="form-inline col-xs-12 d-flex justify-content-end btn-form">
-								<button class="btn btn-form-custom btn-docs ml-2 tooltip--top tooltip-blue" type="button" aria-label="Cargar Curriculum"><img src="img/contact/add-curriculum.png" alt="Curriculum"></button>
-								<button class="btn btn-form-custom btn-docs ml-2 tooltip--top tooltip-blue" type="button" aria-label="Cargar Documento"><img src="img/contact/add-document.png" alt="Documento"></button>
-								<button class="btn btn-form-custom btn-block col-6 ml-2" type="submit">Enviar</button>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="label-form" for="message"><h6>Mensaje</h6></label>
+								<textarea class="form-control input-form" id="input-text-message" rows="5" name="message"></textarea>
+							</div>
+							<div class="form-group">
+								<div class="form-inline col-xs-12 d-flex justify-content-end btn-form">
+									<button class="btn btn-form-custom btn-docs ml-2 tooltip--top tooltip-blue" type="file" aria-label="Cargar Curriculum"><img src="img/contact/add-curriculum.png" alt="Curriculum"></button>
+									<button class="btn btn-form-custom btn-docs ml-2 tooltip--top tooltip-blue" type="file" aria-label="Cargar Documento"><img src="img/contact/add-document.png" alt="Documento"></button>
+									<input class="btn btn-form-custom btn-block col-6 ml-2" type="submit" value="Enviar">
+								</div>
 							</div>
 						</div>
 					</div>
-				</div>
+				</form>
 				<div class="row">
 					<div class="col pt-4">
 						<p>Si desea comunicarse vía teléfono puede hacerlo a nuestro número 5541330297, nuestros ejecutivos atenderán sus dudas de la mejor forma posible.</p>
@@ -651,6 +654,7 @@
 	<!-- End Button Go to Top -->
 
 	<!-- Social Bar -->
+
 	<!-- Chat -->
 	<div id="chat">
 		<div class="row">
