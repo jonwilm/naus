@@ -14,8 +14,6 @@
   <!--<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">-->
   <!--<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">-->
   <!-- Fonts Local -->
-  <link rel="stylesheet" href="fonts/font-roboto-slab.css">
-  <link rel="stylesheet" href="fonts/font-ubuntu.css">
   <!-- Font awesome -->
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <!-- Tooltips -->
@@ -216,6 +214,17 @@
       return false;
     });
 
+  </script>
+  
+  <script>
+    let config: WebFont.Config = {
+      google: {
+        families: [
+          "roboto-slab:400italic,500italic,600italic,700italic,400,500,600,700",
+          "ubuntu:400,900,100"
+        ]
+      }
+    };
   </script>
 </body>
 
