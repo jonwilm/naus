@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- normalize -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <!-- Bootstrap CSS Local -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Fonts -->
+  <!--<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">-->
+  <!--<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">-->
+  <!-- Fonts Local -->
+  <link rel="stylesheet" href="fonts/font-roboto-slab.css">
+  <link rel="stylesheet" href="fonts/font-ubuntu.css">
+  <!-- Font awesome -->
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <!-- Tooltips -->
+  <link rel="stylesheet" href="css/tooltips.css">
+  <!-- styles -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/planet-earth-3d.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/flip.css">
+  <link rel="stylesheet" href="css/animate.css">
+</head>
+<body>
+  @import "navbar.html"
+  @import "home.html"
+  @import "us.html"
+  @import "service.html"
+  @import "portfolio.html"
+  @import "contact.html"
+  @import "footer.html"
+  <!-- Button Go to Top -->
+  <div id="go-top" style="display: none;">
+    <a data-scroll href="#"><i class="fa fa-angle-up"></i></a>
+  </div>
+  @import "chat.html"
+  @import "testimonio.html"
+  @import "socialbar.html"
+
+  <!-- jQuery first, Bootstrap JS. -->
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/tether.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/smooth-scroll.min.js"></script>
+  <script src="js/wow.min.js"></script>
+
+  <!-- Animates WOW -->
+  <script>
+    new WOW().init();
+
+  </script>
+
+  <!-- Scroll -->
+  <script>
+    smoothScroll.init({
+      selector: '[data-scroll]', // Selector for links (must be a class, ID, data attribute, or element tag)
+      selectorHeader: null, // Selector for fixed headers (must be a valid CSS selector) [optional]
+      speed: 1500, // Integer. How fast to complete the scroll in milliseconds
+      easing: 'easeInOutCubic', // Easing pattern to use
+      offset: 66, // Integer. How far to offset the scrolling anchor location in pixels
+      callback: function(anchor, toggle) {} // Function to run after scrolling
+    });
+
+  </script>
+
+  <!-- Hide navbar onClick -->
+  <script>
+    $(".navbar-nav li a").click(function(event) {
+      if (!$(this).parent().hasClass('dropdown'))
+        $(".navbar-collapse").collapse('hide');
+    });
+    $(".navbar-brand").click(function(event) {
+      if (!$(this).parent().hasClass('dropdown'))
+        $(".navbar-collapse").collapse('hide');
+    });
+
+  </script>
+
+  <!-- Height Home -->
+  <script>
+    $(document).ready(function($) {
+      var ventana_alto = $(window).height();
+      $('#home').css("height", ventana_alto - 65);
+      $(window).resize(function() {
+        var ventana_alto = $(window).height();
+        $('#home').css("height", ventana_alto - 65);
+      });
+    });
+
+    $(document).ready(function($) {
+      var content_home = $('#content-home').height();
+      $('#carousel-inner-home').css("height", content_home);
+      $(window).resize(function() {
+        var content_home = $('#content-home').height();
+        $('#carousel-inner-home').css("height", content_home);
+      });
+    });
+
+  </script>
+
+  <!-- Button Go Top -->
+  <script>
+    $(document).ready(function() {
+      $(window).scroll(function() {
+        if ($(this).scrollTop() > 200) {
+          $('#go-top').fadeIn('slow');
+        } else {
+          $('#go-top').fadeOut('slow');
+        }
+      });
+    });
+
+  </script>
+
+  <!-- Popovers -->
+  <script>
+    $(function() {
+      $("#chat-popover").popover({
+        html: true,
+        placement: "left",
+        trigger: "click",
+        content: function() {
+          return $("#chat-popover-content").html();
+        }
+      });
+      $("#testimonio-popover").popover({
+        html: true,
+        placement: "left",
+        trigger: "click",
+        content: function() {
+          return $("#testimonio-popover-content").html();
+        }
+      });
+    });
+
+  </script>
+
+  <!-- Testimonios y Chat -->
+  <script>
+    $(document).ready(main);
+
+    var contadorTest = 'TestClose';
+    var contadorChat = 'ChatClose';
+
+    function main() {
+      $('#btn-testimonio').click(function() {
+        if (contadorTest == 'TestClose') {
+          $('#testimonio').animate({
+            right: '26px'
+          }, 1000);
+          contadorTest = 'TestOpen';
+          contadorChat = 'ChatClose';
+          $('#chat').animate({
+            right: '-100%'
+          }, 1000);
+        } else {
+          contadorTest = 'TestClose';
+          $('#testimonio').animate({
+            right: '-100%'
+          }, 1000);
+        }
+      });
+      $('#btn-chat').click(function() {
+        if (contadorChat == 'ChatClose') {
+          $('#chat').animate({
+            right: '26px'
+          }, 1000);
+          contadorChat = 'ChatOpen';
+          contadorTest = 'TestClose';
+          $('#testimonio').animate({
+            right: '-100%'
+          }, 1000);
+        } else {
+          contadorChat = 'ChatClose';
+          $('#chat').animate({
+            right: '-100%'
+          }, 1000);
+        }
+      });
+    };
+
+  </script>
+
+  <!-- Carousel -->
+  <script>
+    $('.carousel').carousel()
+
+  </script>
+
+  <!-- Enviar Formulario -->
+  <script>
+    $('#formcontact').submit(function(e) {
+      e.preventDefault();
+      var formData = new FormData(document.getElementById("formcontact"));
+
+      $.ajax({
+        type: 'POST',
+        url: $(this).attr('action'),
+        dataType: "html",
+        data: formData,
+        cache: false,
+        contentType: false,
+        processData: false,
+        success: function(data) {
+          //$('#resultmail').html(data);
+          console.log(data)
+        }
+      })
+
+      return false;
+    });
+
+  </script>
+</body>
+
+</html>

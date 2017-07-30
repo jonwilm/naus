@@ -1,0 +1,27 @@
+{
+  "name": "naus",
+  "version": "0.1.0",
+  "description": "Pagina de naus",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://orionkmc@bitbucket.org/orionkmc/naus.git"
+  },
+  "author": "@orionkmc",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.18.13",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-html-import": "0.0.2",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-imagemin": "^3.3.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^3.0.0"
+  },
+  "homepage": "https://bitbucket.org/orionkmc/naus#readme"
+}
