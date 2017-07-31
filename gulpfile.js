@@ -1,7 +1,7 @@
 const gulp = require('gulp');
 const sass = require('gulp-sass');
 const uglify = require('gulp-uglify');
-const cssnano = require('gulp-cssnano');
+const cleanCSS = require('gulp-clean-css');
 const imagemin = require('gulp-imagemin');
 const htmlmin = require('gulp-htmlmin');
 const htmlImport = require('gulp-html-import');
@@ -16,3 +16,24 @@ gulp.task('html', function() {
     .pipe(gulp.dest('app/'));
 });
 
+gulp.task('img', function(){
+  gulp.src('html/img/**/*')
+    .pipe(imagemin())
+    .pipe(gulp.dest('app/img'))
+});
+
+gulp.task('css', function(){
+  return gulp.src('html/css/*.css')
+  .pipe(autoprefixer({
+    browsers: ['last 2 versions'],
+    cascade: false
+  }))
+  .pipe(cleanCSS({compatibility: 'ie8'}))
+  .pipe(gulp.dest('app/css'))
+})
+
+gulp.task('javascript', function(){
+  gulp.src('html/js/*.js')
+  .pipe(uglify())
+  .pipe(gulp.dest('app/js/'))
+})
