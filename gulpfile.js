@@ -7,7 +7,7 @@ const htmlmin = require('gulp-htmlmin');
 const htmlImport = require('gulp-html-import');
 const autoprefixer = require('gulp-autoprefixer');
 const phpMinify = require('@aquafadas/gulp-php-minify');
-
+const criticalCss = require('gulp-critical-css');
 const browserSync = require('browser-sync').create();
 
 gulp.task('html', function() {
@@ -38,6 +38,12 @@ gulp.task('javascript', function(){
   .pipe(uglify())
   .pipe(gulp.dest('app/js/'))
 })
+
+gulp.task('default', () => {
+    gulp.src('src/file.css')
+        .pipe(criticalCss())
+        .pipe(gulp.dest('dist'))
+);
 
 gulp.task('php', () => gulp.src('html/php/*.php', {read: false})
   .pipe(phpMinify())
