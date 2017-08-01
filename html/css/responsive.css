@@ -5,13 +5,16 @@
 	------
 	*/
 	#home h3 {
-		font-size: 47px;
+		font-size: 37px;
+	}
+	#home h3#subh3{
+		font-size: 27px;
 	}
 	#home p#subhome {
-		font-size: 15px;
+		font-size: 16px;
 	}
 	#home p {
-		font-size: 24px;
+		font-size: 20px;
 	}
 	.row-text {
 		height: 95%;
@@ -84,13 +87,16 @@
 	------
 	*/
 	#home h3 {
-		font-size: 57px;
+		font-size: 47px;
+	}
+	#home h3#subh3{
+		font-size: 37px;
 	}
 	#home p#subhome {
-		font-size: 19px;
+		font-size: 20px;
 	}
 	#home p {
-		font-size: 32px;
+		font-size: 27px;
 	}
 	.row-text {
 		height: 95%
@@ -224,13 +230,16 @@
 	------
 	*/
 	#home h3 {
-		font-size: 67px;
+		font-size: 57px;
+	}
+	#home h3#subh3{
+		font-size: 40px;
 	}
 	#home p#subhome {
 		font-size: 29px;
 	}
 	#home p {
-		font-size: 42px;
+		font-size: 35px;
 	}
 	.row-text {
 		height: 95%

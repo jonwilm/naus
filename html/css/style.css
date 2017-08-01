@@ -216,20 +216,29 @@ video {
 }
 
 #home h3 {
-	padding-top: 20px;
+	padding-top: 27px;
 	font-family: 'Roboto Slab', sans-serif;
 	color: #fff;
 	font-size: 21px;
 }
 
+#home h3#subh3 {
+	font-family: 'Roboto Slab', sans-serif;
+	color: #fff;
+	font-size: 18px;
+}
+
 #home p#subhome {
-	font-size: 10px;
+	padding-top: 27px;
+	font-family: 'Roboto Slab', sans-serif;
+	color: #fff;
+	font-size: 12px;
 }
 
 #home p {
 	font-family: 'Roboto Slab', sans-serif;
 	color: #fff;
-	font-size: 12.4px;
+	font-size: 15px;
 }
 
 .row-text {
