@@ -6,7 +6,7 @@ const imagemin = require('gulp-imagemin');
 const htmlmin = require('gulp-htmlmin');
 const htmlImport = require('gulp-html-import');
 const autoprefixer = require('gulp-autoprefixer');
-const phpMinify = require('/proc/gulp-php-minify');
+const phpMinify = require('@aquafadas/gulp-php-minify');
 
 const browserSync = require('browser-sync').create();
 
@@ -39,7 +39,7 @@ gulp.task('javascript', function(){
   .pipe(gulp.dest('app/js/'))
 })
 
-gulp.task('minify:php', () => gulp.src('html/php/*.php', {read: false})
+gulp.task('php', () => gulp.src('html/php/*.php', {read: false})
   .pipe(phpMinify())
   .pipe(gulp.dest('app/php/'))
 );

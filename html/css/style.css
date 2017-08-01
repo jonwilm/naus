@@ -573,7 +573,7 @@ video {
 	background-color: #273638;
 }
 
-.tooltip-blue:after {
+.tooltip-blue.tooltip--top:after {
 	background-color: #1D70B7;
 	color: #F5F4F4;
 	font-family: 'Ubuntu', sans-serif;
@@ -588,7 +588,6 @@ video {
 
 .btn-file {
 	position: relative;
-	overflow: hidden;
 }
 
 .btn-file input[type=file] {
@@ -597,7 +596,7 @@ video {
 	right: 0;
 	min-width: 100%;
 	min-height: 100%;
-	font-size: 100px;
+	font-size: 0;
 	text-align: right;
 	filter: alpha(opacity=0);
 	opacity: 0;
