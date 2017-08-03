@@ -1,54 +1,208 @@
 <!-- Contact -->
 <section id=contact class="container-fluid">
-		<div class="container">
-			<h3>CONTACTO</h3>
-			<div class="row">
-				<div class="col pb-2">
-					<p>Si quiere plantearnos alguna inquietud o deseas pertenecer a nuestro equipo entregarnos tu currículo llene el siguiente formulario, su petición será atendida en la brevedad posible. Sus datos personales serán manejados con absoluta discreción y confidencialidad.</p>
-				</div>
+	<div class="container">
+		<h3>CONTACTO</h3>
+		<div class="row">
+			<div class="col pb-2">
+				<p>Si quiere plantearnos alguna inquietud o deseas pertenecer a nuestro equipo entregarnos tu currículo llene el siguiente formulario, su petición será atendida en la brevedad posible. Sus datos personales serán manejados con absoluta discreción y confidencialidad.</p>
 			</div>
-			<form id="formcontact" action="php/mail.php" method="post" enctype="multipart/form-data">
-				<div class="row">
-					<div class="col-md-6">
-						<div class="form-group">
-							<label class="label-form" for="name"><h6>Nombre y Apellido</h6></label>
-							<input class="form-control input-form" id="input-text-name" type="text" name="name" required>
-						</div>
-						<div class="form-group">
-							<label class="label-form" for="email"><h6>Correo Electronico</h6></label>
-							<input class="form-control input-form" id="input-text-email" type="email" name="email" required>
-						</div>
-						<div class="form-group">
-							<label class="label-form" for="subject"><h6>Asunto</h6></label>
-							<input class="form-control input-form" id="input-text-subject" type="text" name="subject" required>
-						</div>
+		</div>
+		<form id="formcontact" action="php/mail.php" method="post" enctype="multipart/form-data">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="form-group">
+						<label class="label-form" for="name"><h6>Nombre y Apellido</h6></label>
+						<input class="form-control input-form" id="input-text-name" type="text" name="name" required value="Jonathan Paredes">
 					</div>
-					<div class="col-md-6">
-						<div class="form-group">
-							<label class="label-form" for="message"><h6>Mensaje</h6></label>
-							<textarea class="form-control input-form" id="input-text-message" rows="5" name="message" required></textarea>
-						</div>
-						<div class="form-group">
-							<div class="form-inline col-xs-12 d-flex justify-content-end btn-form">
-								<label class="btn btn-form-custom btn-docs btn-file ml-2 tooltip--top tooltip-blue" aria-label="Cargar Curriculum">
+					<div class="form-group">
+						<label class="label-form" for="email"><h6>Correo Electronico</h6></label>
+						<input class="form-control input-form" id="input-text-email" type="email" name="email" required value="jparedes84@hotmail.com">
+					</div>
+					<div class="form-group">
+						<label class="label-form" for="subject"><h6>Asunto</h6></label>
+						<input class="form-control input-form" id="input-text-subject" type="text" name="subject" required value="Asunto de Prueba">
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="form-group">
+						<label class="label-form" for="message"><h6>Mensaje</h6></label>
+						<textarea class="form-control input-form" id="input-text-message" rows="5" name="message" required>mensaje de Prueba</textarea>
+					</div>
+					<div class="form-group">
+						<div class="form-inline col-xs-12 d-flex justify-content-end btn-form">
+							<label class="btn btn-form-custom btn-docs btn-file ml-2 tooltip--top tooltip-blue" aria-label="Cargar Curriculum">
 									<img src="img/contact/add-curriculum.png" alt="Curriculum">
 									<input type="file" name="curriculum" id="curriculum">
 								</label>
-								<label class="btn btn-form-custom btn-docs btn-file ml-2 tooltip--top tooltip-blue" aria-label="Cargar Documento">
+							<label class="btn btn-form-custom btn-docs btn-file ml-2 tooltip--top tooltip-blue" aria-label="Cargar Documento">
 									<img src="img/contact/add-document.png" alt="Documento">
 									<input type="file" name="document" id="document">
 								</label>
-								<input class="btn btn-success btn-form-custom btn-block col-6 ml-2" type="submit" value="Enviar">
-							</div>
+							<input class="btn btn-success btn-form-custom btn-block col-6 ml-2" type="submit" value="Enviar">
 						</div>
 					</div>
 				</div>
-			</form>
-			<div class="row">
-				<div class="col pt-4">
-					<p>Si desea comunicarse vía teléfono puede hacerlo a nuestro número +52 1 55 48581287, nuestros ejecutivos atenderán sus dudas de la mejor forma posible.</p>
-				</div>
+			</div>
+		</form>
+		<div class="row">
+			<div class="col pt-4">
+				<p>Si desea comunicarse vía teléfono puede hacerlo a nuestro número +52 1 55 48581287, nuestros ejecutivos atenderán sus dudas de la mejor forma posible.</p>
 			</div>
 		</div>
-	</section>
+	</div>
+	<div id="resultmail">
+		<div id="resultmailcss">
+			<p id="loadingmail">Enviando Correo</p>
+			<div class="loader"></div>
+		</div>
+	</div>
+	<div id="mailsend">
+		<div id="mailsendcss">
+			<p id="loadingmail">Correo Enviado <span class="fa fa-3x fa-check-circle-o"></span></p>
+		</div>
+	</div>
+	<div id="mailnosend">
+		<div id="mailnosendcss">
+			<p id="loadingmail">Correo No Enviado</p>
+			<div class="iconmail"><span class="fa fa-3x fa-times-circle-o"></span></div>
+		</div>
+	</div>
+	<div id="mailerror">
+			<a class="iconmail"><span class="fa fa-times"></span></a>
+		<div id="mailerrorcss">
+			<p id="loadingmail">Ha Ocurrido un error, por favor comunicate con nosotros <br> <a href="mailto: naustec@gmail.com">naustec@gmail.com</a></p>
+			<div class="iconmail"><span class="fa fa-3x fa-times-circle-o"></span></div>
+		</div>
+	</div>
+	<style>
+		#resultmail {
+			display: none;
+		}
+		
+		#mailsend {
+			display: none
+		}
+		
+		#mailnosend {
+			display: none;
+		}
+		
+		#mailerror {
+			display: none;
+		}
+		
+		#resultmailcss,
+		#mailsendcss,
+		#mailnosendcss,
+		#mailerrorcss {
+			display: flex;
+			color: #F5F4F4;
+			padding: 15px;
+			max-width: 25%;
+			position: fixed;
+			right: 26px;
+			top: 100px;
+			z-index: 3000;
+			box-shadow: 3px 3px 2px #A3A3A3;
+		}
+		
+		#resultmailcss {
+			background-color: rgba(29, 112, 183, .85);
+		}
+		
+		#mailsendcss {
+			background-color: rgba(58, 169, 53, .85);
+		}
+		
+		#mailnosendcss,
+		#mailerrorcss {
+			background-color: rgba(217, 83, 79, .85);
+		}
+		
+		p#loadingmail {
+			font-family: 'Ubuntu', sans-serif;
+			font-size: 14px;
+			align-self: center;
+			margin: 0 10px 0 0;
+		}
+		
+		.inconmail {
+			color: #f5f4f4;
+			margin: 25px 25px;
+		}
+		
+		.loader {
+			color: #f5f4f4;
+			font-size: 5px;
+			margin: 25px 25px;
+			width: 5px;
+			height: 5px;
+			border-radius: 50%;
+			position: relative;
+			text-indent: -9999em;
+			-webkit-animation: load4 1.3s infinite linear;
+			animation: load4 1.3s infinite linear;
+			-webkit-transform: translateZ(0);
+			-ms-transform: translateZ(0);
+			transform: translateZ(0);
+		}
+		
+		@-webkit-keyframes load4 {
+			0%,
+			100% {
+				box-shadow: 0 -3em 0 0.2em, 2em -2em 0 0em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 0;
+			}
+			12.5% {
+				box-shadow: 0 -3em 0 0, 2em -2em 0 0.2em, 3em 0 0 0, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;
+			}
+			25% {
+				box-shadow: 0 -3em 0 -0.5em, 2em -2em 0 0, 3em 0 0 0.2em, 2em 2em 0 0, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;
+			}
+			37.5% {
+				box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 0, 2em 2em 0 0.2em, 0 3em 0 0em, -2em 2em 0 -1em, -3em 0em 0 -1em, -2em -2em 0 -1em;
+			}
+			50% {
+				box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 0em, 0 3em 0 0.2em, -2em 2em 0 0, -3em 0em 0 -1em, -2em -2em 0 -1em;
+			}
+			62.5% {
+				box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 0, -2em 2em 0 0.2em, -3em 0 0 0, -2em -2em 0 -1em;
+			}
+			75% {
+				box-shadow: 0em -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0.2em, -2em -2em 0 0;
+			}
+			87.5% {
+				box-shadow: 0em -3em 0 0, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0, -2em -2em 0 0.2em;
+			}
+		}
+		
+		@keyframes load4 {
+			0%,
+			100% {
+				box-shadow: 0 -3em 0 0.2em, 2em -2em 0 0em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 0;
+			}
+			12.5% {
+				box-shadow: 0 -3em 0 0, 2em -2em 0 0.2em, 3em 0 0 0, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;
+			}
+			25% {
+				box-shadow: 0 -3em 0 -0.5em, 2em -2em 0 0, 3em 0 0 0.2em, 2em 2em 0 0, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;
+			}
+			37.5% {
+				box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 0, 2em 2em 0 0.2em, 0 3em 0 0em, -2em 2em 0 -1em, -3em 0em 0 -1em, -2em -2em 0 -1em;
+			}
+			50% {
+				box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 0em, 0 3em 0 0.2em, -2em 2em 0 0, -3em 0em 0 -1em, -2em -2em 0 -1em;
+			}
+			62.5% {
+				box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 0, -2em 2em 0 0.2em, -3em 0 0 0, -2em -2em 0 -1em;
+			}
+			75% {
+				box-shadow: 0em -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0.2em, -2em -2em 0 0;
+			}
+			87.5% {
+				box-shadow: 0em -3em 0 0, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0, -2em -2em 0 0.2em;
+			}
+		}
+
+	</style>
+</section>
 <!-- End Contact -->
