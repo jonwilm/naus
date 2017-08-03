@@ -157,7 +157,7 @@
   					}, 2000)
   					setTimeout(function () {
   						$('#mailsend').hide(700);
-  					}, 4000)
+  					}, 6000)
   				} else {
   					$('#resultmail').hide(700);
   					setTimeout(function () {
@@ -165,7 +165,7 @@
   					}, 2000)
   					setTimeout(function () {
   						$('#mailnosend').hide(700);
-  					}, 4000)
+  					}, 6000)
   				}
   				//$('#resultmail').html(data);
   				console.log(data)
@@ -175,6 +175,9 @@
   				setTimeout(function () {
   					$('#mailerror').show(700);
   				}, 2000)
+					$('#closeerrormail').click(function () {
+						$('#mailerror').hide(700);
+					})
   			}
   		})
   		return false;

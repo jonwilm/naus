@@ -42,6 +42,6 @@ gulp.task('php', function (){
   .pipe(gulp.dest('app/php/'))
 	});
 
-gulp.task('default',['html', 'js', 'php'], function(){
+gulp.task('default',['html', 'css', 'js', 'php'], function(){
 	
 });

@@ -7,7 +7,7 @@
 	#home h3 {
 		font-size: 37px;
 	}
-	#home h3#subh3{
+	#home h3#subh3 {
 		font-size: 27px;
 	}
 	#home p#subhome {
@@ -75,6 +75,73 @@
 	.btn-form {
 		padding-top: 25px;
 	}
+	#resultmail {
+		display: none;
+	}
+	#mailsend {
+		display: none
+	}
+	#mailnosend {
+		display: none;
+	}
+	#mailerror {
+		display: none;
+	}
+	#closeerrormail:hover {
+		color: #1D70B7;
+	}
+	#resultmailcss,
+	#mailsendcss,
+	#mailnosendcss,
+	#mailerrorcss {
+		display: flex;
+		color: #F5F4F4;
+		padding: 15px;
+		max-width: 25%;
+		position: fixed;
+		right: 26px;
+		top: 100px;
+		z-index: 3000;
+		box-shadow: 3px 3px 2px #A3A3A3;
+	}
+	#resultmailcss {
+		background-color: rgba(29, 112, 183, .85);
+	}
+	#mailsendcss {
+		background-color: rgba(58, 169, 53, .85);
+	}
+	#mailnosendcss,
+	#mailerrorcss {
+		background-color: rgba(217, 83, 79, .85);
+	}
+	p#loadingmail {
+		font-family: 'Ubuntu', sans-serif;
+		font-size: 14px;
+		align-self: center;
+		margin: 0 10px 0 0;
+	}
+	p#loadingmail a {
+		font-weight: bold;
+		text-decoration: none;
+	}
+	.iconmail {
+		align-self: center;
+	}
+	.loader {
+		color: #f5f4f4;
+		font-size: 5px;
+		margin: 25px 25px;
+		width: 5px;
+		height: 5px;
+		border-radius: 50%;
+		position: relative;
+		text-indent: -9999em;
+		-webkit-animation: load4 1.3s infinite linear;
+		animation: load4 1.3s infinite linear;
+		-webkit-transform: translateZ(0);
+		-ms-transform: translateZ(0);
+		transform: translateZ(0);
+	}
 }
 
 
@@ -89,7 +156,7 @@
 	#home h3 {
 		font-size: 47px;
 	}
-	#home h3#subh3{
+	#home h3#subh3 {
 		font-size: 37px;
 	}
 	#home p#subhome {
@@ -232,7 +299,7 @@
 	#home h3 {
 		font-size: 57px;
 	}
-	#home h3#subh3{
+	#home h3#subh3 {
 		font-size: 40px;
 	}
 	#home p#subhome {
