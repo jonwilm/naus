@@ -143,40 +143,90 @@
 	/*Enviar Formulario*/
 	$('#formcontact').submit(function (e) {
 		e.preventDefault();
-		document.getElementById('formcontact').reset();
-		$('#resultmail').show(700);
+		$('#modalmail').find('*').removeClass();
+		$('#modalmailcss').addClass('resultmailcss');
+		$('#modalmailcss').children('p').addClass('loadingmail').html('Enviando Correo');
+		$('#modalmailcss').children('div').addClass('loader');
+		$('#modalmail').show(700);
 		var formData = new FormData(document.getElementById("formcontact"));
 		$.ajax({
 			type: 'POST',
 			url: $(this).attr('action'),
 			data: formData,
+			dataType: "JSON",
 			cache: false,
 			contentType: false,
 			processData: false,
 			success: function (data) {
-				if (data) {
-					$('#resultmail').hide(700);
+				console.log(data)
+				if (data.file == "nopdf") {
+					// Formato invalido
+					$('#modalmail').hide(700);
 					setTimeout(function () {
-						$('#mailsend').show(700);
+						$('#modalmail').find('*').removeClass();
+						$('#modalmailcss').addClass('mailnopdfcss');
+						$('#modalmailcss').children('p').addClass('loadingmail').html(data.message);
+						$('#modalmailcss').children('div').addClass('iconmail');
+						$('#modalmailcss').find('span').addClass('fa fa-3x fa-check-circle-o');
+						$('#modalmail').show(700);
 					}, 2000)
 					setTimeout(function () {
-						$('#mailsend').hide(700);
-					}, 6000)
+						$('#modalmail').hide(700);
+					}, 8000)
 				} else {
-					$('#resultmail').hide(700);
-					setTimeout(function () {
-						$('#mailnosend').show(700);
-					}, 2000)
-					setTimeout(function () {
-						$('#mailnosend').hide(700);
-					}, 6000)
+					if (data.status == 'true') {
+						// Correo Enviado
+						$('#modalmail').hide(700);
+						setTimeout(function () {
+							$('#modalmail').find('*').removeClass();
+							$('#modalmailcss').addClass('mailsendcss');
+							$('#modalmailcss').children('p').addClass('loadingmail').html(data.message);
+							$('#modalmailcss').children('div').addClass('iconmail');
+							$('#modalmailcss').find('span').addClass('fa fa-3x fa-check-circle-o');
+							$('#modalmail').show(700);
+						}, 2000)
+						setTimeout(function () {
+							$('#modalmail').hide(700);
+						}, 6000)
+						document.getElementById('formcontact').reset();
+					} else if (data.status == "false") {
+						// Correo NO Enviado
+						$('#modalmail').hide(700);
+						setTimeout(function () {
+							$('#modalmail').find('*').removeClass();
+							$('#modalmailcss').addClass('mailnosendcss');
+							$('#modalmailcss').children('p').addClass('loadingmail').html(data.message);
+							$('#modalmailcss').children('div').addClass('iconmail');
+							$('#modalmailcss').find('span').addClass('fa fa-3x fa-times-circle-o');
+							$('#modalmail').show(700);
+						}, 2000)
+						setTimeout(function () {
+							$('#modalmail').hide(700);
+						}, 6000)
+						document.getElementById('formcontact').reset();
+					}
 				}
 			},
 			error: function (result) {
-				$('#resultmail').hide(700);
+//				$('#modalmail').hide(700);
+//				setTimeout(function () {
+//					$('#modalmail').find('*').removeClass();
+//					$('#modalmailcss').addClass('mailerrorcss');
+//					$('#modalmailcss').html('<p></p><div><span></span></div><a id="closeerrormail"><i class="fa fa-times">&times;</i></a>');
+//					$('#modalmailcss').children('p').addClass('loadingmail').html('Ha ocurrido un error, por favor comunicate con nosotros <br> <a href="mailto: naustec@gmail.com">naustec@gmail.com</a>');
+//					$('#modalmailcss').children('div').addClass('iconmail');
+//					$('#modalmailcss').find('span').addClass('fa fa-2x fa-exclamation-triangle');
+//					$('#modalmail').show(700);
+//				}, 2000)
+//				document.getElementById('formcontact').reset();
+//				$('#closeerrormail').click(function () {
+//					$('#modalmail').hide(700);
+//				})
+				$('#modalmail').hide(700);
 				setTimeout(function () {
 					$('#mailerror').show(700);
 				}, 2000)
+				document.getElementById('formcontact').reset();
 				$('#closeerrormail').click(function () {
 					$('#mailerror').hide(700);
 				})

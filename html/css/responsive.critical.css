@@ -1,0 +1,145 @@
+@media screen and (min-width: 768px) {
+	/*
+	------
+	  HOME
+	------
+	*/
+	#home h3 {
+		font-size: 37px;
+	}
+	#home h3#subh3 {
+		font-size: 27px;
+	}
+	#home p#subhome {
+		font-size: 16px;
+	}
+	#home p {
+		font-size: 20px;
+	}
+	.row-text {
+		height: 95%;
+	}
+	/*
+  ------
+    US
+  ------
+  */
+	/*
+  ------
+    SERVICE
+  ------
+  */
+	/*
+	------
+	  CONTACT
+	------
+	*/
+}
+
+
+/*	1024 to 1439 	*/
+
+@media screen and (min-width: 1024px) {
+	/*
+	------
+	  HOME
+	------
+	*/
+	#home h3 {
+		font-size: 47px;
+	}
+	#home h3#subh3 {
+		font-size: 37px;
+	}
+	#home p#subhome {
+		font-size: 20px;
+	}
+	#home p {
+		font-size: 27px;
+	}
+	.row-text {
+		height: 95%
+	}
+	.btn-home {
+		height: 35px;
+		padding: 5px;
+	}
+	.btn-home h5 {
+		font-family: 'Roboto Slab', sans-serif;
+		font-size: 20px;
+	}
+	/*
+  ------
+    US
+  ------
+  */
+	/*
+  ------
+    SERVICE
+  ------
+  */
+	/*
+	------
+	  PORTFOLIO
+	------
+	*/
+	/*
+	------
+	  CONTACT
+	------
+	*/
+}
+
+
+/*	>= 1440 	*/
+
+@media screen and (min-width: 1440px) {
+	/*
+	------
+	  HOME
+	------
+	*/
+	#home h3 {
+		font-size: 57px;
+	}
+	#home h3#subh3 {
+		font-size: 40px;
+	}
+	#home p#subhome {
+		font-size: 29px;
+	}
+	#home p {
+		font-size: 35px;
+	}
+	.row-text {
+		height: 95%
+	}
+	.btn-home {
+		height: 35px;
+		padding: 5px;
+	}
+	.btn-home h5 {
+		font-family: 'Roboto Slab', sans-serif;
+		font-size: 20px;
+	}
+	/*
+  ------
+    US
+  ------
+  */
+	/*
+  ------
+    SERVICE
+  ------
+  */
+	/*
+	------
+	  PORTFOLIO
+	------
+	*/
+	/*
+	------
+	  CONTACT
+	------
+	*/
+}

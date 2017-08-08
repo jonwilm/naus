@@ -75,13 +75,7 @@
 	.btn-form {
 		padding-top: 25px;
 	}
-	#resultmail {
-		display: none;
-	}
-	#mailsend {
-		display: none
-	}
-	#mailnosend {
+	#modalmail {
 		display: none;
 	}
 	#mailerror {
@@ -90,10 +84,11 @@
 	#closeerrormail:hover {
 		color: #1D70B7;
 	}
-	#resultmailcss,
-	#mailsendcss,
-	#mailnosendcss,
-	#mailerrorcss {
+	.resultmailcss,
+	.mailnopdfcss,
+	.mailsendcss,
+	.mailnosendcss,
+	.mailerrorcss {
 		display: flex;
 		color: #F5F4F4;
 		padding: 15px;
@@ -104,23 +99,26 @@
 		z-index: 3000;
 		box-shadow: 3px 3px 2px #A3A3A3;
 	}
-	#resultmailcss {
+	.resultmailcss {
 		background-color: rgba(29, 112, 183, .85);
 	}
-	#mailsendcss {
+	.mailsendcss {
 		background-color: rgba(58, 169, 53, .85);
 	}
-	#mailnosendcss,
-	#mailerrorcss {
+	.mailnopdfcss {
+		background-color: rgba(255, 220, 0, .85);
+		color: #273638;
+	}
+	.mailnosendcss,
+	.mailerrorcss {
 		background-color: rgba(217, 83, 79, .85);
 	}
-	p#loadingmail {
+	.loadingmail {
 		font-family: 'Ubuntu', sans-serif;
 		font-size: 14px;
 		align-self: center;
-		margin: 0 10px 0 0;
 	}
-	p#loadingmail a {
+	.loadingmail a {
 		font-weight: bold;
 		text-decoration: none;
 	}

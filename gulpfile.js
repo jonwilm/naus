@@ -47,12 +47,12 @@ gulp.task('php', function () {
 		.pipe(gulp.dest('app/php/'))
 });
 
-gulp.task('critical', () => {
-	gulp.src('src/file.css')
-		.pipe(criticalCss())
-		.pipe(gulp.dest('dist'))
-});
+//gulp.task('critical', () => {
+//	gulp.src('html/css/style.css')
+//		.pipe(criticalCss())
+//		.pipe(gulp.dest('html/css/'))
+//});
 
-gulp.task('default', ['html', 'css', 'js', 'php'], function () {
+gulp.task('default', ['html', 'js', 'php'], function () {
 
 });
