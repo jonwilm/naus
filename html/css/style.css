@@ -620,6 +620,7 @@ video {
 
 #closeerrormail {
 	cursor: pointer;
+	height: max-content;
 }
 
 #closeerrormail:hover {

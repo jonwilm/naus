@@ -13,7 +13,7 @@ if ((($_FILES['curriculum']['size'] == 0) || ($_FILES['curriculum']['type'] == '
 	$mail->Host = 'smtp.gmail.com';                 			// Specify main and backup SMTP servers
 	$mail->SMTPAuth = true;                               // Enable SMTP authentication
 	$mail->Username = 'jparedes84@gmail.com';             // SMTP username
-	$mail->Password = 'Mili..84';                         // SMTP password
+	$mail->Password = 'Mili..84'                         // SMTP password
 	$mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
 	$mail->Port = 587;                                    // TCP port to connect to
 

@@ -208,27 +208,19 @@
 				}
 			},
 			error: function (result) {
-//				$('#modalmail').hide(700);
-//				setTimeout(function () {
-//					$('#modalmail').find('*').removeClass();
-//					$('#modalmailcss').addClass('mailerrorcss');
-//					$('#modalmailcss').html('<p></p><div><span></span></div><a id="closeerrormail"><i class="fa fa-times">&times;</i></a>');
-//					$('#modalmailcss').children('p').addClass('loadingmail').html('Ha ocurrido un error, por favor comunicate con nosotros <br> <a href="mailto: naustec@gmail.com">naustec@gmail.com</a>');
-//					$('#modalmailcss').children('div').addClass('iconmail');
-//					$('#modalmailcss').find('span').addClass('fa fa-2x fa-exclamation-triangle');
-//					$('#modalmail').show(700);
-//				}, 2000)
-//				document.getElementById('formcontact').reset();
-//				$('#closeerrormail').click(function () {
-//					$('#modalmail').hide(700);
-//				})
 				$('#modalmail').hide(700);
 				setTimeout(function () {
-					$('#mailerror').show(700);
+					$('#modalmail').find('*').removeClass();
+					$('#modalmailcss').addClass('mailerrorcss');
+					$('#modalmailcss').html('<p></p><div><i></i></div><span id="closeerrormail" class="fa fa-times"></span>');
+					$('#modalmailcss').children('p').addClass('loadingmail').html('Ha ocurrido un error, por favor comunicate con nosotros <br> <a href="mailto: naustec@gmail.com">naustec@gmail.com</a>');
+					$('#modalmailcss').children('div').addClass('iconmail');
+					$('#modalmailcss').find('i').addClass('fa fa-2x fa-exclamation-triangle');
+					$('#modalmail').show(700);
 				}, 2000)
 				document.getElementById('formcontact').reset();
-				$('#closeerrormail').click(function () {
-					$('#mailerror').hide(700);
+				$('#modalmailcss').on('click', 'span#closeerrormail', function () {
+					$('#modalmail').hide(700);
 				})
 			}
 		})
