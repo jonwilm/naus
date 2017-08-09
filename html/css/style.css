@@ -635,6 +635,7 @@ video {
 	display: flex;
 	color: #F5F4F4;
 	width: 100%;
+	padding: 5px 15px;
 	position: fixed;
 	top: 65px;
 	z-index: 3000;
@@ -650,7 +651,7 @@ video {
 }
 
 .mailnopdfcss {
-	background-color: rgba(255, 220, 0, .85);
+	background-color: rgba(240, 173, 78, .85);
 	color: #273638;
 }
 
@@ -896,7 +897,7 @@ footer a:hover {
 	background: transparent;
 	text-align: center;
 	line-height: 42px;
-	margin: 0 15px 50px;
+	margin: 0 15px;
 }
 
 #go-top .fa:hover {
