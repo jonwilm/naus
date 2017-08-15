@@ -25,7 +25,7 @@ if (empty($_POST['name']) || empty($_POST['email']) || empty($_POST['subject']) 
 		$mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
 		$mail->Port = 587;                                    // TCP port to connect to
 
-		$mail->addReplyTo($_POST['email'], $_POST['name']);					       // Responder a
+		$mail->addReplyTo($_POST['email'], $_POST['name']);					    // Responder a
 		$mail->addAddress('naustec@gmail.com', 'Naus Technologies');    // Destino
 
 		$mail->addAttachment($_FILES['curriculum']['tmp_name'], $_FILES['curriculum']['name']);          //Add attachments
