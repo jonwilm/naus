@@ -1,0 +1,60 @@
+<!-- Contact -->
+<section id=contact class="container-fluid">
+	<div class="container">
+		<h3>CONTACTO</h3>
+		<div class="row">
+			<div class="col pb-2">
+				<p>Si quiere plantearnos alguna inquietud o deseas pertenecer a nuestro equipo entregarnos tu currículo llene el siguiente formulario, su petición será atendida en la brevedad posible. Sus datos personales serán manejados con absoluta discreción y confidencialidad.</p>
+			</div>
+		</div>
+		<form id="formcontact" action="php/mail.php" method="post" enctype="multipart/form-data">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="form-group">
+						<label class="label-form" for="name"><h6>Nombre y Apellido</h6></label>
+						<input class="form-control input-form" id="input-text-name" type="text" name="name" required>
+					</div>
+					<div class="form-group">
+						<label class="label-form" for="email"><h6>Correo Electronico</h6></label>
+						<input class="form-control input-form" id="input-text-email" type="email" name="email" required>
+					</div>
+					<div class="form-group">
+						<label class="label-form" for="subject"><h6>Asunto</h6></label>
+						<input class="form-control input-form" id="input-text-subject" type="text" name="subject" required>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="form-group">
+						<label class="label-form" for="message"><h6>Mensaje</h6></label>
+						<textarea class="form-control input-form" id="input-text-message" rows="5" name="message" required></textarea>
+					</div>
+					<div class="form-group">
+						<div class="form-inline col-xs-12 d-flex justify-content-end btn-form">
+							<label class="btn btn-form-custom btn-docs btn-file ml-2 tooltip--top tooltip-blue" aria-label="Cargar Curriculum">
+									<img src="img/contact/add-curriculum.png" alt="Curriculum">
+									<input type="file" name="curriculum" id="curriculum" accept="application/pdf">
+								</label>
+							<label class="btn btn-form-custom btn-docs btn-file ml-2 tooltip--top tooltip-blue" aria-label="Cargar Documento">
+									<img src="img/contact/add-document.png" alt="Documento">
+									<input type="file" name="document" id="document" accept="application/pdf">
+								</label>
+							<input class="btn btn-success btn-form-custom btn-block col-6 ml-2" type="submit" value="Enviar">
+						</div>
+					</div>
+				</div>
+			</div>
+		</form>
+		<div class="row">
+			<div class="col pt-4">
+				<p>Si desea comunicarse vía teléfono puede hacerlo a nuestro número +52 1 55 48581287, nuestros ejecutivos atenderán sus dudas de la mejor forma posible.</p>
+			</div>
+		</div>
+	</div>
+	<div id="modalmail">
+		<div id="modalmailcss">
+			<p></p>
+			<div><span></span></div>
+		</div>
+	</div>
+</section>
+<!-- End Contact -->

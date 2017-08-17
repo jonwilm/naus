@@ -1,0 +1,47 @@
+/* Flip Hover */
+
+.flip-container:hover .flipper,
+.flip-container.hover .flipper {
+	/* voltea el panel al colocar el mouse(HOVER) */
+	transform: rotateY(180deg);
+}
+
+.flip-container,
+.front-flip,
+.back-flip {
+	width: 100%;
+	height: 100%;
+	box-shadow: 3px 3px 2px #A3A3A3;
+	cursor: pointer;
+}
+
+.flipper {
+	/* velocidad del flip aqui */
+	transition: 0.6s;
+	transform-style: preserve-3d;
+	position: relative;
+}
+
+.front-flip,
+.back-flip {
+	/* oculta el panel posterior durante el cambio */
+	backface-visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.front-flip {
+	/* panel frontal, enviado atras */
+	z-index: 2;
+	/* for firefox 31 */
+	transform: rotateY(0deg);
+}
+
+.back-flip {
+	/* detras,inicialmente el panel oculto */
+	transform: rotateY(180deg);
+}
+
+
+/* End Flip Hover */

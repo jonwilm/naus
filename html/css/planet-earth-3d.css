@@ -1,0 +1,237 @@
+@keyframes mapfront_spin {
+	0% {
+		background-position: 2800px 0%;
+	}
+	100% {
+		background-position: 0 0%;
+	}
+}
+
+@keyframes mapback_spin {
+	0% {
+		background-position: 0 0%;
+	}
+	100% {
+		background-position: 2800px 0%;
+	}
+}
+
+@-webkit-keyframes mapfront_spin {
+	0% {
+		background-position: 2800px 0%;
+	}
+	100% {
+		background-position: 0 0%;
+	}
+}
+
+@-webkit-keyframes mapback_spin {
+	0% {
+		background-position: 0 0%;
+	}
+	100% {
+		background-position: 2800px 0%;
+	}
+}
+
+.globo {
+	width: 540px;
+	height: 540px;
+	position: relative;
+	margin: 0 auto;
+}
+
+.frontal {
+	width: 100%;
+	height: 100%;
+	background: url(../img/planet/1.png);
+	background-size: 100% 100%;
+	z-index: 5;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.back {
+	width: 100%;
+	height: 100%;
+	background: url(../img/planet/2.png);
+	background-size: 100% 100%;
+	z-index: 2;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.mapfront,
+.mapback {
+	border-radius: 300px;
+	width: 85%;
+	height: 85%;
+	position: absolute;
+	top: 39px;
+	left: 39px;
+	z-index: 4;
+}
+
+.mapfront {
+	background: url(../img/planet/3.png) repeat-x;
+	background-size: 1944px 540px;
+	-webkit-animation: mapback_spin 100s linear infinite;
+	animation: mapback_spin 100s linear infinite;
+}
+
+.mapback {
+	background: url(../img/planet/4.png) repeat-x;
+	position: absolute;
+	background-size: 1944px 540px;
+	-webkit-animation: mapfront_spin 100s linear infinite;
+	animation: mapfront_spin 100s linear infinite;
+}
+
+
+/*	>= 1440 	*/
+
+@media screen and (min-width: 1440px) {}
+
+
+/*	1200 to 1439 	*/
+
+@media screen and (max-width: 1439px) {
+	.globo {
+		width: 510px;
+		height: 510px;
+	}
+	.mapfront {
+		background-size: 1836px 510px;
+	}
+	.mapback {
+		background-size: 1836px 510px;
+	}
+}
+
+
+/*	992 to 1199 	*/
+
+@media screen and (max-width: 1199px) {
+	.globo {
+		width: 416px;
+		height: 416px;
+	}
+	.mapfront,
+	.mapback {
+		top: 30px;
+		left: 30px;
+	}
+	.mapfront {
+		background-size: 1498px 416px;
+	}
+	.mapback {
+		background-size: 1498px 416px;
+	}
+}
+
+
+/*	768 to 991 	*/
+
+@media screen and (max-width: 991px) {
+	.globo {
+		width: 315px;
+		height: 315px;
+	}
+	.mapfront,
+	.mapback {
+		top: 23px;
+		left: 23px;
+	}
+	.mapfront {
+		background-size: 1134px 315px;
+	}
+	.mapback {
+		background-size: 1134px 315px;
+	}
+}
+
+
+/*	640 to 767 	*/
+
+@media screen and (max-width: 767px) {
+	.globo {
+		width: 540px;
+		height: 540px;
+	}
+	.mapfront,
+	.mapback {
+		top: 39px;
+		left: 39px;
+	}
+	.mapfront {
+		background-size: 1944px 540px;
+	}
+	.mapback {
+		background-size: 1944px 540px;
+	}
+}
+
+
+/*	480 to 639 	*/
+
+@media screen and (max-width: 639px) {
+	.globo {
+		width: 402px;
+		height: 402px;
+	}
+	.mapfront,
+	.mapback {
+		top: 29px;
+		left: 29px;
+	}
+	.mapfront {
+		background-size: 1447px 402px;
+	}
+	.mapback {
+		background-size: 1447px 402px;
+	}
+}
+
+
+/*	320 to 479 	*/
+
+@media screen and (max-width: 479px) {
+	.globo {
+		width: 258px;
+		height: 258px;
+	}
+	.mapfront,
+	.mapback {
+		top: 19px;
+		left: 19px;
+	}
+	.mapfront {
+		background-size: 929px 258px;
+	}
+	.mapback {
+		background-size: 929px 258px;
+	}
+}
+
+
+/*	240 to 319 	*/
+
+@media screen and (max-width: 319px) {
+	.globo {
+		width: 186px;
+		height: 186px;
+	}
+	.mapfront,
+	.mapback {
+		top: 15px;
+		left: 15px;
+	}
+	.mapfront {
+		background-size: 670px 186px;
+	}
+	.mapback {
+		background-size: 670px 186px;
+	}
+}

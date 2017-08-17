@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- normalize -->
+	<link rel="stylesheet" href="css/normalize.css">
+	<!-- Bootstrap CSS Local -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<!-- Fonts -->
+	<!--<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">-->
+	<!--<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">-->
+	<!-- Fonts Local -->
+	<link rel="stylesheet" href="fonts/font-roboto-slab.css">
+	<link rel="stylesheet" href="fonts/font-ubuntu.css">
+	<!-- Font awesome -->
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<!-- Tooltips -->
+	<link rel="stylesheet" href="css/tooltips.css">
+	<!-- styles -->
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/planet-earth-3d.css">
+	<link rel="stylesheet" href="css/responsive.css">
+	<link rel="stylesheet" href="css/flip.css">
+	<link rel="stylesheet" href="css/animate.css">
+</head>
+
+<body>
+
+	<!-- Navbar -->
+	<div class="bg-navbar fixed-top"></div>
+	<nav class="navbar-custom navbar-toggleable-sm navbar-inverse">
+		<div class="container container-navbar">
+			<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+			<a class="navbar-brand" data-scroll href="#home">
+				<img src="img/logo/logo.png" alt="Logo Naus">
+			</a>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item"><a data-scroll class="nav-link" href="#us">NOSOTROS</a></li>
+					<li class="nav-item"><a data-scroll class="nav-link" href="#service">SERVICIOS</a></li>
+					<li class="nav-item"><a data-scroll class="nav-link" href="#portfolio">PORTAFOLIO</a></li>
+					<li class="nav-item"><a data-scroll class="nav-link" href="#contact">CONTACTO</a></li>
+					<li class="nav-item"><a data-scroll class="nav-link no-border" href="#">BLOG</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!-- End Navbar -->
+
+	<!-- Home -->
+	<section id="home" class="container-fluid">
+		<div id="videoHome" data-section-name="home" class="scroll-act hidden-sm-down">
+			<div id="video" class="pre-height">
+				<video autoplay="" loop="" muted="" autobuffer="" preload="metadata" id="background" poster="">
+					<source src="video/cafe.mp4" type="video/mp4">
+				</video>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row-text" id="content-home">
+				<div class="row">
+					<div class="col-12">
+						<div id="carouselHome" class="carousel slide" data-ride="carousel">
+							<ol class="carousel-indicators carousel-indicators-home">
+								<li data-target="#carouselHome" data-slide-to="0" class="active"></li>
+								<li data-target="#carouselHome" data-slide-to="1"></li>
+								<li data-target="#carouselHome" data-slide-to="2"></li>
+							</ol>
+							<div class="carousel-inner" role="listbox" id="carousel-inner-home">
+								<div class="carousel-item active">
+									<h3 class="text-center">CONSTRUYE <br> tu sitio web, <br> CONSTRUYE <br> tu sueño</h3>
+								</div>
+								<div class="carousel-item">
+									<h3 class="text-center">Software en base <br> a sus OBJETIVOS <br> y NECESIDADES</h3>
+								</div>
+								<div class="carousel-item">
+									<div class="row">
+										<div class="col-12">
+											<p id="subhome">Somos especialistas en:</p>
+										</div>
+										<div class="col-12">
+											<ul>
+												<li>
+													<p class="no-padding no-margin">Diseño web</p>
+												</li>
+												<li>
+													<p class="no-padding no-margin">Diseño de paginas web</p>
+												</li>
+												<li>
+													<p class="no-padding no-margin">Posicionamiento</p>
+												</li>
+												<li>
+													<p class="no-padding no-margin">Sistemas</p>
+												</li>
+												<li>
+													<p class="no-padding no-margin">Aplicaciones Móviles</p>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12 col-md-5 mb-3">
+					<a class="btn btn-home btn-block" role="button" href="#contact" data-scroll>
+						<h5>Contacto</h5>
+					</a>
+				</div>
+				<div class="col-12 col-md-5 mb-3">
+					<a class="btn btn-home btn-block" role="button" href="#contact" data-scroll>
+						<h5>Cotización</h5>
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End Home -->
+
+	<!-- Us -->
+	<section id="us" class="container-fluid">
+		<div class="container">
+			<div class="row row-text">
+				<div class="col-12 col-md-7">
+					<h3 id="title-us">NOSOTROS</h3>
+				</div>
+				<div class="col-12 col-md-5">
+					<p id="text-us" class="wow fadeInRight text-justify">En la última década México se ha convertido en un fuerte exponente en el mercado de las Tecnologías de la Información, su localización geográfica resulta estratégica para países vecinos quienes buscan estándares de calidad y buenas prácticas en servicios de desarrollo de software on shore.</p>
+				</div>
+			</div>
+			<div class="wow fadeInUp card hidden-md-up">
+				<div class="card-block center middle wrap">
+					<article class="naus">
+						<figure class="naus--logo">
+							<img class="naus--logo--img" src="img/us/consultancy1.png" alt="Consultoria">
+						</figure>
+						<h1 class="naus--name">CONSULTORIA</h1>
+					</article>
+					<article class="naus">
+						<figure class="naus--logo">
+							<img class="naus--logo--img" src="img/us/development1.png" alt="Desarrollo">
+						</figure>
+						<h1 class="naus--name">DESARROLLO</h1>
+					</article>
+					<article class="naus">
+						<figure class="naus--logo">
+							<img class="naus--logo--img" src="img/us/outsourcing1.png" alt="Outsourcing">
+						</figure>
+						<h1 class="naus--name">OUTSOURCING</h1>
+					</article>
+				</div>
+			</div>
+		</div>
+		<div class="background mt-3 pt-2 hidden-sm-down">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 wow fadeInLeft">
+						<div class="row">
+							<div class="col-md-4 no-padding">
+								<img class="img-fluid" src="img/us/outsourcing1.png" alt="Outsourcing">
+							</div>
+							<div class="col-md-8">
+								<h1 class="card-title text-center">OUTSOURCING</h1>
+								<p class="card-text text-left">Instauramos modelos de operación WEB 3.0, off site y on shore para ofrecer servicios especializados de valor agregado a su empresa.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 wow fadeInUp">
+						<div class="row">
+							<div class="col-md-4 no-padding">
+								<img class="img-fluid" src="img/us/development1.png" alt="Desarrollo">
+							</div>
+							<div class="col-md-8">
+								<h1 class="card-title text-center">DESARROLLO </h1>
+								<p class="card-text text-left">Desarrollamos las mejores y diferentes plataformas de software, proporcionando servicios como web 3.0 entre otros trabajando con las tecnologías más actuales del mercado.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 wow fadeInRight">
+						<div class="row">
+							<div class="col-md-4 no-padding">
+								<img class="img-fluid" src="img/us/consultancy1.png" alt="Consultoria">
+							</div>
+							<div class="col-md-8">
+								<h1 class="card-title text-center">CONSULTORIA</h1>
+								<p class="card-text text-left">Participamos en el desarrollo de tus procesos, áreas de oportunidad y agregar valor a sus estrategias de negocio.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End Us -->
+
+	<!-- Service -->
+	<section id="service" class="container-fluid" style=" background-color: #f5f4f4;">
+		<div class="container">
+			<div class="row">
+				<div class="col-md">
+					<h3>SERVICIOS</h3>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6 d-flex align-items-top">
+					<div class="globo">
+						<div class="frontal"></div>
+						<div class="mapfront"></div>
+						<div class="mapback"></div>
+						<div class="back"></div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div id="serviceAccordion" role="tablist" aria-multiselectable="true" class="hidden-md-up">
+						<div class="wow fadeInLeft card">
+							<a role="tab" id="headingOne" class="collapsed card-header link-services" data-toggle="collapse" data-parent="#serviceAccordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+								<img class="float-left" src="img/service/software_development.png" alt="Desarrollo de Software">
+								<h2 class="mt-3 text-center">
+									Desarrollo de software
+								</h2>
+							</a>
+							<div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne">
+								<div class="card-block">
+									<p class="card-text">
+										Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="wow fadeInRight card">
+							<a role="tab" id="headingTwo" class="collapsed card-header link-services" data-toggle="collapse" data-parent="#serviceAccordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+								<img class="float-left" src="img/service/apps.png" alt="Aplicaciones Moviles">
+								<h2 class="mt-3 text-center">
+									Aplicaciones Moviles
+								</h2>
+							</a>
+							<div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
+								<div class="card-block">
+									<p class="card-text">
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum fugiat quod numquam, quaerat deleniti expedita, architecto aspernatur iusto, quos unde, assumenda sequi illum! Deleniti, laborum laboriosam qui in at, neque!
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="wow fadeInLeft card">
+							<a role="tab" id="headingThree" class="collapsed card-header link-services" data-toggle="collapse" data-parent="#serviceAccordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+								<img class="float-left" src="img/service/staffing.png" alt="Staffing">
+								<h2 class="mt-3 text-center">
+									Staffing
+								</h2>
+							</a>
+							<div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree">
+								<div class="card-block">
+									<p class="card-text">
+										Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="wow fadeInRight card">
+							<a role="tab" id="headingFour" class="card-header collapsed link-services" data-toggle="collapse" data-parent="#serviceAccordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+								<img class="float-left" src="img/service/projects.png" alt="Reestructuración de Proyectos">
+								<h2 class="mt-3 text-center">
+									Reestructuración de Proyectos
+								</h2>
+							</a>
+							<div id="collapseFour" class="collapse" role="tabpanel" aria-labelledby="headingFour">
+								<div class="card-block">
+									<p class="card-text">
+										Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="wow fadeInLeft card">
+							<a role="tab" id="headingFive" class="card-header collapsed link-services" data-toggle="collapse" data-parent="#serviceAccordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+								<img class="float-left" src="img/service/nearshore.png" alt="Nearshore">
+								<h2 class="mt-3 text-center">
+									Nearshore
+								</h2>
+							</a>
+							<div id="collapseFive" class="collapse" role="tabpanel" aria-labelledby="headingFive">
+								<div class="card-block">
+									<p class="card-text">
+										Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="wow fadeInRight card">
+							<a role="tab" id="headingSix" class="card-header collapsed link-services" data-toggle="collapse" data-parent="#serviceAccordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+								<img class="float-left" src="img/service/marketing-digital.png" alt="Marketing Digital">
+								<h2 class="mt-3 text-center">
+									Marketing Digital
+								</h2>
+							</a>
+							<div id="collapseSix" class="collapse" role="tabpanel" aria-labelledby="headingSix">
+								<div class="card-block">
+									<p class="card-text">
+										Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="center middle wrap hidden-sm-down">
+						<section class="row mt-3">
+							<article class="col-md-6">
+								<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+									<div class="flipper">
+										<div class="card front-flip">
+											<img class="card-img-top" src="img/service/software_development.png" alt="Aplicaciones Moviles">
+											<div class="card-block">
+												<h2 class="card-title text-center">Desarrollo de Software</h2>
+											</div>
+										</div>
+										<div class="card back-flip">
+											<p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus mollitia, libero est. Distinctio modi totam, delectus ipsa saepe obcaecati nesciunt molestiae reiciendis. Amet officia nisi saepe, autem expedita minus nobis.</p>
+										</div>
+									</div>
+								</div>
+							</article>
+							<article class="col-md-6">
+								<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+									<div class="flipper">
+										<div class="card front-flip">
+											<img class="card-img-top" src="img/service/apps.png" alt="Aplicaciones Moviles">
+											<div class="card-block">
+												<h2 class="card-title text-center">Aplicaciones Moviles</h2>
+											</div>
+										</div>
+										<div class="card back-flip">
+											<p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus mollitia, libero est. Distinctio modi totam, delectus ipsa saepe obcaecati nesciunt molestiae reiciendis. Amet officia nisi saepe, autem expedita minus nobis.</p>
+										</div>
+									</div>
+								</div>
+							</article>
+						</section>
+						<section class="row mt-3">
+							<article class="col-md-6">
+								<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+									<div class="flipper">
+										<div class="card front-flip">
+											<img class="card-img-top" src="img/service/staffing.png" alt="Aplicaciones Moviles">
+											<div class="card-block">
+												<h2 class="card-title text-center">Staffing</h2>
+											</div>
+										</div>
+										<div class="card back-flip">
+											<p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus mollitia, libero est. Distinctio modi totam, delectus ipsa saepe obcaecati nesciunt molestiae reiciendis. Amet officia nisi saepe, autem expedita minus nobis.</p>
+										</div>
+									</div>
+								</div>
+							</article>
+							<article class="col-md-6">
+								<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+									<div class="flipper">
+										<div class="card front-flip">
+											<img class="card-img-top" src="img/service/projects.png" alt="Aplicaciones Moviles">
+											<div class="card-block">
+												<h2 class="card-title text-center">Reestructuración de Proyectos</h2>
+											</div>
+										</div>
+										<div class="card back-flip">
+											<p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus mollitia, libero est. Distinctio modi totam, delectus ipsa saepe obcaecati nesciunt molestiae reiciendis. Amet officia nisi saepe, autem expedita minus nobis.</p>
+										</div>
+									</div>
+								</div>
+							</article>
+						</section>
+						<section class="row mt-3">
+							<article class="col-md-6">
+								<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+									<div class="flipper">
+										<div class="card front-flip">
+											<img class="card-img-top" src="img/service/nearshore.png" alt="Aplicaciones Moviles">
+											<div class="card-block">
+												<h2 class="card-title text-center">Nearshore</h2>
+											</div>
+										</div>
+										<div class="card back-flip">
+											<p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus mollitia, libero est. Distinctio modi totam, delectus ipsa saepe obcaecati nesciunt molestiae reiciendis. Amet officia nisi saepe, autem expedita minus nobis.</p>
+										</div>
+									</div>
+								</div>
+							</article>
+							<article class="col-md-6">
+								<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+									<div class="flipper">
+										<div class="card front-flip">
+											<img class="card-img-top" src="img/service/marketing-digital.png" alt="Aplicaciones Moviles">
+											<div class="card-block">
+												<h2 class="card-title text-center">Marketing Digital</h2>
+											</div>
+										</div>
+										<div class="card back-flip">
+											<p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus mollitia, libero est. Distinctio modi totam, delectus ipsa saepe obcaecati nesciunt molestiae reiciendis. Amet officia nisi saepe, autem expedita minus nobis.</p>
+										</div>
+									</div>
+								</div>
+							</article>
+						</section>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End Service -->
+
+	<!-- Portfolio -->
+	<section id="portfolio" class="container-fluid container-portfolio">
+		<div class="container">
+			<h3>PORTAFOLIO</h3>
+			<div class="row">
+				<div class="col-md mt-4" data-toggle="modal" data-target="#modal-portfolio-1">
+					<div class="wow flipInX box-portfolio">
+						<img src="img/portfolio/1.jpg" class="hidden-sm-down">
+						<img src="img/portfolio/mb1.png" class="hidden-md-up">
+					</div>
+					<div id="modal-portfolio-1" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-keyboard="false" data-backdrop="static">
+						<div class="modal-dialog modal-md" role="document">
+							<div class="modal-content">
+								<div class="modal-header">
+									<div class="modal-title" id="myModalLabel"><img class="logo-modal" src="img/logo/logo.png" alt="Naus"></div>
+									<button type="button" class="close" aria-label="Close">
+                		<span aria-hidden="true">&times;</span>
+              		</button>
+								</div>
+								<div class="modal-body">
+									<a class="text-center" href="http://www.remindermillie.com/" target="_blank">
+										<h1 class="title-modal">http://www.remindermillie.com/</h1>
+									</a>
+									<img class="img-fluid" src="img/portfolio/web1.png" alt="remindermillie">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md mt-4" data-toggle="modal" data-target="#modal-portfolio-2">
+					<div class="wow flipInX box-portfolio">
+						<img src="img/portfolio/2.jpg" class="hidden-sm-down">
+						<img src="img/portfolio/mb2.png" class="hidden-md-up">
+					</div>
+					<div id="modal-portfolio-2" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-keyboard="false" data-backdrop="static">
+						<div class="modal-dialog modal-md" role="document">
+							<div class="modal-content">
+								<div class="modal-header">
+									<div class="modal-title" id="myModalLabel"><img class="logo-modal" src="img/logo/logo.png" alt="Naus"></div>
+									<button type="button" class="close" aria-label="Close">
+                		<span aria-hidden="true">&times;</span>
+              		</button>
+								</div>
+								<div class="modal-body">
+									<a class="text-center" href="http://www.performerstuff.com/" target="_blank">
+										<h1 class="title-modal">http://www.performerstuff.com/</h1>
+									</a>
+									<img class="img-fluid" src="img/portfolio/web2.png" alt="performerstuff">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md mt-4" data-toggle="modal" data-target="#modal-portfolio-3">
+					<div class="wow flipInX box-portfolio">
+						<img src="img/portfolio/3.jpg" class="hidden-sm-down">
+						<img src="img/portfolio/mb3.png" class="hidden-md-up">
+					</div>
+					<div id="modal-portfolio-3" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-keyboard="false" data-backdrop="static">
+						<div class="modal-dialog modal-md" role="document">
+							<div class="modal-content">
+								<div class="modal-header">
+									<div class="modal-title" id="myModalLabel"><img class="logo-modal" src="img/logo/logo.png" alt="Naus"></div>
+									<button type="button" class="close" aria-label="Close">
+                		<span aria-hidden="true">&times;</span>
+              		</button>
+								</div>
+								<div class="modal-body">
+									<a class="text-center" href="http://www.statmarkgroup.com/" target="_blank">
+										<h1 class="title-modal">http://www.statmarkgroup.com/</h1>
+									</a>
+									<img class="img-fluid" src="img/portfolio/web3.png" alt="statmarkgroup">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row mb-4">
+				<div class="col-md mt-4" data-toggle="modal" data-target="#modal-portfolio-4">
+					<div class="wow flipInX box-portfolio">
+						<img src="img/portfolio/4.png" class="hidden-sm-down">
+						<img src="img/portfolio/mb4.png" class="hidden-md-up">
+					</div>
+					<div id="modal-portfolio-4" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-keyboard="false" data-backdrop="static">
+						<div class="modal-dialog modal-md" role="document">
+							<div class="modal-content">
+								<div class="modal-header">
+									<div class="modal-title" id="myModalLabel"><img class="logo-modal" src="img/logo/logo.png" alt="Naus"></div>
+									<button type="button" class="close" aria-label="Close">
+                		<span aria-hidden="true">&times;</span>
+              		</button>
+								</div>
+								<div class="modal-body">
+									<a class="text-center" href="http://www.superfanatico.com/" target="_blank">
+										<h1 class="title-modal">http://www.superfanatico.com/</h1>
+									</a>
+									<img class="img-fluid" src="img/portfolio/web4.png" alt="superfanatico">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md mt-4" data-toggle="modal" data-target="#modal-portfolio-5">
+					<div class="wow flipInX box-portfolio">
+						<img src="img/portfolio/5.png" class="hidden-sm-down">
+						<img src="img/portfolio/mb5.png" class="hidden-md-up">
+					</div>
+					<div id="modal-portfolio-5" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-keyboard="false" data-backdrop="static">
+						<div class="modal-dialog modal-md" role="document">
+							<div class="modal-content">
+								<div class="modal-header">
+									<div class="modal-title" id="myModalLabel"><img class="logo-modal" src="img/logo/logo.png" alt="Naus"></div>
+									<button type="button" class="close" aria-label="Close">
+                		<span aria-hidden="true">&times;</span>
+              		</button>
+								</div>
+								<div class="modal-body">
+									<a class="text-center" href="http://lacomensal.com/" target="_blank">
+										<h1 class="title-modal">http://lacomensal.com/</h1>
+									</a>
+									<img class="img-fluid" src="img/portfolio/web5.png" alt="la comensal">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md mt-4" data-toggle="modal" data-target="#modal-portfolio-6">
+					<div class="wow flipInX box-portfolio">
+						<img src="img/portfolio/6.png" class="hidden-sm-down">
+						<img src="img/portfolio/mb6.png" class="hidden-md-up">
+					</div>
+					<div id="modal-portfolio-6" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-keyboard="false" data-backdrop="static">
+						<div class="modal-dialog modal-md" role="document">
+							<div class="modal-content">
+								<div class="modal-header">
+									<div class="modal-title" id="myModalLabel"><img class="logo-modal" src="img/logo/logo.png" alt="Naus"></div>
+									<button type="button" class="close" aria-label="Close">
+                		<span aria-hidden="true">&times;</span>
+              		</button>
+								</div>
+								<div class="modal-body">
+									<a class="text-center" href="http://ideas.estanciadoradapanama.net/proyecto/" target="_blank">
+										<h1 class="title-modal">http://ideas.estanciadoradapanama.net/proyecto/</h1>
+									</a>
+									<img class="img-fluid" src="img/portfolio/web6.png" alt="estancia dorada">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End Porfolio -->
+
+	<!-- Contact -->
+	<section id=contact class="container-fluid">
+		<div class="container">
+			<h3>CONTACTO</h3>
+			<div class="row">
+				<div class="col pb-2">
+					<p>Si quiere plantearnos alguna inquietud o deseas pertenecer a nuestro equipo entregarnos tu currículo llene el siguiente formulario, su petición será atendida en la brevedad posible. Sus datos personales serán manejados con absoluta discreción y confidencialidad.</p>
+				</div>
+			</div>
+			<form id="formcontact" action="mail.php" method="post" enctype="multipart/form-data">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="label-form" for="name"><h6>Nombre y Apellido</h6></label>
+							<input class="form-control input-form" id="input-text-name" type="text" name="name" required>
+						</div>
+						<div class="form-group">
+							<label class="label-form" for="email"><h6>Correo Electronico</h6></label>
+							<input class="form-control input-form" id="input-text-email" type="email" name="email" required>
+						</div>
+						<div class="form-group">
+							<label class="label-form" for="subject"><h6>Asunto</h6></label>
+							<input class="form-control input-form" id="input-text-subject" type="text" name="subject" required>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="label-form" for="message"><h6>Mensaje</h6></label>
+							<textarea class="form-control input-form" id="input-text-message" rows="5" name="message" required></textarea>
+						</div>
+						<div class="form-group">
+							<div class="form-inline col-xs-12 d-flex justify-content-end btn-form">
+								<label class="btn btn-form-custom btn-docs btn-file ml-2 tooltip--top tooltip-blue" aria-label="Cargar Curriculum">
+									<img src="img/contact/add-curriculum.png" alt="Curriculum">
+									<input type="file" name="curriculum" id="curriculum">
+								</label>
+								<label class="btn btn-form-custom btn-docs btn-file ml-2 tooltip--top tooltip-blue" aria-label="Cargar Documento">
+									<img src="img/contact/add-document.png" alt="Documento">
+									<input type="file" name="document" id="document">
+								</label>
+								<input class="btn btn-success btn-form-custom btn-block col-6 ml-2" type="submit" value="Enviar">
+							</div>
+						</div>
+					</div>
+				</div>
+			</form>
+			<div class="row">
+				<div class="col pt-4">
+					<p>Si desea comunicarse vía teléfono puede hacerlo a nuestro número +52 1 55 48581287, nuestros ejecutivos atenderán sus dudas de la mejor forma posible.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End Contact -->
+
+	<!-- Footer -->
+	<footer id="footer" class="container-fluid">
+		<section class="container pb-3 pt-3 ">
+			<div class="row">
+				<div class="col-12 col-md-4 d-flex justify-content-center justify-content-md-start flex-md-row text-center flex-last flex-md-first mt-3">
+					<small>
+        &copy; 2017 Naus Technologies, All rigths reserved      
+      </small>
+				</div>
+				<div class="wow fadeInDownBig col-12 col-md-4 d-flex justify-content-center flex-first">
+					<img class="logo-footer" src="img/logo/logo-mobile.png" alt="Logo Naus">
+				</div>
+				<div class="col-12 col-md-4 d-flex justify-content-center justify-content-md-start flex-md-row-reverse mt-3">
+					<a href="#"><i class="fa fa-2x fa-instagram px-2" aria-hidden="true"></i></a>
+					<a href="#"><i class="fa fa-2x fa-facebook px-2" aria-hidden="true"></i></a>
+					<a href="#"><i class="fa fa-2x fa-whatsapp px-2" aria-hidden="true"></i></a>
+					<a href="#"><i class="fa fa-2x fa-google-plus px-2" aria-hidden="true"></i></a>
+				</div>
+			</div>
+		</section>
+
+	</footer>
+	<!-- End Footer -->
+
+	<!-- Button Go to Top -->
+	<div id="go-top" style="display: none;">
+		<a data-scroll href="#"><i class="fa fa-angle-up"></i></a>
+	</div>
+	<!-- End Button Go to Top -->
+
+	<!-- Social Bar -->
+
+	<!-- Chat -->
+	<div id="chat">
+		<div class="row">
+			<div class="col-12">
+				<form>
+					<div class="row">
+						<div class="col-12">
+							<p>Welcome, <strong>Usuario</strong></p>
+							<hr class="no-margin no-padding">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12">
+							<div class="chat-box"></div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12">
+							<div class="input-group">
+								<input class="form-control" type="text" placeholder="Mensaje">
+								<div class="input-group-btn">
+									<button class="btn btn-secondary btn-submit-chat btn-block" type="submit">Send</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<!-- Testimonio -->
+	<div id="testimonio">
+		<div id="carouselTestimonio" class="carousel slide" data-ride="carousel">
+			<div class="carousel-inner" role="listbox">
+				<div class="carousel-item active">
+					<div class="">
+						<div class="row">
+							<div class="col-3">
+								<img src="img/socialbar/avatar-testimonios.png" class="img-fluid" alt="Perfil">
+							</div>
+							<div class="col-9">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ipsum praesentium facilis necessitatibus perferendis nisi, error itaque eveniet nobis earum, hic vitae sint magni! Placeat dignissimos necessitatibus unde, aliquam omnis!</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-6">
+								<p>@FulanodeTal</p>
+							</div>
+							<div class="col-6">
+								<img class="float-right" src="img/socialbar/estrella-azul.png" alt="star">
+								<img class="float-right" src="img/socialbar/estrella-azul.png" alt="star">
+								<img class="float-right" src="img/socialbar/estrella-azul.png" alt="star">
+								<img class="float-right" src="img/socialbar/estrella-azul.png" alt="star">
+								<img class="float-right" src="img/socialbar/estrella-gris.png" alt="star">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<div class="">
+						<div class="row">
+							<div class="col-3">
+								<img src="img/socialbar/avatar-testimonios.png" class="img-fluid" alt="Perfil">
+							</div>
+							<div class="col-9">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ipsum praesentium facilis necessitatibus perferendis nisi, error itaque eveniet nobis earum, hic vitae sint magni! Placeat dignissimos necessitatibus unde, aliquam omnis!</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-6">
+								<p>@FulanodeTal</p>
+							</div>
+							<div class="col-6">
+								<img class="float-right" src="img/socialbar/estrella-azul.png" alt="star">
+								<img class="float-right" src="img/socialbar/estrella-azul.png" alt="star">
+								<img class="float-right" src="img/socialbar/estrella-azul.png" alt="star">
+								<img class="float-right" src="img/socialbar/estrella-azul.png" alt="star">
+								<img class="float-right" src="img/socialbar/estrella-gris.png" alt="star">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<div class="">
+						<div class="row">
+							<div class="col-3">
+								<img src="img/socialbar/avatar-testimonios.png" class="img-fluid" alt="Perfil">
+							</div>
+							<div class="col-9">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ipsum praesentium facilis necessitatibus perferendis nisi, error itaque eveniet nobis earum, hic vitae sint magni! Placeat dignissimos necessitatibus unde, aliquam omnis!</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-6">
+								<p>@FulanodeTal</p>
+							</div>
+							<div class="col-6">
+								<img class="float-right" src="img/socialbar/estrella-azul.png" alt="star">
+								<img class="float-right" src="img/socialbar/estrella-azul.png" alt="star">
+								<img class="float-right" src="img/socialbar/estrella-azul.png" alt="star">
+								<img class="float-right" src="img/socialbar/estrella-azul.png" alt="star">
+								<img class="float-right" src="img/socialbar/estrella-gris.png" alt="star">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<a class="carousel-control-prev float-left" href="#carouselTestimonio" role="button" data-slide="prev">
+				<span class="fa fa-2x fa-chevron-circle-left" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			<a class="carousel-control-next float-right" href="#carouselTestimonio" role="button" data-slide="next">
+				<span class="fa fa-2x fa-chevron-circle-right" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			</a>
+		</div>
+	</div>
+
+	<!-- Botonera -->
+	<div class="social hidden-sm-down">
+		<ul>
+			<li>
+				<a class="social-chat" id="btn-chat" href="javascript:void(0);">CHAT <span class="fa fa-plus"></span></a>
+			</li>
+			<li>
+				<a class="social-testimonio" id="btn-testimonio" href="javascript:void(0);">TESTIMONIO <span class="fa fa-plus"></span></a>
+			</li>
+			<li class="social-icon">
+				<a href="#" target="_blank" class="fa fa-instagram"></a>
+			</li>
+			<li class="social-icon">
+				<a href="#" target="_blank" class="fa fa-facebook"></a>
+			</li>
+			<li class="social-icon">
+				<a href="#" target="_blank" class="fa  fa-whatsapp"></a>
+			</li>
+			<li class="social-icon">
+				<a href="#" target="_blank" class="fa fa-google-plus"></a>
+			</li>
+		</ul>
+	</div>
+	<!-- End Social Bar -->
+
+	<!-- jQuery first, Bootstrap JS. -->
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/tether.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/smooth-scroll.min.js"></script>
+	<script src="js/wow.min.js"></script>
+
+	<!-- Animates WOW -->
+	<script>
+		new WOW().init();
+
+	</script>
+
+	<!-- Scroll -->
+	<script>
+		smoothScroll.init({
+			selector: '[data-scroll]', // Selector for links (must be a class, ID, data attribute, or element tag)
+			selectorHeader: null, // Selector for fixed headers (must be a valid CSS selector) [optional]
+			speed: 1500, // Integer. How fast to complete the scroll in milliseconds
+			easing: 'easeInOutCubic', // Easing pattern to use
+			offset: 66, // Integer. How far to offset the scrolling anchor location in pixels
+			callback: function(anchor, toggle) {} // Function to run after scrolling
+		});
+
+	</script>
+
+	<!-- Hide navbar onClick -->
+	<script>
+		$(".navbar-nav li a").click(function(event) {
+			if (!$(this).parent().hasClass('dropdown'))
+				$(".navbar-collapse").collapse('hide');
+		});
+		$(".navbar-brand").click(function(event) {
+			if (!$(this).parent().hasClass('dropdown'))
+				$(".navbar-collapse").collapse('hide');
+		});
+
+	</script>
+
+	<!-- Height Home -->
+	<script>
+		$(document).ready(function($) {
+			var ventana_alto = $(window).height();
+			$('#home').css("height", ventana_alto - 65);
+			$(window).resize(function() {
+				var ventana_alto = $(window).height();
+				$('#home').css("height", ventana_alto - 65);
+			});
+		});
+
+		$(document).ready(function($) {
+			var content_home = $('#content-home').height();
+			$('#carousel-inner-home').css("height", content_home);
+			$(window).resize(function() {
+				var content_home = $('#content-home').height();
+				$('#carousel-inner-home').css("height", content_home);
+			});
+		});
+
+	</script>
+
+	<!-- Button Go Top -->
+	<script>
+		$(document).ready(function() {
+			$(window).scroll(function() {
+				if ($(this).scrollTop() > 200) {
+					$('#go-top').fadeIn('slow');
+				} else {
+					$('#go-top').fadeOut('slow');
+				}
+			});
+		});
+
+	</script>
+
+	<!-- Popovers -->
+	<script>
+		$(function() {
+			$("#chat-popover").popover({
+				html: true,
+				placement: "left",
+				trigger: "click",
+				content: function() {
+					return $("#chat-popover-content").html();
+				}
+			});
+			$("#testimonio-popover").popover({
+				html: true,
+				placement: "left",
+				trigger: "click",
+				content: function() {
+					return $("#testimonio-popover-content").html();
+				}
+			});
+		});
+
+	</script>
+
+	<!-- Testimonios y Chat -->
+	<script>
+		$(document).ready(main);
+
+		var contadorTest = 'TestClose';
+		var contadorChat = 'ChatClose';
+
+		function main() {
+			$('#btn-testimonio').click(function() {
+				if (contadorTest == 'TestClose') {
+					$('#testimonio').animate({
+						right: '26px'
+					}, 1000);
+					contadorTest = 'TestOpen';
+					contadorChat = 'ChatClose';
+					$('#chat').animate({
+						right: '-100%'
+					}, 1000);
+				} else {
+					contadorTest = 'TestClose';
+					$('#testimonio').animate({
+						right: '-100%'
+					}, 1000);
+				}
+			});
+			$('#btn-chat').click(function() {
+				if (contadorChat == 'ChatClose') {
+					$('#chat').animate({
+						right: '26px'
+					}, 1000);
+					contadorChat = 'ChatOpen';
+					contadorTest = 'TestClose';
+					$('#testimonio').animate({
+						right: '-100%'
+					}, 1000);
+				} else {
+					contadorChat = 'ChatClose';
+					$('#chat').animate({
+						right: '-100%'
+					}, 1000);
+				}
+			});
+		};
+
+	</script>
+
+	<!-- Carousel -->
+	<script>
+		$('.carousel').carousel()
+
+	</script>
+
+	<!-- Enviar Formulario -->
+	<script>
+		$('#formcontact').submit(function(e) {
+			e.preventDefault();
+			var formData = new FormData(document.getElementById("formcontact"));
+
+			$.ajax({
+				type: 'POST',
+				url: $(this).attr('action'),
+				dataType: "html",
+				data: formData,
+				cache: false,
+				contentType: false,
+				processData: false,
+				success: function(data) {
+					$('#resultmail').html(data);
+				}
+			})
+
+			return false;
+		});
+
+	</script>
+</body>
+
+</html>

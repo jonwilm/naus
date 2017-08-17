@@ -1,0 +1,420 @@
+@media screen and (min-width: 768px) {
+	/*
+	------
+	  HOME
+	------
+	*/
+	#home h3 {
+		font-size: 37px;
+	}
+	#home h3#subh3 {
+		font-size: 27px;
+	}
+	#home p#subhome {
+		font-size: 16px;
+	}
+	#home p {
+		font-size: 20px;
+	}
+	.row-text {
+		height: 95%;
+	}
+	/*
+  ------
+    US
+  ------
+  */
+	#us p#text-us {
+		font-family: 'Ubuntu', serif;
+		font-size: 13.4px;
+	}
+	#us .card-img-top {
+		width: 99px;
+		height: 99px;
+		margin: 20px auto;
+	}
+	#us .card-title {
+		font-family: 'Roboto Slab', serif;
+		font-size: 20px;
+		color: #1d70b7;
+	}
+	#us .card-text {
+		font-family: 'Ubuntu', serif;
+		font-size: 13.4px;
+		color: #273638;
+		padding: 0;
+		margin-bottom: 16px;
+	}
+	/*
+  ------
+    SERVICE
+  ------
+  */
+	#service article {
+		min-height: 114px;
+	}
+	#service img.card-img-top {
+		width: 80px;
+		height: 48px;
+		margin: 10px auto;
+	}
+	#service .card-title {
+		font-family: "Roboto Slab";
+		font-size: 15px;
+		color: #1d70b7;
+		padding: 0px 5px;
+	}
+	#service .card {
+		height: 100%;
+	}
+	/*
+	------
+	  CONTACT
+	------
+	*/
+	.btn-form {
+		padding-top: 25px;
+	}
+	#modalmail {
+		display: none;
+	}
+	#mailerror {
+		display: none;
+	}
+	#closeerrormail:hover {
+		color: #1D70B7;
+	}
+	.resultmailcss,
+	.mailnopdfcss,
+	.mailsendcss,
+	.mailnosendcss,
+	.mailerrorcss {
+		display: flex;
+		color: #F5F4F4;
+		padding: 15px;
+		max-width: 25%;
+		position: fixed;
+		right: 26px;
+		top: 100px;
+		z-index: 3000;
+		box-shadow: 3px 3px 2px #A3A3A3;
+	}
+	.resultmailcss {
+		background-color: rgba(29, 112, 183, .85);
+	}
+	.mailsendcss {
+		background-color: rgba(58, 169, 53, .85);
+	}
+	.mailnopdfcss {
+		background-color: rgba(255, 220, 0, .85);
+		color: #273638;
+	}
+	.mailnosendcss,
+	.mailerrorcss {
+		background-color: rgba(217, 83, 79, .85);
+	}
+	.loadingmail {
+		font-family: 'Ubuntu', sans-serif;
+		font-size: 14px;
+		align-self: center;
+	}
+	.loadingmail a {
+		font-weight: bold;
+		text-decoration: none;
+	}
+	.iconmail {
+		align-self: center;
+	}
+	.loader {
+		color: #f5f4f4;
+		font-size: 5px;
+		margin: 25px 25px;
+		width: 5px;
+		height: 5px;
+		border-radius: 50%;
+		position: relative;
+		text-indent: -9999em;
+		-webkit-animation: load4 1.3s infinite linear;
+		animation: load4 1.3s infinite linear;
+		-webkit-transform: translateZ(0);
+		-ms-transform: translateZ(0);
+		transform: translateZ(0);
+	}
+}
+
+
+/*	1024 to 1439 	*/
+
+@media screen and (min-width: 1024px) {
+	/*
+	------
+	  HOME
+	------
+	*/
+	#home h3 {
+		font-size: 47px;
+	}
+	#home h3#subh3 {
+		font-size: 37px;
+	}
+	#home p#subhome {
+		font-size: 20px;
+	}
+	#home p {
+		font-size: 27px;
+	}
+	.row-text {
+		height: 95%
+	}
+	.btn-home {
+		height: 35px;
+		padding: 5px;
+	}
+	.btn-home h5 {
+		font-family: 'Roboto Slab', sans-serif;
+		font-size: 20px;
+	}
+	/*
+  ------
+    US
+  ------
+  */
+	#us h3#title-us {
+		font-size: 35px;
+	}
+	#us p#text-us {
+		font-family: 'Ubuntu', serif;
+		font-size: 13.4px;
+	}
+	#us .card-img-top {
+		width: 99px;
+		height: 99px;
+		margin: 20px auto;
+	}
+	#us .card-title {
+		font-family: 'Roboto Slab', serif;
+		font-size: 20px;
+		color: #1d70b7;
+	}
+	#us .card-text {
+		font-family: 'Ubuntu', serif;
+		font-size: 13.4px;
+		color: #273638;
+	}
+	#us .card-text {
+		margin-bottom: 16px;
+		padding: 0 18px;
+	}
+	/*
+  ------
+    SERVICE
+  ------
+  */
+	#service h3 {
+		font-size: 35px;
+	}
+	#service img.card-img-top {
+		width: 106px;
+		height: 63px;
+		margin: 11px auto;
+	}
+	#service .card-title {
+		font-family: "Roboto Slab";
+		font-size: 20px;
+		color: #1d70b7;
+		padding: 0px 5px;
+	}
+	#service article {
+		min-height: 143px;
+	}
+	#service .card {
+		height: 100%;
+	}
+	/*
+	------
+	  PORTFOLIO
+	------
+	*/
+	#portfolio h3 {
+		font-size: 35px;
+	}
+	#portfolio h1 {
+		font-size: 18px;
+	}
+	#portfolio p {
+		font-size: 13.4;
+	}
+	.box-portfolio {
+		height: 310px;
+	}
+	.text-box-portfolio {
+		height: 70px;
+		padding: 20px;
+	}
+	.box-portfolio>img {
+		height: 100%;
+	}
+	/*
+	------
+	  CONTACT
+	------
+	*/
+	#contact h3 {
+		font-size: 35px;
+	}
+	#contact h6 {
+		font-size: 13px;
+	}
+	#contact p {
+		font-size: 15px;
+	}
+	#input-text-name,
+	#input-text-email,
+	#input-text-subject {
+		height: 35px;
+		font-family: 'Ubuntu', sans-serif;
+		font-size: 15px;
+	}
+	#input-text-message {
+		height: 100px;
+		font-family: 'Ubuntu', sans-serif;
+		font-size: 15px;
+	}
+	.btn-form {
+		padding-top: 30px;
+	}
+}
+
+
+/*	>= 1440 	*/
+
+@media screen and (min-width: 1440px) {
+	/*
+	------
+	  HOME
+	------
+	*/
+	#home h3 {
+		font-size: 57px;
+	}
+	#home h3#subh3 {
+		font-size: 40px;
+	}
+	#home p#subhome {
+		font-size: 29px;
+	}
+	#home p {
+		font-size: 35px;
+	}
+	.row-text {
+		height: 95%
+	}
+	.btn-home {
+		height: 35px;
+		padding: 5px;
+	}
+	.btn-home h5 {
+		font-family: 'Roboto Slab', sans-serif;
+		font-size: 20px;
+	}
+	/*
+  ------
+    US
+  ------
+  */
+	#us h3#title-us {
+		font-size: 40px;
+	}
+	#us p#text-us {
+		font-family: 'Ubuntu', serif;
+		font-size: 15.5px;
+	}
+	#us .card-img-top {
+		width: 140px;
+		height: 140px;
+		margin: 28px auto;
+	}
+	#us .card-title {
+		font-family: 'Roboto Slab', serif;
+		font-size: 28px;
+	}
+	#us .card-text {
+		font-family: 'Ubuntu', serif;
+		font-size: 15.5px;
+	}
+	/*
+  ------
+    SERVICE
+  ------
+  */
+	#service h3 {
+		font-size: 40px;
+	}
+	#service img.card-img-top {
+		width: 150px;
+		height: 89px;
+		margin: 20px auto;
+	}
+	#service .card-title {
+		font-size: 28px;
+	}
+	#service article {
+		min-height: 200px;
+	}
+	/*
+	------
+	  PORTFOLIO
+	------
+	*/
+	#portfolio {
+		padding: 30px 0;
+	}
+	#portfolio h1 {
+		font-size: 18px;
+	}
+	#portfolio p {
+		font-size: 15.5;
+	}
+	.box-portfolio {
+		height: 310px;
+	}
+	.text-box-portfolio {
+		height: 70px;
+		padding: 15px;
+	}
+	.box-portfolio>img {
+		height: 100%;
+	}
+	/*
+	------
+	  CONTACT
+	------
+	*/
+	#contact {
+		padding: 30px 0;
+	}
+	#contact h3 {
+		font-size: 40px;
+	}
+	#contact h6 {
+		font-size: 18px;
+	}
+	#contact p {
+		font-size: 18px;
+	}
+	#input-text-name,
+	#input-text-email,
+	#input-text-subject {
+		height: 46px;
+		font-family: 'Ubuntu', sans-serif;
+		font-size: 18px;
+	}
+	#input-text-message {
+		height: 122px;
+		font-family: 'Ubuntu', sans-serif;
+		font-size: 18px;
+	}
+	.btn-form {
+		padding-top: 35px;
+	}
+}
